@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang class="loading">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Python编程：从入门到实践（学习笔记-Charpter4） - Wiseer</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate">
+    <meta name="keywords" content="WISEER,"> 
+    <meta name="description" content="坚持，你所热爱的一切,Chapter 4 : 操作列表4.1遍历整个列表for x in y:  循环：
+123magicians = [&#39;alice&#39;, &#39;david&#39;, &#39;carolina&#39;]for magician,"> 
+    <meta name="author" content="Shaw Wiseer"> 
+    <link rel="alternative" href="atom.xml" title="Wiseer" type="application/atom+xml"> 
+    <link rel="icon" href="../../../../img/favicon1.png"> 
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <link rel="stylesheet" href="../../../../css/diaspora.css">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+</head>
+</html>
+<body class="loading">
+    <span id="config-title" style="display:none">Wiseer</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;" data-url="http://yoursite.com"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle">Python编程：从入门到实践（学习笔记-Charpter4）</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class="main">
+        <h1 class="title">Python编程：从入门到实践（学习笔记-Charpter4）</h1>
+        <div class="stuff">
+            <span>五月 18, 2019</span>
+            
+  <ul class="post-tags-list"><li class="post-tags-list-item"><a class="post-tags-list-link" href="../../../../tags/Python/">Python</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h2 id="Chapter-4-操作列表"><a href="#Chapter-4-操作列表" class="headerlink" title="Chapter 4 : 操作列表"></a>Chapter 4 : 操作列表</h2><h4 id="4-1遍历整个列表"><a href="#4-1遍历整个列表" class="headerlink" title="4.1遍历整个列表"></a>4.1遍历整个列表</h4><p><code>for x in y:</code>  循环：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">magicians = [<span class="string">'alice'</span>, <span class="string">'david'</span>, <span class="string">'carolina'</span>]</span><br><span class="line"><span class="keyword">for</span> magician <span class="keyword">in</span> magicians:</span><br><span class="line">    print(magician)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">magicians = [<span class="string">'alice'</span>, <span class="string">'david'</span>, <span class="string">'carolina'</span>]</span><br><span class="line"><span class="keyword">for</span> magician <span class="keyword">in</span> magicians:</span><br><span class="line">    print(magician.title() + <span class="string">', that was a great trick!'</span>)</span><br><span class="line">    print(<span class="string">"I can't wait to see your next trick, "</span> + magician.title() + <span class="string">".\n"</span>)</span><br><span class="line">    </span><br><span class="line">print(<span class="string">"Thank you, everyone. That was a great magic show!"</span>)</span><br></pre></td></tr></table></figure>
+<p><strong>注：</strong>1.<strong>避免缩进错误</strong>（忘记缩进、忘记缩进额外的代码行、不必要的缩进、循环后不必要的缩进）</p>
+<p>​        2.<strong>遗漏了冒号</strong> <code>：</code></p>
+<h4 id="4-2创建数值列表"><a href="#4-2创建数值列表" class="headerlink" title="4.2创建数值列表"></a>4.2创建数值列表</h4><ul>
+<li><code>range</code>( ) 生成一系列数字</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> value <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">5</span>):</span><br><span class="line">    print(value)</span><br><span class="line">    </span><br><span class="line">-------</span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">4</span></span><br><span class="line"><span class="comment">#差一行行为（打印到5前一个数4停止），5本身不打印</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>list() 和 range()</code> 一起创建数字列表</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">numbers = list(range(<span class="number">1</span>,<span class="number">6</span>))</span><br><span class="line">print(numbers)</span><br><span class="line"></span><br><span class="line">------</span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"><span class="comment"># 使用list()函数将range()的结果直接转换成为 列表</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>range()</code>指定步长打印</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">even_numbers = list(range(<span class="number">2</span>,<span class="number">11</span>,<span class="number">2</span>))</span><br><span class="line">print(even_numbers)</span><br><span class="line"></span><br><span class="line">-----</span><br><span class="line">[<span class="number">2</span>, <span class="number">4</span>, <span class="number">6</span>, <span class="number">8</span>, <span class="number">10</span>]</span><br><span class="line"><span class="comment">#range( 初始值，结束值，步长 )</span></span><br><span class="line"><span class="comment">#函数range()从2开始，然后不断加2，直到超过最终值11停止</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">squares = []  <span class="comment">#创建一个空列表</span></span><br><span class="line"><span class="keyword">for</span> value <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">11</span>):</span><br><span class="line">    squares.append(value**<span class="number">2</span>)</span><br><span class="line">    </span><br><span class="line">print(squares)</span><br><span class="line"></span><br><span class="line">------</span><br><span class="line">[<span class="number">1</span>, <span class="number">4</span>, <span class="number">9</span>, <span class="number">16</span>, <span class="number">25</span>, <span class="number">36</span>, <span class="number">49</span>, <span class="number">64</span>, <span class="number">81</span>, <span class="number">100</span>]</span><br><span class="line"><span class="comment">#在循环中，计算每个值的平方，并立即将结果附加到列表squares的末尾</span></span><br></pre></td></tr></table></figure>
+<h4 id="4-3对数字列表统计计算"><a href="#4-3对数字列表统计计算" class="headerlink" title="4.3对数字列表统计计算"></a>4.3对数字列表统计计算</h4><ul>
+<li>最大值<code>max()</code>、最小值<code>min()</code>、总和<code>sum()</code></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; digits = list(range(0,10))</span><br><span class="line">&gt;&gt;&gt; min(digits)</span><br><span class="line">0</span><br><span class="line">&gt;&gt;&gt; max(digits)</span><br><span class="line">9</span><br><span class="line">&gt;&gt;&gt; sum(digits)</span><br><span class="line">45</span><br></pre></td></tr></table></figure>
+<h4 id="4-4列表解析"><a href="#4-4列表解析" class="headerlink" title="4.4列表解析"></a>4.4列表解析</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">squares = [value**<span class="number">2</span> <span class="keyword">for</span> value <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">11</span>)]</span><br><span class="line">print(squares)</span><br><span class="line"></span><br><span class="line">------</span><br><span class="line">[<span class="number">1</span>, <span class="number">4</span>, <span class="number">9</span>, <span class="number">16</span>, <span class="number">25</span>, <span class="number">36</span>, <span class="number">49</span>, <span class="number">64</span>, <span class="number">81</span>, <span class="number">100</span>]</span><br><span class="line"><span class="comment">#首先，指定一个列表名squares </span></span><br><span class="line"><span class="comment">#然后，指定一个方括号，并定义一个表达式（value**2），用于生成你要储存到列表的值</span></span><br><span class="line"><span class="comment">#接下来，编写一个for循环，给表达式提供值，再加上右边的方括号</span></span><br><span class="line"><span class="comment">#注意，在这个解析式子里，for 语句末尾没有冒号</span></span><br></pre></td></tr></table></figure>
+<h4 id="4-5对列表一部分处理"><a href="#4-5对列表一部分处理" class="headerlink" title="4.5对列表一部分处理"></a>4.5对列表一部分处理</h4><ul>
+<li><strong>切片</strong> ：可指定要使用的第一个元素和最后一个元素的索引（遵守差一原则）</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">players = [<span class="string">'charles'</span>, <span class="string">'martina'</span>, <span class="string">'micheal'</span>, <span class="string">'florence'</span>, <span class="string">'eli'</span>]</span><br><span class="line"><span class="comment">#            【0】       【1】      【2】       【3】      【4】</span></span><br><span class="line">print(players[<span class="number">0</span>:<span class="number">3</span>])</span><br><span class="line"></span><br><span class="line">------</span><br><span class="line">[<span class="string">'charles'</span>, <span class="string">'martina'</span>, <span class="string">'micheal'</span>]</span><br><span class="line"><span class="comment">#1. 打印了该列表的一个片段，其中只包含三名队员，输出也是一个列表</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#2. 可以任意生成列表的任何子集，如 提取列表的第2～4个元素，可将起始索引指定为1，并将终止索引指定为4：</span></span><br><span class="line">print(players[<span class="number">1</span>:<span class="number">4</span>])</span><br><span class="line"></span><br><span class="line"><span class="string">'''        技巧： 提取i～j元素， 则players[i-1 , j]                   '''</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#3. 没有指定第一个索引，Python将从列表开头开始:</span></span><br><span class="line">print(players[:<span class="number">4</span>])</span><br><span class="line">[<span class="string">'charles'</span>, <span class="string">'martina'</span>, <span class="string">'micheal'</span>, <span class="string">'florence'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br><span class="line"></span><br><span class="line"><span class="comment">#4. 没有指定终止索引，可以一直提取到最后一个元素终止</span></span><br><span class="line">print(player[<span class="number">2</span>:])</span><br><span class="line">[<span class="string">'micheal'</span>, <span class="string">'florence'</span>, <span class="string">'eli'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br><span class="line"></span><br><span class="line"><span class="comment">#5. 负索引返回离列表末尾相应距离的元素</span></span><br><span class="line">print(players[<span class="number">-3</span>:])</span><br><span class="line">[<span class="string">'micheal'</span>, <span class="string">'florence'</span>, <span class="string">'eli'</span>]</span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>遍历切片</strong></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">players = [<span class="string">'charles'</span>, <span class="string">'martina'</span>, <span class="string">'micheal'</span>, <span class="string">'florence'</span>, <span class="string">'eli'</span>]</span><br><span class="line"></span><br><span class="line">print(<span class="string">"Here are the first three players on my team:"</span>)</span><br><span class="line"><span class="keyword">for</span> player <span class="keyword">in</span> players[:<span class="number">3</span>]:</span><br><span class="line">    print(player.title())</span><br><span class="line">------</span><br><span class="line">Charles</span><br><span class="line">Martina</span><br><span class="line">Micheal</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br><span class="line"><span class="comment">#for循环，遍历前三名队员，并打印他们的名字</span></span><br></pre></td></tr></table></figure>
+<h4 id="4-6复制列表"><a href="#4-6复制列表" class="headerlink" title="4.6复制列表"></a>4.6复制列表</h4><p>复制列表，可创建一个包含整个列表的切片，方法是<strong>同时省略起始索引和终止索引</strong> [   :  ]</p>
+<p>让Python创建一个始于第一个元素，终止于最后一个元素的切片，即完成了复制整个列表。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">my_foods = [<span class="string">'pizza'</span>, <span class="string">'falafel'</span>, <span class="string">'carrot cake'</span>]</span><br><span class="line">friend_foods = my_foods[ : ]</span><br><span class="line"></span><br><span class="line">print(<span class="string">"My favorite foods are: "</span>)</span><br><span class="line">print(my_foods)</span><br><span class="line"></span><br><span class="line">print(<span class="string">"\nMy friend's favorite foods are:"</span>)</span><br><span class="line">print(friend_foods)</span><br><span class="line"></span><br><span class="line">---------</span><br><span class="line">My favorite foods are: </span><br><span class="line">[<span class="string">'pizza'</span>, <span class="string">'falafel'</span>, <span class="string">'carrot cake'</span>]</span><br><span class="line"></span><br><span class="line">My friend<span class="string">'s favorite foods are:</span></span><br><span class="line"><span class="string">['</span>pizza<span class="string">', '</span>falafel<span class="string">', '</span>carrot cake<span class="string">']</span></span><br><span class="line"><span class="string">-------</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">#增加食品名单</span></span><br><span class="line"><span class="string">my_foods.append('</span>cannoli<span class="string">')</span></span><br><span class="line"><span class="string">friend_foods.append('</span>ice cream<span class="string">')</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">#两个独立的列表</span></span><br></pre></td></tr></table></figure>
+<p>这样写不是独立的两个列表，<strong>行不通</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">my_foods =[<span class="string">'pizza'</span>, <span class="string">'falafel'</span>, <span class="string">'carrot cake'</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">#行不通</span></span><br><span class="line">friend_foods = my_foods  <span class="comment">#( X )</span></span><br><span class="line"></span><br><span class="line">my_foods.append(<span class="string">'cannoli'</span>)</span><br><span class="line">friend_foods.append(<span class="string">'ice cream'</span>)</span><br><span class="line"></span><br><span class="line">print(<span class="string">"My favorite foods are: "</span>)</span><br><span class="line">print(my_foods)</span><br><span class="line"></span><br><span class="line">print(<span class="string">"\nMy friend's favorite foods are:"</span>)</span><br><span class="line">print(friend_foods)</span><br><span class="line"></span><br><span class="line"><span class="comment">#以上输出的结果是一样的</span></span><br><span class="line">------</span><br><span class="line">My favorite foods are: </span><br><span class="line">[<span class="string">'pizza'</span>, <span class="string">'falafel'</span>, <span class="string">'carrot cake'</span>, <span class="string">'cannoli'</span>, <span class="string">'ice cream'</span>]</span><br><span class="line"></span><br><span class="line">My friend<span class="string">'s favorite foods are:</span></span><br><span class="line"><span class="string">['</span>pizza<span class="string">', '</span>falafel<span class="string">', '</span>carrot cake<span class="string">', '</span>cannoli<span class="string">', '</span>ice cream<span class="string">']</span></span><br><span class="line"><span class="string">------</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">'</span><span class="string">''</span></span><br><span class="line">这里将my_foods赋给fried_foods,而不是将my_foods的副本存储到friend_foods,</span><br><span class="line">这种语法实际上是让Python将新变量friend_foods关联到包含在my_foods中的列表，</span><br><span class="line">因此这两个变量都指向同一个列表中</span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>
+<h4 id="4-7元组-（-）"><a href="#4-7元组-（-）" class="headerlink" title="4.7元组  （ ）"></a>4.7元组  （ ）</h4><p>定义：<strong>无法修改的值称为不可变的，不可变的列表称为元组</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">dimensions = (<span class="number">200</span>, <span class="number">50</span>)</span><br><span class="line">print(dinmensions[<span class="number">0</span>])</span><br><span class="line">print(dinmensions[<span class="number">1</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment">#访问列表元素时使用的语法相同</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#行不通 ，无法修改</span></span><br><span class="line">dimensions[<span class="number">0</span>] = <span class="number">250</span> <span class="comment">#( X )</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>遍历元组中的所有值</strong>  (   <code>for</code> 循环)</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">dimensions = (<span class="number">200</span>, <span class="number">50</span>)</span><br><span class="line"><span class="keyword">for</span> dimension <span class="keyword">in</span> dimensions:</span><br><span class="line">    print(dimension)</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>修改元组变量</strong></li>
+</ul>
+<p>虽然不能修改元组的元素，但可以给存储元组的变量赋值，因此，如果要修改，可以重新定义整个元组：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">dimensions = (<span class="number">200</span>, <span class="number">50</span>)</span><br><span class="line">print(<span class="string">"Original dimensions:"</span>)</span><br><span class="line"><span class="keyword">for</span> dimension <span class="keyword">in</span> dimensions:</span><br><span class="line">    print(dimension)</span><br><span class="line">    </span><br><span class="line">dimensions = (<span class="number">400</span>, <span class="number">30</span>)</span><br><span class="line">print(<span class="string">"\nModified dimensions:"</span>)</span><br><span class="line"><span class="keyword">for</span> dimension <span class="keyword">in</span> dimensions:</span><br><span class="line">    print(dimension)</span><br></pre></td></tr></table></figure>
+<p><strong>小结</strong>：相比列表，元组是更简单的数据结构，如果需要存储的一组值在程序的整个生命周期内都不变，可使用元组。</p>
+<h4 id="4-8设置代码格式（PEP8）"><a href="#4-8设置代码格式（PEP8）" class="headerlink" title="4.8设置代码格式（PEP8）"></a>4.8设置代码格式（PEP8）</h4><ul>
+<li><p>缩进：每级需要用空<strong>四个空格</strong>来缩进</p>
+</li>
+<li><p>行长：每行代码建议在80 字符之内</p>
+</li>
+<li><p>空行：将程序的不同部分分开，可使用空行</p>
+</li>
+</ul>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src>
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        <li title="0" data-url="http://link.hhtjim.com/163/5146554.mp3"></li>
+                    
+                        <li title="1" data-url="http://link.hhtjim.com/qq/001faIUs4M2zna.mp3"></li>
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link" data-ae="false" data-ci="bf3b6228b6e577e68d28" data-cs="6cb97263d97a9d68f52875f09272ef70d9828f34" data-r="Mrxxd" data-o="Mrxxd" data-a="Mrxxd" data-d="true">查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="../js/plugin.js"></script>
+<script src="../js/diaspora.js"></script>
+<link rel="stylesheet" href="../photoswipe/photoswipe.css">
+<link rel="stylesheet" href="../photoswipe/default-skin/default-skin.css">
+<script src="../photoswipe/photoswipe.min.js"></script>
+<script src="../photoswipe/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>
