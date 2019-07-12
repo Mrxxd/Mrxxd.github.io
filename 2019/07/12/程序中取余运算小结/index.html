@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang class="loading">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>程序中求余运算小结 - Wiseer</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate">
+    <meta name="keywords" content="WISEER,"> 
+    <meta name="description" content="坚持，你所热爱的一切,%求余数
+整除 a / b = C (  C是整除得到的值) 例如： 3 / 4 = 0——–3 ，其中C为0， 3为余数
+5 / 2 = 2——1，其中C为2 ，1为余数
+7 / 6  = 1——,"> 
+    <meta name="author" content="Shaw Wiseer"> 
+    <link rel="alternative" href="atom.xml" title="Wiseer" type="application/atom+xml"> 
+    <link rel="icon" href="../../../../img/favicon1.png"> 
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <link rel="stylesheet" href="../../../../css/diaspora.css">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+</head>
+</html>
+<body class="loading">
+    <span id="config-title" style="display:none">Wiseer</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;" data-url="http://yoursite.com"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle">程序中求余运算小结</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class="main">
+        <h1 class="title">程序中求余运算小结</h1>
+        <div class="stuff">
+            <span>七月 12, 2019</span>
+            
+  <ul class="post-tags-list"><li class="post-tags-list-item"><a class="post-tags-list-link" href="../../../../tags/Python/">Python</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="../../../../tags/operation/">operation</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h4 id="求余数"><a href="#求余数" class="headerlink" title="%求余数"></a>%求余数</h4><blockquote>
+<p>整除 a / b = C (  C是整除得到的值) 例如： 3 / 4 = 0——–3 ，其中C为0， 3为余数</p>
+<p>5 / 2 = 2——1，其中C为2 ，1为余数</p>
+<p>7 / 6  = 1——1，其中C为1，1为余数</p>
+</blockquote>
+<p>通常取模运算也叫取余运算，它们返回结果都是余数 <code>.rem</code> 和 <code>mod</code> 唯一的区别在于:</p>
+<p>​        当 x 和 y 的<strong>正负号一样</strong>的时候，两个函数结果是等同的；</p>
+<p>​        当 x 和 y 的<strong>符号不同</strong>时，rem 函数结果的符号和 x 的一样，而 mod 和 y 一样。</p>
+<p>这是由于这两个函数的生成机制不同，rem 函数采用 fix 函数，而 mod 函数采用了 floor 函数（这两个函数是用来取整的，fix 函数向 0 方向舍入，floor 函数向无穷小方向舍入）。 rem（x，y）命令返回的是 x-n.<em>y，如果 y 不等于 0，其中的 n = fix(x./y)，而 mod(x,y) 返回的是 x-n.</em>y，当 y 不等于 0 时，n=floor(x./y)</p>
+<p>两个异号整数取模取值规律 （当是小数时也是这个运算规律，这一点好像与 C 语言的不太一样）</p>
+<p>先将两个整数看作是正数，再作除法运算:</p>
+<ul>
+<li>1、能整除时，其值为 0</li>
+<li>2、不能整除时，其值=除数×(整商+1)-被除数 </li>
+</ul>
+<p><code>mod(36,-10)=-4</code></p>
+<blockquote>
+<p>即：36 除以 10 的整数商为 3，加 1 后为 4；其与除数之积为 40；再与被数之差为（40-36=4）；取除数的符号。所以值为 -4。</p>
+</blockquote>
+<p>例：mod(9,1.2)=0.6; </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; mod(5,2)</span><br><span class="line">ans =1                   % 除数是正，余数就是正</span><br><span class="line"></span><br><span class="line">&gt;&gt; mod(-5,2)</span><br><span class="line">ans =1</span><br><span class="line">&gt;&gt; mod(5,-2)</span><br><span class="line">ans =-1                  % 除数是负，余数就是负</span><br><span class="line"></span><br><span class="line">&gt;&gt; mod(-5,-2)</span><br><span class="line">ans =-1                  % 用 rem 时，不管除数是正是负，余数的符号与被除数的符号相同</span><br><span class="line"></span><br><span class="line">&gt;&gt; rem(5,2)</span><br><span class="line">ans =1                   % 被除数是正，余数就是正</span><br><span class="line"></span><br><span class="line">&gt;&gt; rem(5,-2); </span><br><span class="line">ans =1</span><br><span class="line">&gt;&gt; rem(-5,2)</span><br><span class="line">ans =-1                 % 被除数是负， 余数就是负</span><br><span class="line"></span><br><span class="line">&gt;&gt; rem(-5,-2)</span><br><span class="line">ans =-1</span><br></pre></td></tr></table></figure>
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src>
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        <li title="0" data-url="http://link.hhtjim.com/163/5146554.mp3"></li>
+                    
+                        <li title="1" data-url="http://link.hhtjim.com/qq/001faIUs4M2zna.mp3"></li>
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link" data-ae="false" data-ci="bf3b6228b6e577e68d28" data-cs="6cb97263d97a9d68f52875f09272ef70d9828f34" data-r="Mrxxd" data-o="Mrxxd" data-a="Mrxxd" data-d="true">查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="../js/plugin.js"></script>
+<script src="../js/diaspora.js"></script>
+<link rel="stylesheet" href="../photoswipe/photoswipe.css">
+<link rel="stylesheet" href="../photoswipe/default-skin/default-skin.css">
+<script src="../photoswipe/photoswipe.min.js"></script>
+<script src="../photoswipe/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>
