@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang class="loading">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Python编程：从入门到实践（学习笔记-Charpter 7) - Wiseer</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate">
+    <meta name="keywords" content="WISEER,"> 
+    <meta name="description" content="坚持，你所热爱的一切,Chapter 7 : 用户输入和while循环7.1 函数input( )工作原理函数input（）让程序暂停运行，等待用户输入一些文本，获取用户输入后，Python将其存储在一个变量中，以便后台,"> 
+    <meta name="author" content="Shaw Wiseer"> 
+    <link rel="alternative" href="atom.xml" title="Wiseer" type="application/atom+xml"> 
+    <link rel="icon" href="../../../../img/favicon1.png"> 
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <link rel="stylesheet" href="../../../../css/diaspora.css">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+</head>
+</html>
+<body class="loading">
+    <span id="config-title" style="display:none">Wiseer</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;" data-url="http://yoursite.com"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle">Python编程：从入门到实践（学习笔记-Charpter 7)</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class="main">
+        <h1 class="title">Python编程：从入门到实践（学习笔记-Charpter 7)</h1>
+        <div class="stuff">
+            <span>十月 17, 2019</span>
+            
+  <ul class="post-tags-list"><li class="post-tags-list-item"><a class="post-tags-list-link" href="../../../../tags/Python/">Python</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h2 id="Chapter-7-用户输入和while循环"><a href="#Chapter-7-用户输入和while循环" class="headerlink" title="Chapter 7 : 用户输入和while循环"></a>Chapter 7 : 用户输入和<code>while</code>循环</h2><h4 id="7-1-函数input-工作原理"><a href="#7-1-函数input-工作原理" class="headerlink" title="7.1 函数input( )工作原理"></a>7.1 函数input( )工作原理</h4><p>函数input（）让程序暂停运行，等待用户输入一些文本，获取用户输入后，Python将其存储在一个变量中，以便后台检测</p>
+<ul>
+<li><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#input()</span></span><br><span class="line">messgae = input(<span class="string">"Tell me something, and I will repeat it back to you: "</span>)</span><br><span class="line">print(message)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><strong>注意</strong>：编写清晰的程序，使用函数input() 时，都应指定清晰而易于明白的提示，准确地指出你希望用户提供什么样的信息，<u>通过在提示末尾（这里是冒号 <strong><code>：</code></strong>后面）<strong>包含一个空格</strong></u>，将提示与用户输入分开，让用户清楚的知道其输入始于何处：</p>
+<ul>
+<li><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">name = input(<span class="string">"please enter your name: "</span>) <span class="comment"># 冒号后面有空格</span></span><br><span class="line">print(<span class="string">"Hello, "</span> + name + <span class="string">'!'</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#提示可能超出一行,可将提示存储在一个变量中，在将该变量传递给函数input().</span></span><br><span class="line">prompt = <span class="string">"If you tell us who you are, we can personalize the messages you see."</span></span><br><span class="line">prompt += <span class="string">"\nWhat is your first name?"</span>  <span class="comment"># 使用+=拼接句子</span></span><br><span class="line"></span><br><span class="line">name = input(prompt)</span><br><span class="line">print(<span class="string">"\nHello, "</span> + name + <span class="string">"!"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#-------------运行结果-------</span></span><br><span class="line">&gt;&gt;&gt;If you tell us who you are, we can personalize the messages you see.</span><br><span class="line">What is your first name?  xiaoxingd</span><br><span class="line">&gt;&gt;&gt;Hello,   xiaoxingd!</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用<strong><code>int( )</code></strong>来获取数值输入</p>
+<ul>
+<li><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; age = input(<span class="string">'How old are you?'</span>)</span><br><span class="line">How old are you? 21</span><br><span class="line">&gt;&gt;&gt; age </span><br><span class="line"><span class="string">'21'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#返回的是'21'字符串，不能直接作为数值使用</span></span><br><span class="line"><span class="comment">#用int()处理后，可以直接用作数值</span></span><br><span class="line">&gt;&gt;&gt; age = int(age)</span><br><span class="line">&gt;&gt;&gt; age &gt;= 18</span><br><span class="line">True</span><br></pre></td></tr></table></figure>
+</li>
+<li><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">height = input(<span class="string">"How tall are you, in inches? "</span>)</span><br><span class="line">height = int(height)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> height &gt;= <span class="number">36</span>:</span><br><span class="line">    print(<span class="string">"\nYou're tall enough to ride!"</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">"\nYou'll be able to ride when you're a little older."</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>求模运算符<strong><code>%</code></strong></p>
+<ul>
+<li><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#将两个数相除并返回余数：不会指出倍数，只指出余数多少</span></span><br><span class="line">&gt;&gt;&gt; 4 % 3</span><br><span class="line">1</span><br><span class="line">&gt;&gt;&gt; 5 % 3</span><br><span class="line">2</span><br><span class="line">&gt;&gt;&gt; 6 % 3</span><br><span class="line">0</span><br><span class="line">&gt;&gt;&gt; 7 % 3</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+</li>
+<li><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#偶数能被2整除，因此对一个数（number）和2执行求模运算的结果为零，则这个数就是偶数，否则为奇。</span></span><br><span class="line">number = input(<span class="string">"Enter a number, and  I'll tell you if it's seven or odd: "</span>)</span><br><span class="line">number = int(number)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> number % <span class="number">2</span> == <span class="number">0</span>:</span><br><span class="line">    print(<span class="string">"\nThe number "</span> + str(number) + <span class="string">"is even."</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">"\nThe number "</span> + str(number) + <span class="string">"is odd."</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="7-2-while循环简介"><a href="#7-2-while循环简介" class="headerlink" title="7.2 while循环简介"></a>7.2 <code>while</code>循环简介</h4><p><strong>for</strong> 循环用于针对集合中的每个元素都是一个代码块，而<code>while</code>循环不断地运行，直到指定的条件不满足为止。</p>
+<ul>
+<li><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#用whie循环来数数</span></span><br><span class="line">current_number = <span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> current_number &lt;= <span class="number">5</span>:   <span class="comment">#大于5循环将停止</span></span><br><span class="line">    print(current_number)</span><br><span class="line">    current_number += <span class="number">1</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>让用户选择何时退出</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">prompt = <span class="string">"\nTell me something, and I will repeat it back to you: "</span></span><br><span class="line">prompt += <span class="string">"\nEnter 'quit' to end the program."</span></span><br><span class="line"></span><br><span class="line">messgae = <span class="string">""</span>   <span class="comment">#此处空字符串很有必要！！</span></span><br><span class="line"><span class="keyword">while</span> message != <span class="string">'quit'</span>:</span><br><span class="line">    message = input(prompt)</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> message != <span class="string">'quit'</span>:</span><br><span class="line">        print(message)</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line"><span class="comment">#我们将变量 message 的初始值设置为空字符串 "" ，让 Python 首次执行 while 代码行时有可供检查的东西。 </span></span><br><span class="line"><span class="comment">#Python 首次执行 while 语句时,需要将 message 的值与 'quit' 进行比较,但此时用户还没有输入。如果没有可供比较的东西，Python 将无法继续运行程序。为解决这个问题，我们必须给变量 message 指定一个初始值。虽然这个初始值只是一个空字符串，但符合要求，让 Python 能够执行 while 循环所需的比较。只要 message 的值不是 'quit' ，这个循环就会不断运行。</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>使用标志</strong></p>
+<ul>
+<li>在前一个示例中，我们让程序在满足指定条件时就执行特定的任务。但在更复杂的程序中，很多不同的事件都会导致程序停止运行;在这种情况下，该怎么办呢?<br>例如，在游戏中，多种事件都可能导致游戏结束,如玩家一艘飞船都没有了或要保护的城市都被摧毁了。导致程序结束的事件有很多时，如果在一条 while 语句中检查所有这些条件，将既复杂又困难。<u>在要求很多条件都满足才继续运行的程序中，可定义一个变量，用于判断整个程序是否处于活动状态。</u>这个变量被称为<strong>标志</strong>，充当了程序的交通信号灯。你可让程序在标志为 True 时继续运行，并在任何事件导致标志的值为 False 时让程序停止运行。这样，<u>在 while 语句中就只需检查一个条件 —— 标志的当前值是否为 True，并将所有测试(是否发生了应将标志设置为 False 的事件)都放在其他地方，</u>从而让程序变得更为整洁。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#标志命名为active</span></span><br><span class="line">prompt = <span class="string">"\n Tell me something, and I will repeat it back to you: "</span></span><br><span class="line">prompt += <span class="string">"\nEnter 'quit' to end the program."</span></span><br><span class="line"></span><br><span class="line">active = <span class="literal">True</span>   <span class="comment">#让程序最初处于活动状态</span></span><br><span class="line"><span class="keyword">while</span> active:</span><br><span class="line">    message = input(prompt)</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> message == <span class="string">'quit'</span>:</span><br><span class="line">        active = <span class="literal">False</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(message)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>使用break退出循环</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">prompt = <span class="string">"\nPlease enter the name of a city you have visited: "</span></span><br><span class="line">prompt += <span class="string">"\n(Enter 'quit' when you are finished.)"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    city = input(prompt)</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> city == <span class="string">'quit'</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">"I'd love to go to "</span> + city.title() + <span class="string">"!"</span>)</span><br><span class="line">        </span><br><span class="line"><span class="comment">#以while True打头的循环将不断运行，直到遇到break语句</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在循环中使用continue( )</p>
+<p>要返回到循环开头，并根据条件测试结果决定是否继续执行循环，可使用continue语句</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">current_number = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> current_number &lt; <span class="number">10</span>:</span><br><span class="line">    current_number += <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> current_number % <span class="number">2</span> == <span class="number">0</span>:</span><br><span class="line">        contiune　 <span class="comment">#让程序忽略下面的print（）部分，直接再次循环</span></span><br><span class="line">        </span><br><span class="line">    print(current_number)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="7-3使用while循环来处理列表和字典"><a href="#7-3使用while循环来处理列表和字典" class="headerlink" title="7.3使用while循环来处理列表和字典"></a>7.3使用<code>while</code>循环来处理列表和字典</h4><p>要在遍历列表的同时对其进行修改，可以使用while循环</p>
+<ul>
+<li><p><strong>在列表之间移动元素</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#首先，创建一个待验证用户列表</span></span><br><span class="line"><span class="comment"># 和一个用于存储已验证用户的空列表</span></span><br><span class="line">unconfirmed_users = [<span class="string">'alice'</span>, <span class="string">'brian'</span>, <span class="string">'candace'</span>]</span><br><span class="line">confirmed_users = []</span><br><span class="line"></span><br><span class="line"><span class="comment">#验证每个用户，直到没有未验证用户为止</span></span><br><span class="line"><span class="comment"># 将每个经过验证的列表都移到已验证用户列表中</span></span><br><span class="line"><span class="keyword">while</span> unconfirmed_users:</span><br><span class="line">    current_user = unconfirmed_users.pop()  <span class="comment">#从未验证的名单里从后往前删除名单</span></span><br><span class="line">    </span><br><span class="line">    print(<span class="string">"Verifying user: "</span> + current_user.title())</span><br><span class="line">    confirmed_users.append(current_user)   <span class="comment">#将删除的名单添加到已经验证的名单中</span></span><br><span class="line">    </span><br><span class="line"><span class="comment"># 显示所有已验证的用户</span></span><br><span class="line">print(<span class="string">"\nThe following users have been confirmed:"</span>)</span><br><span class="line"><span class="keyword">for</span> confirmed_user <span class="keyword">in</span> confirmed_users:</span><br><span class="line">    print(confirmed_user.title())</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除包含<strong>特定值</strong>的所有列表元素</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#删除特定值cat</span></span><br><span class="line">pets = [<span class="string">'dog'</span>, <span class="string">'cat'</span>, <span class="string">'dog'</span>, <span class="string">'goldfish'</span>, <span class="string">'cat'</span>, <span class="string">'rabbit'</span>, <span class="string">'cat'</span>]</span><br><span class="line">print(pets)</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="string">'cat'</span> <span class="keyword">in</span> pets:</span><br><span class="line">    pets.remove(<span class="string">'cat'</span>)</span><br><span class="line">    </span><br><span class="line">print(<span class="string">"\n"</span> + pets)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用用户 <strong>输入来填充字典</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">responses = &#123; &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">#设置一个标志，指出调查是否继续</span></span><br><span class="line">polling_active = <span class="literal">True</span> </span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> polling_active :</span><br><span class="line">    <span class="comment">#提示输入被调查者的名字和回答</span></span><br><span class="line">    </span><br><span class="line">    name = input(<span class="string">"\nWhat is your name? "</span>)</span><br><span class="line">    response = input(<span class="string">"Which mountain would you like to climb someday? "</span>)</span><br><span class="line">    </span><br><span class="line">    <span class="comment">#将答卷存储在字典中</span></span><br><span class="line">    responses[name] = response </span><br><span class="line">    </span><br><span class="line">    <span class="comment">#看看是否有人要参加与调查</span></span><br><span class="line">    repeat =  input(<span class="string">"Would you like to let another person respond? (yes/ no) "</span>)</span><br><span class="line">    <span class="keyword">if</span> repeat == <span class="string">'no'</span>: </span><br><span class="line">        polling_active = <span class="literal">False</span></span><br><span class="line">        </span><br><span class="line"><span class="comment">#调查结束，显示结果</span></span><br><span class="line">print(<span class="string">"\n--- Poll Results ---"</span>)</span><br><span class="line"><span class="keyword">for</span> name, response <span class="keyword">in</span> responses.items():</span><br><span class="line">    print(name + <span class="string">"would like to climb "</span> + response + <span class="string">"."</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>## </p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src>
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        <li title="0" data-url="http://link.hhtjim.com/163/5146554.mp3"></li>
+                    
+                        <li title="1" data-url="http://link.hhtjim.com/qq/001faIUs4M2zna.mp3"></li>
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link" data-ae="false" data-ci="bf3b6228b6e577e68d28" data-cs="6cb97263d97a9d68f52875f09272ef70d9828f34" data-r="Mrxxd" data-o="Mrxxd" data-a="Mrxxd" data-d="true">查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="../js/plugin.js"></script>
+<script src="../js/diaspora.js"></script>
+<link rel="stylesheet" href="../photoswipe/photoswipe.css">
+<link rel="stylesheet" href="../photoswipe/default-skin/default-skin.css">
+<script src="../photoswipe/photoswipe.min.js"></script>
+<script src="../photoswipe/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>

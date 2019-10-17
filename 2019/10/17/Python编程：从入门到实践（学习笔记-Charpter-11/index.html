@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang class="loading">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Python编程：从入门到实践（学习笔记-Charpter 11) - Wiseer</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate">
+    <meta name="keywords" content="WISEER,"> 
+    <meta name="description" content="坚持，你所热爱的一切,Chapter 11：测试代码11.1  测试函数name_function.py
+1234def get_formatted_name(first, last):    &#34;&#34;&#34;Generate a,"> 
+    <meta name="author" content="Shaw Wiseer"> 
+    <link rel="alternative" href="atom.xml" title="Wiseer" type="application/atom+xml"> 
+    <link rel="icon" href="../../../../img/favicon1.png"> 
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <link rel="stylesheet" href="../../../../css/diaspora.css">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+</head>
+</html>
+<body class="loading">
+    <span id="config-title" style="display:none">Wiseer</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;" data-url="http://yoursite.com"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle">Python编程：从入门到实践（学习笔记-Charpter 11)</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class="main">
+        <h1 class="title">Python编程：从入门到实践（学习笔记-Charpter 11)</h1>
+        <div class="stuff">
+            <span>十月 17, 2019</span>
+            
+  <ul class="post-tags-list"><li class="post-tags-list-item"><a class="post-tags-list-link" href="../../../../tags/Python/">Python</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h2 id="Chapter-11：测试代码"><a href="#Chapter-11：测试代码" class="headerlink" title="Chapter 11：测试代码"></a>Chapter 11：测试代码</h2><h4 id="11-1-测试函数"><a href="#11-1-测试函数" class="headerlink" title="11.1  测试函数"></a>11.1  测试函数</h4><p><strong>name_function.py</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_formatted_name</span><span class="params">(first, last)</span>:</span></span><br><span class="line">    <span class="string">"""Generate a neatly formatted full name."""</span></span><br><span class="line">    full_name = first + <span class="string">' '</span> + last</span><br><span class="line">    <span class="keyword">return</span> full_name.title()</span><br></pre></td></tr></table></figure>
+<p><strong>names.py</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> name_function <span class="keyword">import</span> get_formatted_name</span><br><span class="line"></span><br><span class="line">print(<span class="string">"Enter 'q' at any time to quit."</span>)</span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    first = input(<span class="string">"\nPlease give me a first name: "</span>)</span><br><span class="line">    <span class="keyword">if</span> first == <span class="string">'q'</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    last = input(<span class="string">"Please give me a last name: "</span>)</span><br><span class="line">    <span class="keyword">if</span> last == <span class="string">'q'</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    </span><br><span class="line">    formatted_name = get_formatted_name(first, last)</span><br><span class="line">    print(<span class="string">"\tNeatly formatted name: "</span> + formatted_name + <span class="string">'.'</span>)</span><br></pre></td></tr></table></figure>
+<p><strong>11.1.1单元测试和测试用例</strong></p>
+<p>Python 标准库中的模块 unittest 提供了代码测试工具。</p>
+<p><strong>单元测试：</strong>用于核实函数的某个方面没有问题；</p>
+<p><strong>测试用例：</strong>是一组单元测试，这些单元测试一起核实函数在各种情形下的行为都符合要求。良好的测试用例考虑到了函数可能收到的各种输入，包含针对所有这些情形的测试。</p>
+<p><strong>全覆盖式测试：</strong>用例包含一整套单元测试，涵盖了各种可能的函数使用方式。对于大型项目,要实现全覆盖可能很难。通常，最初只要针对代码的重要行为编写测试即可，等项目被广泛使用时再考虑全覆盖。</p>
+<h5 id="11-1-2可通过测试"><a href="#11-1-2可通过测试" class="headerlink" title="11.1.2可通过测试"></a>11.1.2可通过测试</h5><p><strong>test_name_function.py</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> unittest</span><br><span class="line"><span class="keyword">from</span> name_function <span class="keyword">import</span> get_formatted_name</span><br><span class="line"></span><br><span class="line"><span class="comment">#❶</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">NamesTestCase</span><span class="params">(unittest.TestCase)</span>:</span></span><br><span class="line">    <span class="string">""" 测试 name_function.py"""</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test_first_last_name</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="string">""" 能够正确地处理像 Janis Joplin 这样的姓名吗? """</span></span><br><span class="line">        formatted_name = get_formatted_name(<span class="string">'janis'</span>, <span class="string">'joplin'</span>)   <span class="comment">#❷</span></span><br><span class="line">        self.assertEqual(formatted_name, <span class="string">'Janis Joplin'</span>)    <span class="comment">#❸</span></span><br><span class="line"></span><br><span class="line">unittest.main()</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>首先,我们导入了模块unittest 和要测试的函数<code>get_formatted_name()</code> 。在❶处,我们创建了一个名为 <code>NamesTestCase</code>的类，用于包含一系列针对<code>get_formatted_name()</code>的单元测试。你可随便给这个类命名，但最好让它看起来与要测试的函数相关，并包含字样Test。这个类必须继承<code>unittest.TestCase</code>类，这样Python才知道如何运行你编写的测试。</p>
+</blockquote>
+<blockquote>
+<p>NamesTestCase 只包含一个方法,用于测试 get_formatted_name() 的一个方面。我们将这个方法命名为 <code>test_first_last_name()</code>，因为我们要核实的是只有名和姓的姓名能否被正确地格式化。我们运行 <code>testname_function.py</code> 时，所有以 test 打头的方法都将自动运行。在这个方法中，我们调用了要测试的函数，并存储了要测试的返回值。在这个示例中,我们使用实参’janis’和’joplin’调用get_formatted_name()，并将结果存储到变量formatted_name 中(见❷)。</p>
+</blockquote>
+<blockquote>
+<p>在❸处,我们使用了 unittest 类最有用的功能之一：一个断 方法。断言方法用来核实得到的结果是否与期望的结果一致。在这里,我们知道 get_formatted_name() 应返回这样的姓名,即名和姓的首字母为大写,且它们之间有一个空格,因此我们期望 formatted_name 的值为 Janis Joplin 。为检查是否确实如此,我们调用 unittest的方法 assertEqual() ,并向它传递 formatted_name 和 ‘Janis Joplin’ 。代码行 self.assertEqual(formatted_name, ‘Janis Joplin’) 的意思是说: “ 将 formatted_name 的值同字符串 ‘Janis Joplin’ 进行比较,如果它们相等,就万事大吉,如果它们不相等,跟我说一声! ”</p>
+</blockquote>
+<h5 id="11-1-3-不能通过的测试"><a href="#11-1-3-不能通过的测试" class="headerlink" title="11.1.3 不能通过的测试"></a>11.1.3 不能通过的测试</h5><p><strong>name_function.py</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_formatted_name</span><span class="params">(first, middle, last)</span>:</span></span><br><span class="line">    <span class="string">""" 生成整洁的姓名 """</span></span><br><span class="line">    full_name = first + <span class="string">' '</span> + middle + <span class="string">' '</span> + last</span><br><span class="line">    <span class="keyword">return</span> full_name.title()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">-------结果</span><br><span class="line">❶E</span><br><span class="line">======================================================================</span><br><span class="line">❷ERROR: test_first_last_name (__main__.NamesTestCase)</span><br><span class="line">----------------------------------------------------------------------</span><br><span class="line">❸ Traceback (most recent call last):</span><br><span class="line">File <span class="string">"test_name_function.py"</span>, line <span class="number">8</span>, <span class="keyword">in</span> test_first_last_name</span><br><span class="line">formatted_name = get_formatted_name(<span class="string">'janis'</span>, <span class="string">'joplin'</span>)</span><br><span class="line">TypeError: get_formatted_name() missing <span class="number">1</span> required positional argument: <span class="string">'last'</span></span><br><span class="line">----------------------------------------------------------------------</span><br><span class="line">❹Ran <span class="number">1</span> test <span class="keyword">in</span> <span class="number">0.000</span>s</span><br><span class="line">❺FAILED (errors=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>其中包含的信息很多,因为测试未通过时,需要让你知道的事情可能有很多。第 1 行输出只有一个字母 E (见❶),它指出测试用例中有一个单元测试导致了错误。接下来,我们看到 NamesTestCase 中的 test_first_last_name() 导致了错误(见❷)。测试用例包含众多单元测试时,知道哪个测试未通过至关重要。在❸处,我们看到了一个标准<br>的 traceback ,它指出函数调用 get_formatted_name(‘janis’, ‘joplin’) 有问题,因为它缺少一个必不可少的位置实参。</p>
+<p>我们还看到运行了一个单元测试(见❹)。最后,还看到了一条消息,它指出整个测试用例都未通过,因为运行该测试用例时发生了一个错误(见❺)。这条消息位于输出末尾,让你一眼就能看到 —— 你可不希望为获悉有多少测试未通过而翻阅长长的输出。</p>
+</blockquote>
+<h5 id="11-1-4-测试未通过时怎么办"><a href="#11-1-4-测试未通过时怎么办" class="headerlink" title="11.1.4 测试未通过时怎么办"></a>11.1.4 测试未通过时怎么办</h5><p>试未通过时怎么办呢？如果你检查的条件没错,测试通过了意味着函数的行为是对的，而测试未通过意味着你编写的新代码有错。因此，测试未通过时<strong>，不要修改测试</strong>，而<strong>应修复导致测试不能通过的代码</strong>：检查刚对函数所做的修改，找出导致函数行为不符合预期的修改。</p>
+<p>在这个示例中, get_formatted_name() 以前只需要两个实参 —— 名和姓,但现在它要求提供名、中间名和姓。新增的中间名参数是必不可少的,这导致 get_formatted_name() 的行为不符合预期。就这里而言,最佳的选择是让中间名变为可选的。这样做后,使用类似于 Janis Joplin 的姓名进行测试时,测试就会通过了,同时这个函数还能接受中间名。下面来修改 get_formatted_name() ,将中间名设置为可选的,然后再次运行这个测试用例。如果通过了,我们接着确认这个函数能够妥善地处理中间名。<br>要将中间名设置为可选的,可在函数定义中将形参 middle 移到形参列表末尾,并将其默认值指定为一个空字符串。我们还要添加一个 if 测试,以便根据是否提供了中间名相应地创建姓名:</p>
+<p><strong>name_function.py</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_formatted_name</span><span class="params">(first, last, middle=<span class="string">''</span>)</span>:</span></span><br><span class="line">    <span class="string">""" 生成整洁的姓名 """</span></span><br><span class="line">    <span class="keyword">if</span> middle:</span><br><span class="line">        full_name = first + <span class="string">' '</span> + middle + <span class="string">' '</span> + last</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        full_name = first + <span class="string">' '</span> + last</span><br><span class="line">    <span class="keyword">return</span> full_name.title()</span><br></pre></td></tr></table></figure>
+<h5 id="11-1-5-添加新测试"><a href="#11-1-5-添加新测试" class="headerlink" title="11.1.5 添加新测试"></a>11.1.5 添加新测试</h5><p>确定 get_formatted_name() 又能正确地处理简单的姓名后，我们再编写一个测试，用于测试包含中间名的姓名。为此，我们在 NamesTestCase 类中再添加一个方法：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> unittest</span><br><span class="line"><span class="keyword">from</span> name_function <span class="keyword">import</span> get_formatted_name</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">NamesTestCase</span><span class="params">(unittest.TestCase)</span>:</span></span><br><span class="line">    <span class="string">""" 测试 name_function.py """</span></span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test_first_last_name</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="string">""" 能够正确地处理像 Janis Joplin 这样的姓名吗? """</span></span><br><span class="line">        formatted_name = get_formatted_name(<span class="string">'janis'</span>, <span class="string">'joplin'</span>)</span><br><span class="line">        self.assertEqual(formatted_name, <span class="string">'Janis Joplin'</span>)</span><br><span class="line">        </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test_first_last_middle_name</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="string">""" 能够正确地处理像 Wolfgang Amadeus Mozart 这样的姓名吗? """</span></span><br><span class="line">        formatted_name = get_formatted_name(<span class="string">'wolfgang'</span>, <span class="string">'mozart'</span>, <span class="string">'amadeus'</span>)  <span class="comment">#❶</span></span><br><span class="line">        self.assertEqual(formatted_name, <span class="string">'Wolfgang Amadeus Mozart'</span>)</span><br><span class="line"></span><br><span class="line">unittest.main()</span><br></pre></td></tr></table></figure>
+<p>我们将这个方法命名为 test_first_last_middle_name() 。方法名必须以 test_ 打头,这样它才会在我们运行 test_name_function.py 时自动运行。这个方法名清楚地指出了它测试的是 get_formatted_name() 的哪个行为,这样,如果该测试未通过,我们就会马上知道受影响的是哪种类型的姓名。在 TestCase 类中使用很长的方法名是可以的;这些方法的名称必须是描述性的,这才能让你明白测试未通过时的输出;这些方法由 Python 自动调用,你根本不用编写调用它们的代码。<br>为测试函数 get_formatted_name() ,我们使用名、姓和中间名调用它(见❶),再使用 assertEqual() 检查返回的姓名是否与预期的姓名(名、中间名和姓)一致。我们再次运行 test_name_function.py 时,两个测试都通过了</p>
+<h4 id="11-2-测试类"><a href="#11-2-测试类" class="headerlink" title="11.2 测试类"></a>11.2 测试类</h4><h5 id="11-2各种断言方法"><a href="#11-2各种断言方法" class="headerlink" title="11.2各种断言方法"></a>11.2各种断言方法</h5><p><strong>表 11-1 unittest Module 中的断言方法</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">方法</th>
+<th style="text-align:left">用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">assertEqual(a, b)</td>
+<td style="text-align:left">核实a == b</td>
+</tr>
+<tr>
+<td style="text-align:left">assertNotEqual(a, b)</td>
+<td style="text-align:left">核实a != b</td>
+</tr>
+<tr>
+<td style="text-align:left">assertTrue(x)</td>
+<td style="text-align:left">核实x 为True</td>
+</tr>
+<tr>
+<td style="text-align:left">assertFalse(x)</td>
+<td style="text-align:left">核实x 为False</td>
+</tr>
+<tr>
+<td style="text-align:left">assertIn(item , list )</td>
+<td style="text-align:left">核实 item 在 list 中</td>
+</tr>
+<tr>
+<td style="text-align:left">assertNotIn(item , list )</td>
+<td style="text-align:left">核实 item 不在 list 中</td>
+</tr>
+</tbody>
+</table>
+<h5 id="11-2-2-一个要测试的类"><a href="#11-2-2-一个要测试的类" class="headerlink" title="11.2.2 一个要测试的类"></a>11.2.2 一个要测试的类</h5><p><strong>survey.py</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">AnonymousSurvey</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="string">"""收集匿名调查问卷的答案"""</span></span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, question)</span>:</span></span><br><span class="line">        <span class="string">"""存储一个问题，并为存储答案做准备"""</span></span><br><span class="line">        self.question = question</span><br><span class="line">        self.responses = []</span><br><span class="line">        </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">show_question</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="string">"""显示调查问卷"""</span></span><br><span class="line">        print(question)</span><br><span class="line">        </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">store_response</span><span class="params">(self, new_response)</span>:</span></span><br><span class="line">        <span class="string">"""存储单份调查答案"""</span></span><br><span class="line">        self.responses.append(new_response)</span><br><span class="line">        </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">show_results</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="string">"""显示收集到的所有答案"""</span></span><br><span class="line">        print(<span class="string">"Survey result:"</span>)</span><br><span class="line">        <span class="keyword">for</span> response <span class="keyword">in</span> responses:</span><br><span class="line">            print(<span class="string">'-'</span> + response)</span><br></pre></td></tr></table></figure>
+<p>为证明AnonymousSurvey类能够正确地工作，我们来编写一个使用它的程序：</p>
+<p><strong>language_survey.py</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> survey <span class="keyword">import</span> AnonymousSurvey</span><br><span class="line"></span><br><span class="line"><span class="comment">#定义一个问题，并创建一个表示调查的AnonymousSurvey对象</span></span><br><span class="line">question = <span class="string">"What language did you first learn to speak?"</span></span><br><span class="line">my_survey = AnonymousSurvey(question)</span><br><span class="line"></span><br><span class="line"><span class="comment">#显示问题并存储答案</span></span><br><span class="line">my_survey.show_question()</span><br><span class="line">print(<span class="string">"(Enter 'q' to any time to quit). \n"</span>)</span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    response = input(<span class="string">"Language: "</span>)</span><br><span class="line">    <span class="keyword">if</span> response == <span class="string">'q'</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    my_survey.store_response(response)</span><br><span class="line">    </span><br><span class="line"><span class="comment">#显示调查结果</span></span><br><span class="line">print(<span class="string">"\nThink you to everyone who participated in the survey!"</span>)</span><br><span class="line">print(<span class="string">" "</span>)</span><br><span class="line">my_survey.show_results()</span><br></pre></td></tr></table></figure>
+<h5 id="11-2-3-测试-AnonymousSurvey-类"><a href="#11-2-3-测试-AnonymousSurvey-类" class="headerlink" title="11.2.3 测试 AnonymousSurvey 类"></a>11.2.3 测试 AnonymousSurvey 类</h5><p><strong>test_survey.py</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> unittest</span><br><span class="line"><span class="keyword">from</span> survey <span class="keyword">import</span> AnonymousSurvey</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestAnonymousSurvey</span><span class="params">(unittest.TestCase)</span>:</span></span><br><span class="line">    <span class="string">"""针对AnonymousSurvey类测试"""</span></span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test_store_single_response</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="string">"""测试单个答案被妥善地存储"""</span></span><br><span class="line">        question = <span class="string">"What language did you first learn to speak?"</span></span><br><span class="line">        my_survey = AnonymousSurvey(question)</span><br><span class="line">        my_survey.store_response(<span class="string">'English'</span>)</span><br><span class="line">        </span><br><span class="line">        self.assertIn(<span class="string">'English'</span>, my_survey.responses)</span><br><span class="line">        </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test_store_three_responses</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="string">"""测试三个答案会被妥善地存储"""</span></span><br><span class="line">        question = <span class="string">"What language did you first learn to speak?"</span></span><br><span class="line">        my_survey = AnonymousSurvey(question)</span><br><span class="line">        responses =[<span class="string">'English'</span>, <span class="string">'Spanish'</span>, <span class="string">'Mandarin'</span>]</span><br><span class="line">        <span class="keyword">for</span> response <span class="keyword">in</span> responses:</span><br><span class="line">            my_survey.store_response(response)</span><br><span class="line">            </span><br><span class="line">        <span class="keyword">for</span> response <span class="keyword">in</span> responses:</span><br><span class="line">            self.asserIn(response, my_survey.responses)</span><br><span class="line">        </span><br><span class="line"></span><br><span class="line">unittest.main()</span><br></pre></td></tr></table></figure>
+<h5 id="11-2-4-方法-setUp"><a href="#11-2-4-方法-setUp" class="headerlink" title="11.2.4 方法 setUp()"></a>11.2.4 方法 setUp()</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> unittest</span><br><span class="line"><span class="keyword">from</span> survey <span class="keyword">import</span> AnonymousSurvey</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestAnonymousSurvey</span><span class="params">(unittest.TestCase)</span>:</span></span><br><span class="line">    <span class="string">""" 针对 AnonymousSurvey 类的测试 """</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">setUp</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        创建一个调查对象和一组答案,供使用的测试方法使用</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">        question = <span class="string">"What language did you first learn to speak?"</span></span><br><span class="line">        self.my_survey = AnonymousSurvey(question)  <span class="comment">#❶</span></span><br><span class="line">        self.responses = [<span class="string">'English'</span>, <span class="string">'Spanish'</span>, <span class="string">'Mandarin'</span>]   <span class="comment">#❷</span></span><br><span class="line">        </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test_store_single_response</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="string">""" 测试单个答案会被妥善地存储 """</span></span><br><span class="line">        self.my_survey.store_response(self.responses[<span class="number">0</span>])</span><br><span class="line">        self.assertIn(self.responses[<span class="number">0</span>], self.my_survey.responses)</span><br><span class="line">        </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test_store_three_responses</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="string">""" 测试三个答案会被妥善地存储 """</span></span><br><span class="line">        <span class="keyword">for</span> response <span class="keyword">in</span> self.responses:</span><br><span class="line">            self.my_survey.store_response(response)</span><br><span class="line">        <span class="keyword">for</span> response <span class="keyword">in</span> self.responses:</span><br><span class="line">            self.assertIn(response, self.my_survey.responses)</span><br><span class="line">            </span><br><span class="line">unittest.main()</span><br></pre></td></tr></table></figure>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src>
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        <li title="0" data-url="http://link.hhtjim.com/163/5146554.mp3"></li>
+                    
+                        <li title="1" data-url="http://link.hhtjim.com/qq/001faIUs4M2zna.mp3"></li>
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link" data-ae="false" data-ci="bf3b6228b6e577e68d28" data-cs="6cb97263d97a9d68f52875f09272ef70d9828f34" data-r="Mrxxd" data-o="Mrxxd" data-a="Mrxxd" data-d="true">查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="../js/plugin.js"></script>
+<script src="../js/diaspora.js"></script>
+<link rel="stylesheet" href="../photoswipe/photoswipe.css">
+<link rel="stylesheet" href="../photoswipe/default-skin/default-skin.css">
+<script src="../photoswipe/photoswipe.min.js"></script>
+<script src="../photoswipe/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>
