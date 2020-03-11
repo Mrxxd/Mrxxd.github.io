@@ -1,0 +1,2110 @@
+
+<!DOCTYPE html>
+<html lang class="loading">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Linux学习笔记[2-9] - Wiseer</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate">
+    <meta name="keywords" content="WISEER,"> 
+    <meta name="description" content="坚持，你所热爱的一切,《Linux就该这么学》学习笔记HERE笔记： :1st_place_medal:Wiseer
+资料来源：老刘  Linux 泡泡  :bulb:
+欢迎交流：:love_letter: **5141,"> 
+    <meta name="author" content="Shaw Wiseer"> 
+    <link rel="alternative" href="atom.xml" title="Wiseer" type="application/atom+xml"> 
+    <link rel="icon" href="../../../../img/favicon1.png"> 
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <link rel="stylesheet" href="../../../../css/diaspora.css">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+</head>
+</html>
+<body class="loading">
+    <span id="config-title" style="display:none">Wiseer</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;" data-url="http://yoursite.com"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle">Linux学习笔记[2-9]</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class="main">
+        <h1 class="title">Linux学习笔记[2-9]</h1>
+        <div class="stuff">
+            <span>三月 11, 2020</span>
+            
+  <ul class="post-tags-list"><li class="post-tags-list-item"><a class="post-tags-list-link" href="../../../../tags/Adobe-Flash-Player/">Adobe Flash Player</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="../../../../tags/Ubuntu/">Ubuntu</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h1 id="《Linux就该这么学》学习笔记"><a href="#《Linux就该这么学》学习笔记" class="headerlink" title="《Linux就该这么学》学习笔记"></a>《Linux就该这么学》学习笔记</h1><h3 id="HERE"><a href="#HERE" class="headerlink" title="HERE"></a>HERE</h3><p><strong>笔记：</strong> :1st_place_medal:<code>Wiseer</code></p>
+<p><strong>资料来源</strong>：<code>老刘</code>  <a href="www.linuxprobe.com">Linux 泡泡</a>  :bulb:</p>
+<p><strong>欢迎交流：</strong>:love_letter: <a href="mailto:**514165492@qq.com" target="_blank" rel="noopener">**514165492@qq.com</a>**</p>
+<p><strong>转载须知</strong>： :warning:  <strong><u>转载请附上出处、原作者等重要信息，并告知本人获取授权</u></strong></p>
+<h3 id="laughing-帅的人都会看这里："><a href="#laughing-帅的人都会看这里：" class="headerlink" title=":laughing: 帅的人都会看这里："></a>:laughing: <strong>帅的人都会看这里：</strong></h3><ul>
+<li><p>本资料是<strong>关于Linux技术</strong>的学习笔记，这一版<strong>只包含前九章节</strong>的内容，其中<strong>第一章节不作整理</strong>，请看书自行补充</p>
+</li>
+<li><p>笔记中有<strong>较为详细的实验操作步骤</strong>，具体参数有做修改，参考时请小可爱们根据实际情况来实操</p>
+</li>
+<li><p>我是老刘的<strong>第25期学生</strong>(同门的兄弟挥挥手吖)，<strong>个人听课并结合老刘书籍资料整理</strong>的，文中部分图片来源于老刘的<a href="www.linuxprobe.com">泡泡网站</a></p>
+</li>
+<li><p><strong>老刘讲课耐心风趣</strong>，谁听谁知道，<strong><u>但是确实没我帅</u></strong> :cowboy_hat_face:  ，没给我广告费，所以不能说他帅</p>
+</li>
+<li><p>笔记中只<strong>记录了本人觉得重要的内容</strong>，难免<strong>有些地方有疏露错误</strong>，欢迎<strong>指点江山</strong>，本白愿意改正</p>
+</li>
+<li><p>老刘教书不易，写书也辛苦，望各位<strong>支持正版</strong>，我确实比他帅就不说了，还得交学费</p>
+</li>
+</ul>
+<p><strong>话不多说，直接上目录，点击下方 :arrow_down_small:  即可跳转哟!</strong></p>
+<p>[TOC]</p>
+<p>:heart: :heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart::heart:</p>
+<h2 id="第二章-必须掌握的Linux命令"><a href="#第二章-必须掌握的Linux命令" class="headerlink" title="第二章 必须掌握的Linux命令"></a><strong>第二章 必须掌握的Linux命令</strong></h2><blockquote>
+<p><strong>命令名称 [命令参数] [命令对象]</strong>                    </p>
+<p>长格式 ： man –help</p>
+<p>段格式： man -h</p>
+</blockquote>
+<h3 id="1-常用-系统工作-命令"><a href="#1-常用-系统工作-命令" class="headerlink" title="1.常用 系统工作 命令"></a>1.常用 <code>系统工作</code> 命令</h3><ul>
+<li><h4 id="echo-–-输出字符串-或-提取Shell变量的值-echo-linuxprobe-com"><a href="#echo-–-输出字符串-或-提取Shell变量的值-echo-linuxprobe-com" class="headerlink" title="echo                       – 输出字符串 或 提取Shell变量的值  # echo linuxprobe.com"></a>echo                       – 输出字符串 或 提取Shell变量的值  <code># echo linuxprobe.com</code></h4></li>
+<li><h4 id="date-–-显示日期与时间-date-quot-Y-m-d-H-M-S-quot-date-s-更新时间"><a href="#date-–-显示日期与时间-date-quot-Y-m-d-H-M-S-quot-date-s-更新时间" class="headerlink" title="date                        – 显示日期与时间 # date &quot;+%Y-%m-%d %H:%M:%S&quot;    # date -s 更新时间"></a>date                        – 显示日期与时间 <code># date &quot;+%Y-%m-%d %H:%M:%S&quot;</code>    <code># date -s</code> 更新时间</h4></li>
+<li><h4 id="reboot-–-重启计算机-reboot"><a href="#reboot-–-重启计算机-reboot" class="headerlink" title="reboot                    – 重启计算机     # reboot"></a>reboot                    – 重启计算机     <code># reboot</code></h4></li>
+<li><h4 id="poweroff-–-关闭操作系统并切断电源-poweroff"><a href="#poweroff-–-关闭操作系统并切断电源-poweroff" class="headerlink" title="poweroff                – 关闭操作系统并切断电源 # poweroff"></a>poweroff                – 关闭操作系统并切断电源 <code># poweroff</code></h4></li>
+<li><h4 id="wget-–-文件下载-wget-r-q-P-home-http-···-下载到指定目录"><a href="#wget-–-文件下载-wget-r-q-P-home-http-···-下载到指定目录" class="headerlink" title="wget                       – 文件下载 # wget -r -q -P/home http://··· 下载到指定目录"></a><strong>wget</strong>                       <strong>– 文件下载</strong> <code># wget -r -q -P/home http://···</code> 下载到指定目录</h4></li>
+<li><h4 id="ps-–-显示进程状态-ps-aux-显示用户、没有控制终端及其他信息进程"><a href="#ps-–-显示进程状态-ps-aux-显示用户、没有控制终端及其他信息进程" class="headerlink" title="ps                           – 显示进程状态  # ps aux 显示用户、没有控制终端及其他信息进程"></a>ps                           – 显示进程状态  <code># ps aux</code> 显示用户、没有控制终端及其他信息进程</h4></li>
+<li><h4 id="top-–-实时显示进程动态-任务管理器-top"><a href="#top-–-实时显示进程动态-任务管理器-top" class="headerlink" title="top                          – 实时显示进程动态(任务管理器)  # top"></a>top                          – 实时显示进程动态(任务管理器)  <code># top</code></h4></li>
+<li><h4 id="pidof-–-返回运行程序的进程ID-pidof-sshd"><a href="#pidof-–-返回运行程序的进程ID-pidof-sshd" class="headerlink" title="pidof                       – 返回运行程序的进程ID # pidof sshd"></a>pidof                       – 返回运行程序的进程ID <code># pidof sshd</code></h4></li>
+<li><h4 id="kill-–-杀死进程-kill-2156"><a href="#kill-–-杀死进程-kill-2156" class="headerlink" title="kill                           – 杀死进程 # kill 2156"></a>kill                           – 杀死进程 <code># kill 2156</code></h4></li>
+<li><h4 id="killall-–-使用进程名称来杀死一组进程-killall-httpd"><a href="#killall-–-使用进程名称来杀死一组进程-killall-httpd" class="headerlink" title="killall                       – 使用进程名称来杀死一组进程  # killall httpd"></a>killall                       – 使用进程名称来杀死一组进程  <code># killall httpd</code></h4><blockquote>
+<p>Ctrl + C ：停止命令</p>
+<p>命令末尾上添加&amp;：命令将进入系统后台来执行</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="2-系统状态检测命令"><a href="#2-系统状态检测命令" class="headerlink" title="2.系统状态检测命令"></a>2.<code>系统状态</code>检测命令</h3><ul>
+<li><h4 id="ifconfig-–-获取网卡配置与网络状态等信息-ifconfig"><a href="#ifconfig-–-获取网卡配置与网络状态等信息-ifconfig" class="headerlink" title="ifconfig             – 获取网卡配置与网络状态等信息   # ifconfig"></a><strong>ifconfig</strong>             – 获取网卡配置与网络状态等信息   <code># ifconfig</code></h4></li>
+</ul>
+<ul>
+<li><h4 id="uname-–-用于查看系统内核与版本等信息-unname-a"><a href="#uname-–-用于查看系统内核与版本等信息-unname-a" class="headerlink" title="uname              – 用于查看系统内核与版本等信息  # unname -a"></a><strong>uname</strong>              – 用于查看系统内核与版本等信息  <code># unname -a</code></h4></li>
+</ul>
+<ul>
+<li><h4 id="uptime-–-获取主机运行时间及查看系统负载-uptime"><a href="#uptime-–-获取主机运行时间及查看系统负载-uptime" class="headerlink" title="uptime              – 获取主机运行时间及查看系统负载  # uptime"></a><strong>uptime</strong>              – 获取主机运行时间及查看系统负载  <code># uptime</code></h4></li>
+</ul>
+<ul>
+<li><h4 id="free-–-显示系统内存情况-free-h"><a href="#free-–-显示系统内存情况-free-h" class="headerlink" title="free                   – 显示系统内存情况   # free -h"></a><strong>free</strong>                   – 显示系统内存情况   <code># free -h</code></h4></li>
+</ul>
+<ul>
+<li><h4 id="who-–-打印当前登录用户-who"><a href="#who-–-打印当前登录用户-who" class="headerlink" title="who                   – 打印当前登录用户   # who"></a><strong>who</strong>                   – 打印当前登录用户   <code># who</code></h4></li>
+</ul>
+<ul>
+<li><h4 id="last-–-查看用户或终端的登录情况-last"><a href="#last-–-查看用户或终端的登录情况-last" class="headerlink" title="last                    – 查看用户或终端的登录情况  # last"></a><strong>last </strong>                   – 查看用户或终端的登录情况  <code># last</code></h4></li>
+</ul>
+<ul>
+<li><h4 id="history-–-显示历史操纵命令-history"><a href="#history-–-显示历史操纵命令-history" class="headerlink" title="history              – 显示历史操纵命令 # history"></a><strong>history</strong>              – 显示历史操纵命令 <code># history</code></h4><blockquote>
+<h4 id="history-c-清空历史命令"><a href="#history-c-清空历史命令" class="headerlink" title="# history -c : 清空历史命令"></a><code># history -c</code> : 清空历史命令</h4><h3 id="15：重复执行第15行的命名"><a href="#15：重复执行第15行的命名" class="headerlink" title="# !15：重复执行第15行的命名"></a><code># !15</code>：重复执行第15行的命名</h3></blockquote>
+</li>
+<li><h4 id="sosreport-–收集系统配置及架构信息并输出诊断文档-sosreport"><a href="#sosreport-–收集系统配置及架构信息并输出诊断文档-sosreport" class="headerlink" title="sosreport         –收集系统配置及架构信息并输出诊断文档 # sosreport"></a><strong>sosreport</strong>         –收集系统配置及架构信息并输出诊断文档 <code># sosreport</code></h4></li>
+</ul>
+<h3 id="3-工作目录切换命令"><a href="#3-工作目录切换命令" class="headerlink" title="3. 工作目录切换命令"></a><strong>3. 工作<code>目录切换</code>命令</strong></h3><ul>
+<li><h4 id="pwd-–-显示当前目录-pwd"><a href="#pwd-–-显示当前目录-pwd" class="headerlink" title="pwd          – 显示当前目录  # pwd"></a>pwd          – 显示当前目录  <code># pwd</code></h4></li>
+</ul>
+<ul>
+<li><h4 id="cd-–-切换目录-cd-返回用户主目录、-cd-返回上级目录、-cd-返回上一次目录"><a href="#cd-–-切换目录-cd-返回用户主目录、-cd-返回上级目录、-cd-返回上一次目录" class="headerlink" title="cd             – 切换目录 (#cd ~返回用户主目录、# cd ..返回上级目录、# cd -返回上一次目录)"></a>cd             – 切换目录 (<code>#cd ~</code>返回用户主目录、<code># cd ..</code>返回上级目录、<code># cd -</code>返回上一次目录)</h4></li>
+</ul>
+<ul>
+<li><h4 id="ls-–-目录中文件信息"><a href="#ls-–-目录中文件信息" class="headerlink" title="ls           – 目录中文件信息"></a>ls           – 目录中文件信息</h4><blockquote>
+<h4 id="ls-a-全部文件-、-ls-l-文件属性-大小等、-ls-d-目录权限与属性"><a href="#ls-a-全部文件-、-ls-l-文件属性-大小等、-ls-d-目录权限与属性" class="headerlink" title="# ls -a 全部文件 、# ls -l 文件属性 大小等、# ls -d 目录权限与属性"></a><code># ls -a</code> 全部文件 、<code># ls -l</code> 文件属性 大小等、<code># ls -d</code> 目录权限与属性</h4></blockquote>
+</li>
+</ul>
+<h3 id="4-文本文件编辑命令"><a href="#4-文本文件编辑命令" class="headerlink" title="4.文本文件编辑命令"></a><strong>4.文本文件<code>编辑</code>命令</strong></h3><ul>
+<li><h4 id="cat-–-查看纯文本文件内容（少）-Ctrl-C-中断-Ctrl-S-t停止-Ctrl-Q-恢复"><a href="#cat-–-查看纯文本文件内容（少）-Ctrl-C-中断-Ctrl-S-t停止-Ctrl-Q-恢复" class="headerlink" title="cat                       – 查看纯文本文件内容（少） Ctrl+C(中断)Ctrl+S(t停止)Ctrl+Q`(恢复)"></a>cat                       – 查看纯文本文件内容（少） <code>Ctrl+C</code>(中断)<code>Ctrl+S</code>(t停止)<code></code>Ctrl+Q`(恢复)</h4></li>
+</ul>
+<ul>
+<li><h4 id="more-–-查看文本文件内容（多）-more-file-cfg"><a href="#more-–-查看文本文件内容（多）-more-file-cfg" class="headerlink" title="more                    – 查看文本文件内容（多）# more file.cfg"></a>more                    – 查看文本文件内容（多）<code># more file.cfg</code></h4></li>
+</ul>
+<ul>
+<li><h4 id="head-–-显示文件开头内容（-n-显示头几行）-head-n-15-file-cfg"><a href="#head-–-显示文件开头内容（-n-显示头几行）-head-n-15-file-cfg" class="headerlink" title="head                     – 显示文件开头内容（- n 显示头几行） # head -n 15 file.cfg"></a>head                     – 显示文件开头内容（- n 显示头几行） <code># head -n 15 file.cfg</code></h4></li>
+</ul>
+<ul>
+<li><h4 id="tail-–-查看文件尾部内容或持续刷新内容-默认显示的末尾10行）-tail-f-文件名"><a href="#tail-–-查看文件尾部内容或持续刷新内容-默认显示的末尾10行）-tail-f-文件名" class="headerlink" title="tail                        – 查看文件尾部内容或持续刷新内容  (默认显示的末尾10行） # tail -f 文件名"></a>tail                        – 查看文件尾部内容或持续刷新内容  (默认显示的末尾10行） <code># tail -f 文件名</code></h4></li>
+</ul>
+<ul>
+<li><h4 id="tr-–-字符转换-cat-anaconda-ks-cfg-tr-a-z-A-Z-先读取在转换大写"><a href="#tr-–-字符转换-cat-anaconda-ks-cfg-tr-a-z-A-Z-先读取在转换大写" class="headerlink" title="tr                           – 字符转换  # cat anaconda-ks.cfg | tr [a-z] [A-Z] 先读取在转换大写"></a>tr                           – 字符转换  <code># cat anaconda-ks.cfg | tr [a-z] [A-Z]</code> 先读取在转换大写</h4></li>
+</ul>
+<ul>
+<li><h4 id="wc-–-统计文件的字节数、字数、行数"><a href="#wc-–-统计文件的字节数、字数、行数" class="headerlink" title="wc                         – 统计文件的字节数、字数、行数"></a>wc                         – 统计文件的字节数、字数、行数</h4><blockquote>
+<h4 id="wc-l-显示行数、-wc-w-显示单词数、-wc-c-显示字节数"><a href="#wc-l-显示行数、-wc-w-显示单词数、-wc-c-显示字节数" class="headerlink" title="# wc -l 显示行数、 # wc -w 显示单词数、# wc -c 显示字节数"></a><code># wc -l</code> 显示行数、 <code># wc -w</code> 显示单词数、<code># wc -c</code> 显示字节数</h4></blockquote>
+</li>
+</ul>
+<ul>
+<li><h4 id="stat-–显示文件存储及时间详细信息-stat-file-cfg"><a href="#stat-–显示文件存储及时间详细信息-stat-file-cfg" class="headerlink" title="stat                      –显示文件存储及时间详细信息  # stat file.cfg"></a>stat                      –显示文件存储及时间详细信息  <code># stat file.cfg</code></h4></li>
+</ul>
+<ul>
+<li><h4 id="cut-–-按“列”提取文本字符-cut-d-f1-etc-passwd-d设置间隔符、-f设置列数"><a href="#cut-–-按“列”提取文本字符-cut-d-f1-etc-passwd-d设置间隔符、-f设置列数" class="headerlink" title="cut                       – 按“列”提取文本字符 # cut -d: -f1 /etc/passwd -d设置间隔符、-f设置列数"></a>cut                       – 按“列”提取文本字符 <code># cut -d: -f1 /etc/passwd</code> -d设置间隔符、-f设置列数</h4></li>
+</ul>
+<ul>
+<li><h4 id="diff-–-比较文件的差异-diff-c-fileA-txt-fileB-txt"><a href="#diff-–-比较文件的差异-diff-c-fileA-txt-fileB-txt" class="headerlink" title="diff                       – 比较文件的差异 # diff -c fileA.txt fileB.txt"></a>diff                       – 比较文件的差异 <code># diff -c fileA.txt fileB.txt</code></h4></li>
+</ul>
+<h3 id="5-文件目录管理命令"><a href="#5-文件目录管理命令" class="headerlink" title="5 .文件目录管理命令"></a>5 .文件<code>目录管理</code>命令</h3><ul>
+<li><h4 id="touch-–-创建空白文件或设置文件时间-touch-file-txt"><a href="#touch-–-创建空白文件或设置文件时间-touch-file-txt" class="headerlink" title="touch                  – 创建空白文件或设置文件时间   # touch file.txt  "></a>touch                  – 创建空白文件或设置文件时间   <strong><code># touch file.txt</code>  </strong></h4><blockquote>
+<h4 id="touch-a-修改读取时间-touch-m-修改修改时间-touch-d-同时修改两者时间"><a href="#touch-a-修改读取时间-touch-m-修改修改时间-touch-d-同时修改两者时间" class="headerlink" title="# touch -a 修改读取时间   # touch -m 修改修改时间  # touch -d 同时修改两者时间"></a><code># touch -a</code> 修改读取时间   <code># touch -m</code> 修改修改时间  <code># touch -d</code> 同时修改两者时间</h4></blockquote>
+</li>
+</ul>
+<ul>
+<li><h4 id="mkdir-–-创建目录-mkdir-p-目录名-创建具有嵌套叠层的文件目录"><a href="#mkdir-–-创建目录-mkdir-p-目录名-创建具有嵌套叠层的文件目录" class="headerlink" title="mkdir                  – 创建目录 # mkdir -p  目录名 创建具有嵌套叠层的文件目录"></a>mkdir                  – 创建目录 <code># mkdir -p  目录名</code> 创建具有嵌套叠层的文件目录</h4></li>
+</ul>
+<ul>
+<li><h4 id="cp-–-复制文件或目录-cp-源文件-目标文件-cp-r-原文件-目标目录"><a href="#cp-–-复制文件或目录-cp-源文件-目标文件-cp-r-原文件-目标目录" class="headerlink" title="cp                        – 复制文件或目录  # cp [ ] 源文件 目标文件  # cp -r 原文件 目标目录"></a>cp                        – 复制文件或目录  <code># cp [ ] 源文件 目标文件</code>  <code># cp -r 原文件 目标目录</code></h4></li>
+</ul>
+<ul>
+<li><h4 id="mv-–-移动或重命名文件-mv-x-log-linux-log"><a href="#mv-–-移动或重命名文件-mv-x-log-linux-log" class="headerlink" title="mv                       – 移动或重命名文件  # mv x.log linux.log"></a>mv                       – 移动或重命名文件  <code># mv x.log linux.log</code></h4></li>
+</ul>
+<ul>
+<li><h4 id="rm-–-删除文件或目录-rm-f-x-log-f-强制删除"><a href="#rm-–-删除文件或目录-rm-f-x-log-f-强制删除" class="headerlink" title="rm                       – 删除文件或目录  # rm -f x.log -f 强制删除"></a>rm                       – 删除文件或目录  <code># rm -f x.log</code> -f 强制删除</h4></li>
+</ul>
+<ul>
+<li><h4 id="dd-–-拷贝文件及转换-dd-if-dev-zero-of-560-file-count-1-bs-560M"><a href="#dd-–-拷贝文件及转换-dd-if-dev-zero-of-560-file-count-1-bs-560M" class="headerlink" title="dd                       – 拷贝文件及转换  # dd if=/dev/zero of=560_file count=1 bs=560M"></a>dd                       – 拷贝文件及转换  <code># dd if=/dev/zero of=560_file count=1 bs=560M</code></h4></li>
+</ul>
+<ul>
+<li><h4 id="file-–-识别文件类型-file-a-cfg"><a href="#file-–-识别文件类型-file-a-cfg" class="headerlink" title="file                     – 识别文件类型   # file a.cfg"></a>file                     – 识别文件类型   <code># file a.cfg</code></h4></li>
+</ul>
+<h3 id="6-打包压缩与搜索命令"><a href="#6-打包压缩与搜索命令" class="headerlink" title="6.打包压缩与搜索命令"></a>6.<strong>打包<code>压缩</code>与<code>搜索</code>命令</strong></h3><ul>
+<li><h4 id="tar-–对文件进行打包和压缩-tar-czvf-压缩包-tar-gz-tar-xzvf-压缩包-tar-gz"><a href="#tar-–对文件进行打包和压缩-tar-czvf-压缩包-tar-gz-tar-xzvf-压缩包-tar-gz" class="headerlink" title="tar    –对文件进行打包和压缩    # tar -czvf 压缩包.tar.gz  # tar -xzvf 压缩包.tar.gz"></a>tar    –对文件进行打包和压缩    <code># tar -czvf 压缩包.tar.gz</code>  <strong><code># tar -xzvf 压缩包.tar.gz</code></strong></h4></li>
+</ul>
+<ul>
+<li><h4 id="grep-–-强大的文本搜索关键词工具-grep-n-文件"><a href="#grep-–-强大的文本搜索关键词工具-grep-n-文件" class="headerlink" title="grep  – 强大的文本搜索关键词工具      # grep -n 文件"></a>grep  – 强大的文本搜索关键词工具      <code># grep -n 文件</code></h4></li>
+</ul>
+<ul>
+<li><h4 id="find-–-查找和搜索文件"><a href="#find-–-查找和搜索文件" class="headerlink" title="find   – 查找和搜索文件"></a>find   – 查找和搜索文件</h4><blockquote>
+<h4 id="find-user-linuxprobe-exec-cp-a-root-findresults"><a href="#find-user-linuxprobe-exec-cp-a-root-findresults" class="headerlink" title="# find / user linuxprobe -exec cp -a {} /root/findresults/ \"></a><code># find / user linuxprobe -exec cp -a {} /root/findresults/ \</code></h4><p>目的：在整个文件系统中找出所有归属于linuxprobe用户的文件并复制到/root/findresults目录。</p>
+<p>“<code>-exec {} ··· \；</code>” ：其中<code>{}</code>表示find命令搜索出每一个文件，并且命令的结尾必须是“<code>\;</code>”</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第三章-管道符、重定向与环境变量"><a href="#第三章-管道符、重定向与环境变量" class="headerlink" title="第三章 管道符、重定向与环境变量"></a><strong>第三章 管道符、重定向与环境变量</strong></h2><h3 id="1-输入输出重定向"><a href="#1-输入输出重定向" class="headerlink" title="1.输入输出重定向"></a>1.输入输出重定向</h3><p>​                                                      <strong><code>输入重定向</code></strong>中用到的符号及其作用</p>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>命令 &lt; 文件</td>
+<td>将文件作为命令的标准输入</td>
+</tr>
+<tr>
+<td>命令 &lt;&lt; 分界符</td>
+<td>从标准输入中读入，直到遇见分界符才停止</td>
+</tr>
+<tr>
+<td>命令 &lt; 文件1 &gt; 文件2</td>
+<td>将文件1作为命令的标准输入并将标准输出到文件2</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><h4 id="wc-l-lt-readme-txt-把readme-txt导入给wc-l命令-等价-cat-readme-txt-wc-l"><a href="#wc-l-lt-readme-txt-把readme-txt导入给wc-l命令-等价-cat-readme-txt-wc-l" class="headerlink" title="# wc -l &lt; readme.txt  把readme.txt导入给wc -l命令   等价 # cat readme.txt | wc -l"></a><code># wc -l &lt; readme.txt</code>  把readme.txt导入给wc -l命令   等价 <code># cat readme.txt | wc -l</code></h4></li>
+</ul>
+<p>​                                                    <strong><code>输出重定向</code></strong>中用到的符号及其作用</p>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>命令 &gt; 文件</td>
+<td>将<strong>标准输出</strong>重定向到一个文件中（<strong>清空</strong>原有文件的数据）</td>
+</tr>
+<tr>
+<td>命令 2&gt; 文件</td>
+<td>将<strong>错误输出</strong>重定向到一个文件中（<strong>清空</strong>原有文件的数据）</td>
+</tr>
+<tr>
+<td>命令 &gt;&gt; 文件</td>
+<td>将标准输出重定向到一个文件中（<strong>追加</strong>到原有内容的后面）</td>
+</tr>
+<tr>
+<td>命令 2&gt;&gt; 文件</td>
+<td>将错误输出重定向到一个文件中（<strong>追加</strong>到原有内容的后面）</td>
+</tr>
+<tr>
+<td>命令 &gt;&gt; 文件 2&gt;&amp;1   或  命令 &amp;&gt;&gt; 文件</td>
+<td>将标准输出与错误输出共同写入到文件中（追加到原有内容的后面）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>对于重定向中的标准输出模式，可以省略文件描述符1 不写， 但错误输出模式的文件描述符2必须要写！</p>
+</blockquote>
+<h3 id="2-管道命令符"><a href="#2-管道命令符" class="headerlink" title="2.管道命令符"></a>2.管道命令符</h3><blockquote>
+<p><strong>命令A | 命令B</strong></p>
+<p>把前一个命令原本要输出到屏幕的标准正常数据当作是后一个命令的标准<strong>输入</strong></p>
+</blockquote>
+<ul>
+<li>通过匹配关键词/sbin/nologin找出了所有被限制登录系统的用户<ul>
+<li><strong><code># grep &quot;/sbin/nologin&quot; /etc/passwd | wc -l</code></strong></li>
+</ul>
+</li>
+<li>用翻页的形式查看/etc目录中的文件列表及属性信息<ul>
+<li><strong><code># ls -l /etc/ | more</code></strong></li>
+</ul>
+</li>
+<li>密码重置<ul>
+<li><strong><code># echo &quot;mima&quot; | passwd --stdin root</code></strong></li>
+</ul>
+</li>
+<li>邮件内容与标题打包<ul>
+<li><strong><code># echo &quot;Content&quot; | mail -s &quot;Subject&quot; linuxprobe</code></strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="3-命令符的通配符"><a href="#3-命令符的通配符" class="headerlink" title="3.命令符的通配符"></a>3.命令符的通配符</h3><table>
+<thead>
+<tr>
+<th><strong>*</strong> ：</th>
+<th>匹配零个或多个字符</th>
+<th><strong><code># ls -l /dev/sda*</code></strong>     会匹配sda sda1 sda2 sda3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>? ：</strong></td>
+<td>匹配单个字符</td>
+<td><strong><code># ls -l /dev/sda？</code></strong>     <strong>会匹配 sda1 sad2</strong>    几个字符就输入几个？</td>
+</tr>
+<tr>
+<td><strong>[0-9] :</strong></td>
+<td>匹配0~9的数字</td>
+<td><strong><code># ls -l /dev/sda[0-9]</code></strong></td>
+</tr>
+<tr>
+<td><strong>[1,3,5] ：</strong></td>
+<td>精确匹配</td>
+<td><strong><code># ls -l /dev/sda[1,3,5]</code></strong>   逗号最好不省略</td>
+</tr>
+<tr>
+<td><strong>[a-z] ：</strong></td>
+<td>匹配单个小写字母</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>[A-Z] ：</strong></td>
+<td>匹配单个大写字母</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-常用的转义字符"><a href="#4-常用的转义字符" class="headerlink" title="4.常用的转义字符"></a>4.常用的转义字符</h3><p><strong>反斜杠</strong>（\）：使反斜杠后面的一个变量变为单纯的字符串  <strong>转义符</strong>。<strong><code>&quot;\$$5&quot; = $5</code></strong></p>
+<p><strong>单引号</strong>（’’）：转义其中所有的变量为单纯的字符串。<strong>单纯字符串</strong></p>
+<p><strong>双引号</strong>（””）：保留其中的变量属性，不进行转义处理。</p>
+<p><strong>反引号</strong>（<code></code>）：把其中的命令执行后返回结果。:zap:<strong>注意是反引号不是单引号</strong></p>
+<blockquote>
+<p>如果输入的对象或参数有空格的话，用” “(<strong>双引号</strong>)括起来 </p>
+<p><code># echo &quot; Price is $PRICE&quot;</code></p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 定义一个名为PRICE的变量并赋值为5，然后输出以双引号括起来的字符串与变量信息</span></span><br><span class="line">[root@linuxprobe ~]<span class="comment"># PRICE=5</span></span><br><span class="line">[root@linuxprobe ~]<span class="comment"># echo "Price is $PRICE"</span></span><br><span class="line">Price is 5</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出“Price is $5</span></span><br><span class="line">[root@linuxprobe ~]<span class="comment"># echo "Price is \$$PRICE"</span></span><br><span class="line">Price is <span class="variable">$5</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>把命令执行后返回结果</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查看本机的linux版本和内核信息</span></span><br><span class="line"><span class="comment"># echo `uname -a`</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="5-重要环境变量"><a href="#5-重要环境变量" class="headerlink" title="5.重要环境变量"></a>5.重要环境变量</h3><p><strong>- 命令路径</strong> ：/bin /ls</p>
+<p><strong>- 别名命令</strong>：alias 别名 = 命令</p>
+<p><strong>- 内部命令</strong>：</p>
+<p><strong>- 外部命令</strong>：常用的命令    用 <code>whereis 命令名</code> 来判断是否为外部命令</p>
+<p>​                                                       <strong>Linux系统中最重要的10个环境变量</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">变量名称</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">HOME</td>
+<td>用户的主目录（即家目录）</td>
+</tr>
+<tr>
+<td style="text-align:right">SHELL</td>
+<td>用户在使用的Shell解释器名称</td>
+</tr>
+<tr>
+<td style="text-align:right">HISTSIZE</td>
+<td>输出的历史命令记录条数</td>
+</tr>
+<tr>
+<td style="text-align:right">HISTFILESIZE</td>
+<td>保存的历史命令记录条数</td>
+</tr>
+<tr>
+<td style="text-align:right">MAIL</td>
+<td>邮件保存路径</td>
+</tr>
+<tr>
+<td style="text-align:right">LANG</td>
+<td>系统语言、语系名称</td>
+</tr>
+<tr>
+<td style="text-align:right">RANDOM</td>
+<td>生成一个随机数字</td>
+</tr>
+<tr>
+<td style="text-align:right">PS1</td>
+<td>Bash解释器的提示符</td>
+</tr>
+<tr>
+<td style="text-align:right">PATH</td>
+<td>定义解释器搜索用户执行命令的路径</td>
+</tr>
+<tr>
+<td style="text-align:right">EDITOR</td>
+<td>用户默认的文本编辑器</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>小写是命令，大写是变量PATH</p>
+</blockquote>
+<h2 id="第四章-vim编辑器与shell-命令脚本"><a href="#第四章-vim编辑器与shell-命令脚本" class="headerlink" title="第四章 vim编辑器与shell 命令脚本"></a><strong>第四章 vim编辑器与shell 命令脚本</strong></h2><h3 id="1-Vim文本编辑器"><a href="#1-Vim文本编辑器" class="headerlink" title="1 Vim文本编辑器"></a><strong>1 Vim文本编辑器</strong></h3><p>​                                                        <strong>a：</strong>光标后面一位   <strong>i：</strong>光标当前位置   <strong>o：</strong>换行   <strong>:wq!</strong> 强制保存退出</p>
+<p><img src="/2020/03/11/Linux学习笔记-2-9/vim不同模式间的切换.png" alt></p>
+<p>​                                                                      <strong>Vim中常用的命令</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">命令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right"><strong>dd</strong></td>
+<td>删除（剪切）光标所在整行</td>
+</tr>
+<tr>
+<td style="text-align:right">5dd</td>
+<td>删除（剪切）从光标处开始的5行</td>
+</tr>
+<tr>
+<td style="text-align:right"><strong>yy</strong></td>
+<td>复制光标所在整行</td>
+</tr>
+<tr>
+<td style="text-align:right">5yy</td>
+<td>复制从光标处开始的5行</td>
+</tr>
+<tr>
+<td style="text-align:right">n</td>
+<td>显示搜索命令定位到的下一个字符串</td>
+</tr>
+<tr>
+<td style="text-align:right">N</td>
+<td>显示搜索命令定位到的上一个字符串</td>
+</tr>
+<tr>
+<td style="text-align:right">u</td>
+<td>撤销上一步的操作</td>
+</tr>
+<tr>
+<td style="text-align:right">p</td>
+<td>将之前删除（dd）或复制（yy）过的数据粘贴到光标后面</td>
+</tr>
+</tbody>
+</table>
+<p>​                                                             <strong>末行模式中可用的命令</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">命令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">:w</td>
+<td>保存</td>
+</tr>
+<tr>
+<td style="text-align:right">:q</td>
+<td>退出</td>
+</tr>
+<tr>
+<td style="text-align:right">:q!</td>
+<td>强制退出（放弃对文档的修改内容）</td>
+</tr>
+<tr>
+<td style="text-align:right"><strong>:wq!</strong></td>
+<td>强制保存退出</td>
+</tr>
+<tr>
+<td style="text-align:right"><strong>:set nu</strong></td>
+<td><strong>显示行号</strong></td>
+</tr>
+<tr>
+<td style="text-align:right">:set nonu</td>
+<td>不显示行号</td>
+</tr>
+<tr>
+<td style="text-align:right">:命令</td>
+<td>执行该命令</td>
+</tr>
+<tr>
+<td style="text-align:right">:整数</td>
+<td>跳转到该行</td>
+</tr>
+<tr>
+<td style="text-align:right">:s/one/two</td>
+<td>将当前光标所在行的第一个one替换成two</td>
+</tr>
+<tr>
+<td style="text-align:right">:s/one/two/g</td>
+<td>将当前光标所在行的所有one替换成two</td>
+</tr>
+<tr>
+<td style="text-align:right">:%s/one/two/g</td>
+<td>将全文中的所有one替换成two</td>
+</tr>
+<tr>
+<td style="text-align:right"><strong>?字符串</strong></td>
+<td>在文本中从下至上搜索该字符串</td>
+</tr>
+<tr>
+<td style="text-align:right">/<strong>字符串</strong></td>
+<td>在文本中从上至下搜索该字符串</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1-2-配置主机名称"><a href="#1-2-配置主机名称" class="headerlink" title="1.2 配置主机名称"></a>1.2 <strong>配置主机</strong>名称</h4><p><strong><code># vim /etc/hostname</code></strong> </p>
+<p><strong>第1步</strong>：使用Vim编辑器修改“/etc/hostname”主机名称文件。</p>
+<p><strong>第2步</strong>：把原始主机名称删除后追加“linuxprobe.com”。注意，使用Vim编辑器修改主机名称文件后，要在末行模式下执行:wq!命令才能保存并退出文档。</p>
+<p><strong>第3步</strong>：保存并退出文档，然后使用hostname命令检查是否修改成功。</p>
+<h4 id="1-3-配置网卡信息"><a href="#1-3-配置网卡信息" class="headerlink" title="1.3 配置网卡信息"></a>1.3 <strong>配置网卡</strong>信息</h4><p>:bulb: <strong>方法一：界面操作</strong></p>
+<ul>
+<li><strong>RHEL 7  是 <code># nmtui</code>  </strong><ul>
+<li><img src="/2020/03/11/Linux学习笔记-2-9/NetworkManager TUI.png" style="zoom: 33%;"></li>
+<li><img src="/2020/03/11/Linux学习笔记-2-9/NetworkManager TUI_Edit.png" style="zoom:25%;"></li>
+<li><img src="/2020/03/11/Linux学习笔记-2-9/NetworkManager TUI_Edit connection.png" style="zoom: 25%;"></li>
+<li><img src="/2020/03/11/Linux学习笔记-2-9/NetworkManager TUI_quit.png" style="zoom:25%;"></li>
+</ul>
+</li>
+<li><strong>重启网卡    <code># systemctl restart network</code></strong></li>
+</ul>
+<p><strong>:bulb: 方法三 : 图形化界面操作</strong></p>
+<ul>
+<li><code># nm-connection-editor</code></li>
+<li><strong>选择编辑</strong>  <strong>IPv4 Settings  修改</strong></li>
+<li><strong>重启网卡</strong></li>
+</ul>
+<p>:bulb: <strong>方法二：名编辑网卡配置文件</strong></p>
+<p><strong>第一步：查看本机网卡相关信息  <code># ifconfig</code>   确定ifcfg-en0xxxxxxxx的值</strong></p>
+<p><strong>第二步 ：打开网卡配置文件 <code># vim etc/sysconfig/network-scripts/ifcfg-eno16777736</code></strong></p>
+<p><strong>第三步：编辑相关参数</strong></p>
+<p>​                <strong>TYPE=</strong><a href>Ethernet</a><br>​                    <strong>BOOTPROTO=</strong><a href>static</a><br>​                    <strong>NAME=</strong><a href>eno16777736</a><br>​                    <strong>ONBOOT=</strong><a href>yes</a><br>​                    <strong>IPADDR=</strong><a href>192.168.10.10</a><br>​                    <strong>NETMASK=</strong><a href>255.255.255.0</a><br>​                    <strong>GATEWAY=</strong><a href>192.168.10.1</a><br>​                    <strong>DNS1=</strong><a href>192.168.10.1</a></p>
+<p><strong>第四步：重启网卡  <code># systemctl restart network</code></strong></p>
+<blockquote>
+<p>设备类型：TYPE=Ethernet</p>
+<p>地址分配模式：BOOTPROTO=static</p>
+<p>网卡名称：NAME=eno16777736</p>
+<p>是否启动：ONBOOT=yes</p>
+<p>IP地址：IPADDR=192.168.10.10</p>
+<p>子网掩码：NETMASK=255.255.255.0</p>
+<p>网关地址：GATEWAY=192.168.10.1</p>
+<p>DNS地址：DNS1=192.168.10.1</p>
+</blockquote>
+<h4 id="1-4-配置Yum仓库"><a href="#1-4-配置Yum仓库" class="headerlink" title="1.4 配置Yum仓库"></a>1.4 <strong>配置Yum</strong>仓库</h4><p>:checkered_flag: <strong>准备工作 : 将虚拟机的光盘设备指向ISO镜像</strong> </p>
+<p><img src="/2020/03/11/Linux学习笔记-2-9/设置虚拟机网卡的模式.png" style="zoom:50%;"></p>
+<p><strong>第一步：创建系统镜像挂载目录     <code># mkdir -p /media/cdrom</code></strong></p>
+<p><strong>第二步：编辑挂载信息 <code># /etc/fstab</code>      写入   /dev/cdrom /media/cdrom iso9660</strong></p>
+<p><strong>第三步：进入目录 </strong>  <strong><code># cd /etc/yum.repos.d/</code></strong></p>
+<p>​                <strong>使用Vim文本编辑器创建Yum仓库的配置文件   </strong>  <strong><code># vim /etc/yum.repos.d/rhel7.repo</code></strong> </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[rhel]</span><br><span class="line">name=rhel</span><br><span class="line">baseurl=file:///media/cdrom</span><br><span class="line">enabled=1</span><br><span class="line">gpgcheck=0</span><br></pre></td></tr></table></figure>
+<p><strong>第三步：把光盘设备中的系统镜像挂载到/media/cdrom目录   <code># mount -a</code></strong></p>
+<p><strong>第四步：查看挂载情况  <code># df -h</code></strong></p>
+<h3 id="2-编写Shell脚本"><a href="#2-编写Shell脚本" class="headerlink" title="2 编写Shell脚本"></a><strong>2 编写Shell脚本</strong></h3><p>运行脚本： bash</p>
+<p>脚本申明：#!/bin/bash</p>
+<p>脚本注释：#解释说明脚本功能</p>
+<p>脚本命令：pwd ls -al</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxprobe ~]<span class="comment"># vim example.sh</span></span><br><span class="line"><span class="meta">#!/bin/bash </span></span><br><span class="line"><span class="comment">#For Example BY linuxprobe.com </span></span><br><span class="line"><span class="built_in">pwd</span> </span><br><span class="line">ls -al</span><br></pre></td></tr></table></figure>
+<h4 id="2-1-接收用户的参数"><a href="#2-1-接收用户的参数" class="headerlink" title="2.1 接收用户的参数"></a>2.1 接收用户的参数</h4><p><img src="/2020/03/11/Linux学习笔记-2-9/shell脚本程序中的参数.png" alt></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxprobe ~]<span class="comment"># vim example.sh</span></span><br><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"当前脚本名称为<span class="variable">$0</span>"</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"总共有<span class="variable">$#</span>个参数，分别是$*。"</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"第1个参数为<span class="variable">$1</span>，第5个为<span class="variable">$5</span>。"</span></span><br></pre></td></tr></table></figure>
+<h4 id="2-3-判断用户的参数"><a href="#2-3-判断用户的参数" class="headerlink" title="2.3 判断用户的参数"></a>2.3 判断用户的参数</h4><p><img src="/2020/03/11/Linux学习笔记-2-9/条件测试语句的执行格式.png" alt></p>
+<p>按照测试对象来划分，条件测试语句可以分为4种：</p>
+<blockquote>
+<p><strong>文件测试语句；</strong></p>
+<p><strong>逻辑测试语句；</strong></p>
+<p><strong>整数值比较语句；</strong></p>
+<p><strong>字符串比较语句。</strong></p>
+</blockquote>
+<ul>
+<li><strong>文件测试所用的参数</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>操作符</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-d</td>
+<td>测试文件是否为<strong>目录类型</strong></td>
+</tr>
+<tr>
+<td>-e</td>
+<td>测试文件<strong>是否存在</strong></td>
+</tr>
+<tr>
+<td>-f</td>
+<td>判断是否为<strong>一般文件</strong></td>
+</tr>
+<tr>
+<td>-r</td>
+<td>测试当前用户是否<strong>有权限读取</strong></td>
+</tr>
+<tr>
+<td>-w</td>
+<td>测试当前用户是否<strong>有权限写入</strong></td>
+</tr>
+<tr>
+<td>-x</td>
+<td>测试当前用户是否<strong>有权限执行</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>:zap: <strong>echo $?</strong> 显示返回值，返回值 <strong>0</strong> 为<strong>存在</strong>，返回值 <strong>非零 为不存在</strong>            $ 符号用于提取变量的值！</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxprobe ~]<span class="comment"># [ -d /etc/fstab ]</span></span><br><span class="line">[root@linuxprobe ~]<span class="comment"># echo $?</span></span><br><span class="line">1</span><br><span class="line"></span><br><span class="line"><span class="string">''</span><span class="string">'</span></span><br><span class="line"><span class="string">$? 显示返回值，返回值0为存在，返回值非零为不存在</span></span><br><span class="line"><span class="string">'</span><span class="string">''</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>逻辑测试语句</strong></li>
+</ul>
+<p>​        <strong>||   ： 或</strong>            <strong>&amp;&amp; ：与</strong>             <strong>？：非</strong></p>
+<blockquote>
+<p>&amp;&amp;  若前面成功，则执行后面 </p>
+<p>||    若前面失败，则执行后面</p>
+<p>！  取反</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 用来判断/dev/cdrom文件是否存在，若存在则输出Exist字样</span></span><br><span class="line">[root@linuxprobe ~]<span class="comment"># [ -e /dev/cdrom ] &amp;&amp; echo "Exist"</span></span><br><span class="line">Exist</span><br><span class="line"></span><br><span class="line"><span class="comment"># 判断当前登录的用户是否为非管理员身份</span></span><br><span class="line">[root@linuxprobe ~]<span class="comment"># [ $USER = root ] || echo "user"</span></span><br><span class="line">[root@linuxprobe ~]<span class="comment"># su - linuxprobe </span></span><br><span class="line">[linuxprobe@linuxprobe ~]$ [ <span class="variable">$USER</span> = root ] || <span class="built_in">echo</span> <span class="string">"user"</span></span><br><span class="line">user</span><br><span class="line"></span><br><span class="line"><span class="comment"># 先判断当前登录用户的USER变量名称是否等于root，然后用逻辑运算符“非”进行取反操作，效果就变成了判断当前登录的用户是否为非管理员用户了。最后若条件成立则会根据逻辑“与”运算符输出user字样；或条件不满足则会通过逻辑“或”运算符输出root字样，而如果前面的&amp;&amp;不成立才会执行后面的||符号。</span></span><br><span class="line">[root@linuxprobe ~]<span class="comment"># [ $USER != root ] &amp;&amp; echo "user" || echo "root"</span></span><br><span class="line">root</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>可用的整数比较运算符</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">操作符</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">-eq</td>
+<td>是否<strong>等于</strong></td>
+</tr>
+<tr>
+<td style="text-align:right">-ne</td>
+<td>是否<strong>不等于</strong></td>
+</tr>
+<tr>
+<td style="text-align:right">-gt</td>
+<td>是否<strong>大于</strong></td>
+</tr>
+<tr>
+<td style="text-align:right">-lt</td>
+<td>是否<strong>小于</strong></td>
+</tr>
+<tr>
+<td style="text-align:right">-le</td>
+<td>是否<strong>等于</strong>或<strong>小于</strong></td>
+</tr>
+<tr>
+<td style="text-align:right">-ge</td>
+<td>是否<strong>大于</strong>或<strong>等于</strong></td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[ `free -m | grep Men: | awk <span class="string">'&#123;print $4&#125;'</span>` -lt 1024 ] &amp;&amp; <span class="built_in">echo</span> <span class="string">"danger"</span> || <span class="built_in">echo</span> <span class="string">"chongzu"</span></span><br></pre></td></tr></table></figure>
+<p><strong><code>free -m</code></strong>  查看内存使用量情况（单位为MB）</p>
+<p><strong><code>grep Men:</code></strong> 过滤出剩余内存量的行</p>
+<p><strong><code>awk</code></strong> ： 文件逐行的读入 ，读取第四个数据</p>
+<p><strong><code>-lt 1024</code></strong>  ： 比较是否小于1024</p>
+<ul>
+<li><strong>常见的字符串比较运算符</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>操作符</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>=</td>
+<td>比较字符串内容是否相同</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>比较字符串内容是否不同</td>
+</tr>
+<tr>
+<td>-z</td>
+<td>判断字符串内容是否为空</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-流程控制语句"><a href="#3-流程控制语句" class="headerlink" title="3 流程控制语句"></a><strong>3 流程控制语句</strong></h3><h4 id="3-1-if条件测试语句"><a href="#3-1-if条件测试语句" class="headerlink" title="3.1 if条件测试语句"></a>3.1 <code>if</code>条件测试语句</h4><ul>
+<li><strong>单分支的if语句</strong></li>
+</ul>
+<p><img src="/2020/03/11/Linux学习笔记-2-9/单分支的if语句.png" alt></p>
+<ul>
+<li><strong>双分支的if条件语句</strong></li>
+</ul>
+<p><img src="/2020/03/11/Linux学习笔记-2-9/双分支的if条件语句.png" alt></p>
+<ul>
+<li><strong>多分支的if条件语句</strong></li>
+</ul>
+<p><img src="/2020/03/11/Linux学习笔记-2-9/多分支的if条件语句.png" alt></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 验证某台主机是否在线</span></span><br><span class="line">[root@linuxprobe ~]<span class="comment"># vim chkhost.sh</span></span><br><span class="line"><span class="meta">#!/bin/bash </span></span><br><span class="line">ping -c 3 -i 0.2 -W 3 <span class="variable">$1</span> &amp;&gt; /dev/null <span class="comment"># -c 尝试次数  -i 每个数据间隔时间  -W  等待超时时间  /dev/null 写入黑洞</span></span><br><span class="line"><span class="keyword">if</span> [ $? -eq 0 ]</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"Host <span class="variable">$1</span> is On-line."</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"Host <span class="variable">$1</span> is Off-line."</span></span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 使用多分支的if条件语句来判断用户输入的分数在哪个成绩区间内，然后输出如Excellent、Pass、Fail等提示信息</span></span><br><span class="line">[root@linuxprobe ~]<span class="comment"># vim chkscore.sh</span></span><br><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="built_in">read</span> -p <span class="string">"Enter your score（0-100）："</span> GRADE   <span class="comment"># -p 是提示信息参数   GRADE 是赋值参数</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="variable">$GRADE</span> -ge 85 ] &amp;&amp; [ <span class="variable">$GRADE</span> -le 100 ] ; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"<span class="variable">$GRADE</span> is Excellent"</span></span><br><span class="line"><span class="keyword">elif</span> [ <span class="variable">$GRADE</span> -ge 70 ] &amp;&amp; [ <span class="variable">$GRADE</span> -le 84 ] ; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"<span class="variable">$GRADE</span> is Pass"</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"<span class="variable">$GRADE</span> is Fail"</span> </span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line">[root@linuxprobe ~]<span class="comment"># bash chkscore.sh</span></span><br><span class="line">Enter your score（0-100）：88</span><br><span class="line">88 is Excellent</span><br><span class="line">[root@linuxprobe ~]<span class="comment"># bash chkscore.sh </span></span><br><span class="line">Enter your score（0-100）：80</span><br><span class="line">80 is Pass</span><br></pre></td></tr></table></figure>
+<h4 id="3-2-for条件循环语句"><a href="#3-2-for条件循环语句" class="headerlink" title="3.2 for条件循环语句"></a><strong>3.2 <code>for</code>条件循环语句</strong></h4><p><img src="/2020/03/11/Linux学习笔记-2-9/for循环语句的语法格式.png" alt></p>
+<p><strong>eg: 批量创建用户名的脚本</strong>(p89)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxprobe ~]<span class="comment"># vim Example.sh</span></span><br><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="built_in">read</span> -p <span class="string">"Enter The Users Password : "</span> PASSWD</span><br><span class="line"><span class="keyword">for</span> UNAME <span class="keyword">in</span> `cat users.txt`      <span class="comment"># 读取 user.txt 到 UNAME 中, 实战中需要先创建一个目标user.txt文件</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">id <span class="variable">$UNAME</span> &amp;&gt; /dev/null        <span class="comment"># id 用户名 : 擦看用户信息，并写入黑洞中去</span></span><br><span class="line"><span class="keyword">if</span> [ $? -eq 0 ]               <span class="comment"># $?  判断这条命令是否执行成功</span></span><br><span class="line"><span class="keyword">then</span>                           </span><br><span class="line"><span class="built_in">echo</span> <span class="string">"Already exists"</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">useradd <span class="variable">$UNAME</span> &amp;&gt; /dev/null     <span class="comment">#没有就 添加新用户</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"<span class="variable">$PASSWD</span>"</span> | passwd --stdin <span class="variable">$UNAME</span> &amp;&gt; /dev/null</span><br><span class="line"><span class="keyword">if</span> [ $? -eq 0 ]</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"<span class="variable">$UNAME</span> , Create success"</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"<span class="variable">$UNAME</span> , Create failure"</span></span><br><span class="line"><span class="keyword">fi</span>      <span class="comment"># if   fi  成对出现</span></span><br><span class="line"><span class="keyword">fi</span>      <span class="comment"># if   fi  成对出现</span></span><br><span class="line"><span class="keyword">done</span>    <span class="comment"># do done  成对出现</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong><code>/dev/null</code></strong>是一个被称作Linux黑洞的文件，把输出信息重定向到这个文件等同于删除数据（类似于没有回收功能的垃圾箱），可以让用户的屏幕窗口保持简洁。</p>
+<p><strong><code>/etc/passwd</code></strong>是用来保存用户账户信息的文件。如果想确认这个脚本是否成功创建了用户账户，可以打开这个文件，看其中是否有这些新创建的用户信息。</p>
+</blockquote>
+<p><strong>eg: 判断主机是否在线</strong>(p90)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxprobe ~]<span class="comment"># vim CheckHosts.sh</span></span><br><span class="line"><span class="comment">#?/bin/bash</span></span><br><span class="line">HLIST=$(cat ~/ipadds.txt)</span><br><span class="line"><span class="keyword">for</span> IP <span class="keyword">in</span> <span class="variable">$HLIST</span> </span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">ping -c 3 -i 0.2 -W 3 <span class="variable">$IP</span> &amp;&gt; /dev/null  <span class="comment"># -c 尝试次数  -i 每个数据间隔时间  -W  等待超时时间  /dev/null 写入黑洞</span></span><br><span class="line"><span class="keyword">if</span> [ $? -eq 0 ] ; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"Host <span class="variable">$IP</span> is On-line"</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"Host <span class="variable">$IP</span> is Off-line"</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+<h4 id="3-3-while条件循环语句"><a href="#3-3-while条件循环语句" class="headerlink" title="3.3 while条件循环语句"></a><strong>3.3 <code>while</code>条件循环语句</strong></h4><p><img src="/2020/03/11/Linux学习笔记-2-9/while循环语句的语法格式.png" alt></p>
+<blockquote>
+<p> <strong><code>while</code></strong>循环语句通过<strong>判断条件测试的真假</strong>来决定是否继续执行命令，若条件为真就继续执行，为假就结束循环</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxprobe~] <span class="comment"># vim Guess.sh</span></span><br><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line">PRICE=$(expr <span class="variable">$RANDOM</span> % 1000)  <span class="comment"># RANDOM 随机调取一个值  并取余， expr 求表达式变量的值</span></span><br><span class="line">TIMES=0</span><br><span class="line"><span class="keyword">while</span> <span class="literal">true</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line"><span class="built_in">read</span> -p <span class="string">"Enter: "</span> INT</span><br><span class="line"><span class="built_in">let</span>  TIMES++                 <span class="comment">#计数（自动加一）</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="variable">$INT</span> -eq <span class="variable">$PRICE</span> ]</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"<span class="variable">$TIME</span> Congratulation!"</span></span><br><span class="line"><span class="built_in">exit</span></span><br><span class="line"><span class="keyword">elif</span> [ <span class="variable">$INT</span> -gt <span class="variable">$PRICE</span>]</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"High!!"</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"Low!!"</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+<h4 id="3-4-case条件测试语句"><a href="#3-4-case条件测试语句" class="headerlink" title="3.4 case条件测试语句"></a><strong>3.4 <code>case</code>条件测试语句</strong></h4><p><img src="/2020/03/11/Linux学习笔记-2-9/case条件测试语句的语法结构.png" alt></p>
+<blockquote>
+<p><strong><code>case</code></strong> 语句是在<strong>多个范围内匹配数据</strong>，若匹配成功则执行相关命令并结束整个条件测试；而如果数据不在所列出的范围内，则会去执行星号<strong><code>（*）</code></strong>中所定义的默认命令</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxprobe ~]<span class="comment"># vim Checkkeys.sh</span></span><br><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="built_in">read</span> -p <span class="string">"请输入一个字符，并按Enter键确认："</span> KEY</span><br><span class="line"><span class="keyword">case</span> <span class="string">"<span class="variable">$KEY</span>"</span> <span class="keyword">in</span></span><br><span class="line">[a-z]|[A-Z])</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"您输入的是 字母。"</span></span><br><span class="line">;;</span><br><span class="line">[0-9])</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"您输入的是 数字。"</span></span><br><span class="line">;;</span><br><span class="line">*)</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"您输入的是 空格、功能键或其他控制字符。"</span></span><br><span class="line"><span class="keyword">esac</span></span><br></pre></td></tr></table></figure>
+<h3 id="4-计划任务服务程序"><a href="#4-计划任务服务程序" class="headerlink" title="4 计划任务服务程序"></a><strong>4 计划任务服务程序</strong></h3><h4 id="4-1-at-命令-一次性的计划任务"><a href="#4-1-at-命令-一次性的计划任务" class="headerlink" title="4.1 at 命令 一次性的计划任务"></a>4.1 <code>at</code> 命令 一次性的计划任务</h4><p><strong><code># at time</code></strong>  设置一次性任务</p>
+<p><strong><code># at -l</code></strong> 查看已设置好但还未执行的一次性计划任务</p>
+<p><strong><code># atrm 任务序号</code></strong> 删除任务</p>
+<ul>
+<li>设置在今晚23:30分自动重启网站服务</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxprobe ~]<span class="comment"># at 23:30</span></span><br><span class="line">at &gt; systemctl restart httpd</span><br><span class="line">at &gt; 此处请同时按下Ctrl+d来结束编写计划任务</span><br><span class="line">job 3 at Mon Apr 27 23:30:00 2015</span><br><span class="line">[root@linuxprobe ~]<span class="comment"># at -l</span></span><br><span class="line">3 Mon Apr 27 23:30:00 2016 a root</span><br></pre></td></tr></table></figure>
+<ul>
+<li>结合<strong><code>管道符 |</code> </strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxprobe ~]<span class="comment"># echo "systemctl restart httpd" | at 23:30</span></span><br><span class="line">job 4 at Mon Apr 27 23:30:00 2015</span><br><span class="line">[root@linuxprobe ~]<span class="comment"># at -l</span></span><br><span class="line">3 Mon Apr 27 23:30:00 2016 a root</span><br><span class="line">4 Mon Apr 27 23:30:00 2016 a root</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>删除</strong>两个相同的一次性计划任务的其中一个</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxprobe ~]<span class="comment"># atrm 3</span></span><br><span class="line">[root@linuxprobe ~]<span class="comment"># at -l</span></span><br><span class="line">4 Mon Apr 27 23:30:00 2016 a root</span><br></pre></td></tr></table></figure>
+<h4 id="4-2-crond-服务-有周期性的计划任务"><a href="#4-2-crond-服务-有周期性的计划任务" class="headerlink" title="4.2 crond 服务 有周期性的计划任务"></a>4.2 <code>crond</code> 服务 有周期性的计划任务</h4><p><strong><code># crontab -e</code></strong>  创建、编辑计划任务的命令</p>
+<p><strong><code># crontab -l</code></strong>  查看当前计划任务的命令</p>
+<p><strong><code># crontab -r</code></strong>   删除某条计划任务的命令</p>
+<p><img src="/2020/03/11/Linux学习笔记-2-9/使用crond设置任务的参数格式.png" alt></p>
+<blockquote>
+<ul>
+<li><p><strong>分  时  日  月  周  命令</strong></p>
+</li>
+<li><p>如果有些字段没有设置，则需要使用星号（<strong>*</strong>）占位</p>
+</li>
+<li><p>:zap: 计划任务中的“分”字段必须有数值，绝对不能为空或是*号，而“日”和“星期”字段不能同时使用，否则就会发生冲突。</p>
+</li>
+</ul>
+</blockquote>
+<p>​                                                      使用crond设置任务的参数字段说明</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">分钟</td>
+<td>取值为0～59的整数</td>
+</tr>
+<tr>
+<td style="text-align:right">小时</td>
+<td>取值为0～23的任意整数</td>
+</tr>
+<tr>
+<td style="text-align:right">日期</td>
+<td>取值为1～31的任意整数</td>
+</tr>
+<tr>
+<td style="text-align:right">月份</td>
+<td>取值为1～12的任意整数</td>
+</tr>
+<tr>
+<td style="text-align:right">星期</td>
+<td>取值为0～7的任意整数，其中0与7均为星期日</td>
+</tr>
+<tr>
+<td style="text-align:right">命令</td>
+<td>要执行的命令或程序脚本</td>
+</tr>
+</tbody>
+</table>
+<p>eg :  每周一、三、五的凌晨3点25分，使用tar命令把某个网站的数据目录进行打包处理，使其作为一个备份文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxprobe ~]<span class="comment"># crontab -e      #创建计划任务，自动调用vim编译器 </span></span><br><span class="line">no crontab <span class="keyword">for</span> root - using an empty one</span><br><span class="line">crontab: installing new crontab</span><br><span class="line">[root@linuxprobe ~]<span class="comment"># crontab -l</span></span><br><span class="line">25 3 * * 1,3,5 /usr/bin/tar -czvf backup.tar.gz /home/wwwroot</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>用逗号（,）来分别表示多个时间段，例如“8,9,12”表示8月、9月和12月。</p>
+<p>用减号（-）来表示<strong>一段连续</strong>的时间周期（例如字段“日”的取值为“12-15”，则表示每月的12～15日）。</p>
+<p>用除号（/）表示执行任务的<strong>间隔时间</strong>（例如“*/2”表示每隔2分钟执行一次任务）。</p>
+</blockquote>
+<p>eg: 添加一条计划任务，它的功能是每周一至周五的凌晨1点钟自动清空/tmp目录内的所有文件。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxprobe ~]<span class="comment"># whereis rm</span></span><br><span class="line">rm: /usr/bin/rm /usr/share/man/man1/rm.1.gz /usr/share/man/man1p/rm.1p.gz</span><br><span class="line">[root@linuxprobe ~]<span class="comment"># crontab -e</span></span><br><span class="line">crontab: installing new crontab</span><br><span class="line">[root@linuxprobe ~]<span class="comment"># crontab -l</span></span><br><span class="line">25 3 * * 1,3,5 /usr/bin/tar -czvf backup.tar.gz /home/wwwroot</span><br><span class="line">0 1 * * 1-5 /usr/bin/rm -rf /tmp/*</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>在<strong><code>crond</code></strong>服务的计划任务参数中，所有命令一定要用绝对路径的方式来写，</p>
+<p>如果不知道绝对路径，请用<strong><code>whereis 命令</code></strong>进行查询，</p>
+</blockquote>
+<h2 id="第五章-文件权限与归属"><a href="#第五章-文件权限与归属" class="headerlink" title="第五章 文件权限与归属"></a><strong>第五章 文件权限与归属</strong></h2><h3 id="5-1-用户身份与能力"><a href="#5-1-用户身份与能力" class="headerlink" title="5.1 用户身份与能力"></a>5.1 用户身份与能力</h3><blockquote>
+<p>管理员<strong><code>UID</code></strong>为0：系统的管理员用户。</p>
+<p>系统用户UID为1～999： Linux系统为了避免因某个服务程序出现漏洞而被黑客提权至整台服务器，默认服务程序会有独立的系统用户负责运行，进而有效控制被破坏范围。</p>
+<p>普通用户UID从1000开始：是由管理员创建的用于日常工作的用户。</p>
+</blockquote>
+<p>通过使用用户组号码（<strong>GID</strong>，Group IDentification），我们可以把多个用户加入到同一个组中，从而方便为组中的用户统一规划权限或指定任务</p>
+<ul>
+<li><h4 id="useradd-命令-–创建新的用户"><a href="#useradd-命令-–创建新的用户" class="headerlink" title="useradd 命令          –创建新的用户"></a><code>useradd</code> 命令          –创建新的用户</h4><ul>
+<li><code># useradd -d /home -u 9999 -s /sbin/nologin linuxprobe</code></li>
+<li><code>-d</code>  指定用户的家目录（默认为/home/username） </li>
+<li><code>-u</code>  指定该用户的默认UID</li>
+<li><code>-s</code>  指定该用户的默认Shell解释器        </li>
+</ul>
+</li>
+</ul>
+<p>​                                                       </p>
+<ul>
+<li><h4 id="userdel-命令-–-删除用户"><a href="#userdel-命令-–-删除用户" class="headerlink" title="userdel  命令         – 删除用户"></a><strong><code>userdel</code>  命令 </strong>        – 删除用户</h4><ul>
+<li><code># userdel -r linuxprobe</code></li>
+<li><code>-f</code> 强制删除用户</li>
+<li><code>-r</code> 同时删除用户及用户家目录</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><h4 id="groupadd-命令-–创建用户组"><a href="#groupadd-命令-–创建用户组" class="headerlink" title="groupadd  命令              –创建用户组"></a><strong><code>groupadd</code>  命令 </strong>             –创建用户组</h4><ul>
+<li><code># groupadd ronny</code></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><h4 id="usermod-命令-–-修改用户的属性"><a href="#usermod-命令-–-修改用户的属性" class="headerlink" title="usermod  命令                 – 修改用户的属性"></a><code>usermod</code>  命令                 – 修改用户的属性</h4><ul>
+<li><code># usermod -G root linuxprobe</code></li>
+<li><code>-c</code>  填写用户账户的<strong>备注信息</strong></li>
+<li><code>-d -m</code>  参数-m与参数-d连用，可重新指定用户的家目录并自动把旧的数据转移过去</li>
+<li><code>-e</code>  账户的<strong>到期时间</strong>，格式为YYYY-MM-DD</li>
+<li><code>-g</code>  变更所属用户组</li>
+<li><code>-G</code>  <strong>变更扩展用户组</strong></li>
+<li><code>-L</code> <strong>锁定</strong>用户禁止其登录系统</li>
+<li><code>-U</code>  <strong>解锁</strong>用户，允许其登录系统</li>
+<li><code>-s</code>  变更<strong>默认终端</strong></li>
+<li><code>-u</code>  修改用户的UID</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><h4 id="passwd-命令-–修改用户密码、过期时间、认证信息等"><a href="#passwd-命令-–修改用户密码、过期时间、认证信息等" class="headerlink" title="passwd  命令                    –修改用户密码、过期时间、认证信息等"></a><strong><code>passwd</code>  命令</strong>                    –修改用户密码、过期时间、认证信息等</h4><ul>
+<li><code># passwd</code></li>
+<li><code>-l</code>  <strong>锁定用户</strong>，禁止其登录   <code># passwd -l linuxprobe</code></li>
+<li><code>--stdin</code>  允许通过标准输入修改用户密码  <code># echo &quot;NewPassWord&quot; | passwd --stdin Username</code></li>
+<li><code>-d</code>  使该用户<strong>可用空密码</strong>登录系统</li>
+<li><code>-e</code>  强制用户在下次登录时修改密码</li>
+<li><code>-S</code>  <strong>显示</strong>用户的密码<strong>是否被锁定</strong>，以及密码所采用的加密算法名称</li>
+</ul>
+</li>
+</ul>
+<h3 id="5-2-文件权限与归属"><a href="#5-2-文件权限与归属" class="headerlink" title="5.2 文件权限与归属"></a>5.2 文件权限与归属</h3><p><strong><code># ls -l</code> </strong></p>
+<p><strong><code># chmod +权限（-权限） 文件名称</code></strong>     设置文件或目录的权限    ，  大写参数<code>-R</code>来表示<strong>递归操作 </strong>  <strong>+授权 -取消权限</strong></p>
+<p><strong><code># chown 用户：用户组  文件名称</code></strong>       设置文件或目录的所有者和所属组 </p>
+<blockquote>
+<p> <strong><code>-</code></strong>：普通文件。</p>
+<p> <code>d</code>：目录文件。</p>
+<p> <code>l</code>：链接文件。</p>
+<p> <code>b</code>：块设备文件。</p>
+<p> <code>c</code>：字符设备文件。</p>
+<p> <code>p</code>：管道文件。</p>
+</blockquote>
+<p>​         <strong>文件权限的字符与数字表示</strong>：    <strong>read</strong>      <strong>write</strong>       <strong>execute</strong></p>
+<p><img src="/2020/03/11/Linux学习笔记-2-9/文献权变的字符与数字表示.png" alt></p>
+<p>​          <strong>通过ls命令查看到的文件属性信息</strong>：</p>
+<p><img src="/2020/03/11/Linux学习笔记-2-9/通过ls命令查看到的文件属性信息.png" alt></p>
+<h3 id="5-3-文件的特殊权限"><a href="#5-3-文件的特殊权限" class="headerlink" title="5.3 文件的特殊权限"></a>5.3 文件的特殊权限</h3><p>​     rw<strong><code>s</code></strong>rw<code>s</code>rw<code>t</code>   <strong>7777 满权限</strong>  </p>
+<ul>
+<li><h4 id="SUID-4-执行者临时拥有属主的权限-u-s"><a href="#SUID-4-执行者临时拥有属主的权限-u-s" class="headerlink" title="SUID   4   执行者临时拥有属主的权限    u + s"></a><strong>SUID</strong>   <code>4</code>   执行者<u>临时拥有</u>属主的权限    <strong><code>u + s</code></strong></h4><ul>
+<li><strong>将 <code>rwx</code> 改成 <code>rws</code></strong>      原有权限</li>
+<li><strong>将 <code>rw-</code> 改成 <code>rwS</code></strong>      原没有权限</li>
+<li><strong><code># chmod u+s 文件</code></strong></li>
+</ul>
+</li>
+<li><h4 id="SGID-2-获取到文件所属组的权限-g-s"><a href="#SGID-2-获取到文件所属组的权限-g-s" class="headerlink" title="SGID   2   获取到文件所属组的权限    g + s"></a><strong>SGID</strong>   <code>2</code>   获取到文件<u>所属组</u>的权限    <strong><code>g + s</code></strong></h4><ul>
+<li><strong>将 <code>rwx</code> 改成 <code>rws</code></strong>     原有权限</li>
+<li><strong>将 <code>rw-</code> 改成 <code>rwS</code></strong>     原没有权限</li>
+<li><strong><code># chmod g+s 文件</code></strong></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>让执行者临时拥有<strong>属组</strong>的权限（对拥有执行权限的二进制程序进行设置）；</p>
+<p>在某个目录中创建的文件自动继承该目录的用户组（只可以对目录进行设置）。</p>
+</blockquote>
+<ul>
+<li><h4 id="SBIT-1-“保护位”-o-t"><a href="#SBIT-1-“保护位”-o-t" class="headerlink" title="SBIT   1   “保护位”      o + t"></a>SBIT   <code>1</code>   “保护位”      <strong><code>o + t</code></strong></h4><ul>
+<li><strong>将 <code>rwx</code> 改成 <code>rwt</code></strong>     原有权限</li>
+<li><strong>将 <code>rw-</code> 改成 <code>rwT</code></strong>    原没有权限</li>
+<li><strong><code># chmod o+t 文件</code></strong></li>
+</ul>
+</li>
+</ul>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">EG : </span><br><span class="line">rwxrwSrwt :  3 7 6 7</span><br><span class="line">rwxrwSrwT：3 7 6 6</span><br><span class="line">5 6 4 2 ：rwSr---wT</span><br></pre></td></tr></table></figure>
+<h3 id="5-4-文件的隐藏属性"><a href="#5-4-文件的隐藏属性" class="headerlink" title="5.4 文件的隐藏属性"></a>5.4 文件的隐藏属性</h3><ul>
+<li><h4 id="chattr-chattr-权限-文件-chattr-权限-文件"><a href="#chattr-chattr-权限-文件-chattr-权限-文件" class="headerlink" title="chattr   # chattr +权限 文件  # chattr -权限 文件"></a>chattr   <code># chattr +权限 文件</code>  <code># chattr -权限 文件</code></h4></li>
+<li><p><code>i</code>  无法对文件进行修改；仅能修改其中的子文件内容而不能新建或删除文件<br><code>a</code>  仅允许<strong>补充（追加）内容</strong>，<strong>无法覆盖/删除内容</strong>（Append Only）<br><code>S</code>  文件内容在变更后立即<strong>同步到硬盘</strong>（sync）<br><code>s</code>  <strong>彻底从硬盘中删除</strong>，不可恢复（用0填充原文件所在硬盘区域）<br><code>A</code>  不再修改这个文件或目录的<strong>最后访问时间</strong>（atime）<br><code>b</code>  不再修改文件或目录的<strong>存取时间</strong><br><code>D</code>  检查压缩文件中的错误<br><code>d</code>  使用dump命令备份时忽略本文件/目录<br><code>c</code>  默认将文件或目录进行压缩<br><code>u</code>  当删除该文件后依然保留其在硬盘中的数据，方便日后恢复<br><code>t</code>  让文件系统支持尾部合并（tail-merging）<br><code>x</code>  可以直接访问压缩文件中的内容</p>
+<blockquote>
+<p>把某个隐藏功能<strong>添加</strong>到文件上，命令后面追加“<strong><code>+</code></strong>参数”，</p>
+<p>把某个隐藏功能<strong>移出</strong>文件，追加“<strong><code>-</code></strong>参数”</p>
+</blockquote>
+</li>
+<li><h4 id="lsattr-显示文件的隐藏权限"><a href="#lsattr-显示文件的隐藏权限" class="headerlink" title="lsattr  显示文件的隐藏权限"></a>lsattr  显示文件的隐藏权限</h4><ul>
+<li><p>:zap: <strong>删除目标文件</strong></p>
+</li>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># ls</span><br><span class="line"># lsattr initial.cfg  显示隐藏权限</span><br><span class="line"># chattr -a initial.cfg   -a就是去除无法删除权限</span><br><span class="line"># rm initial.cfg</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="5-5-文件访问控制列表"><a href="#5-5-文件访问控制列表" class="headerlink" title="5.5 文件访问控制列表"></a>5.5 文件访问控制列表</h3><ul>
+<li><h4 id="setfacl-用于管理文件的ACL规则"><a href="#setfacl-用于管理文件的ACL规则" class="headerlink" title="setfacl           用于管理文件的ACL规则"></a><strong>setfacl</strong>           用于管理文件的ACL规则</h4></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxprobe ~]<span class="comment"># setfacl -Rm u:linuxprobe:rwx /root   </span></span><br><span class="line">[root@linuxprobe ~]<span class="comment"># su - linuxprobe</span></span><br><span class="line">Last login: Sat Mar 21 15:45:03 CST 2017 on pts/1</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>针对<strong>目录文件</strong>需要使用<code>-R</code>递归参数；</p>
+<p>针对<strong>普通文件</strong>则使用<code>-m</code>参数；</p>
+<p>如果<strong>想要删除</strong>某个文件的ACL，则可以使用<code>-b</code>参数。</p>
+<p>su - linuxprobe :  切换用户</p>
+</blockquote>
+<p>:zap: <strong>怎么去查看文件上有那些ACL呢?</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxprobe ~]<span class="comment"># ls -ld /root</span></span><br><span class="line">dr-xrwx---+ 14 root root 4096 May 4 2017 /root</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>常用的ls命令是看不到ACL表信息的，但是却可以看到文件的权限最后一个点（<strong><code>.</code></strong>）变成了加号（<strong><code>+</code></strong>）,这就意味着该文件已经设置了ACL了</p>
+</blockquote>
+<ul>
+<li><h4 id="getfacl命令-用于显示文件上设置的ACL信息"><a href="#getfacl命令-用于显示文件上设置的ACL信息" class="headerlink" title="getfacl命令       用于显示文件上设置的ACL信息"></a><strong>getfacl命令</strong>       用于显示文件上设置的ACL信息</h4><ul>
+<li>要<strong>设置ACL</strong>，用的是<code>setfac</code>l命令；</li>
+<li>想<strong>查看ACL</strong>，用的是<code>getfacl</code>命令。</li>
+</ul>
+</li>
+</ul>
+<h3 id="5-6-su命令与sudo服务"><a href="#5-6-su命令与sudo服务" class="headerlink" title="5.6 su命令与sudo服务"></a>5.6 su命令与sudo服务</h3><ul>
+<li><code>su</code>命令可以解决<strong>切换用户身份</strong>的需求    <strong><code># su - mrxxd</code></strong>    <strong><code>-</code></strong>  添加减号完全切换到新的用户。<code># exit</code>  注销</li>
+<li><code>sudo</code>命令用于给普通用户<strong>提供额外的权限</strong>来完成原本root管理员才能完成的任务。</li>
+</ul>
+<blockquote>
+<p><strong>限制用户执行指定的命令</strong>：</p>
+<p><strong>记录用户执行的每一条命令</strong>；</p>
+<p>配置文件（/etc/sudoers）<strong>提供集中的用户管理、权限与主机</strong>等参数；</p>
+<p><strong>验证密码的后</strong>5分钟内（默认值）无须再让<strong>用户再次验证密码</strong>。</p>
+</blockquote>
+<p>​                                                               <strong>sudo   服务中的可用参数以及作用</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">参数</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">-h</td>
+<td>列出<strong>帮助信息</strong></td>
+</tr>
+<tr>
+<td style="text-align:right">-l</td>
+<td>列出<strong>当前用户可执行</strong>的命令</td>
+</tr>
+<tr>
+<td style="text-align:right">-u 用户名或UID值</td>
+<td>以指定的用户身份执行命令</td>
+</tr>
+<tr>
+<td style="text-align:right">-k</td>
+<td>清空密码的有效时间，下次执行sudo时需要再次进行密码验证</td>
+</tr>
+<tr>
+<td style="text-align:right">-b</td>
+<td>在<strong>后台执行指定的命令</strong></td>
+</tr>
+<tr>
+<td style="text-align:right">-p</td>
+<td>更改询问密码的提示语</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><h4 id="visudo-命令"><a href="#visudo-命令" class="headerlink" title="visudo 命令"></a>visudo 命令</h4><p>如果担心直接修改配置文件会出现问题，则可以使用sudo命令提供的visudo命令来配置用户权限。这条命令在配置用户权限时将禁止多个用户同时修改sudoers配置文件，还可以对配置文件内的参数进行语法检查，并在发现参数错误时进行报错。</p>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxprobe ~]<span class="comment"># visudo</span></span><br><span class="line"> 96 <span class="comment">##</span></span><br><span class="line"> 97 <span class="comment">## Allow root to run any commands anywhere</span></span><br><span class="line"> 98 root ALL=(ALL) ALL</span><br><span class="line"> 99 linuxprobe ALL=(ALL) ALL      <span class="comment"># 第一个ALL 是全部  第二个ALL是获取更高权限 第三个ALL是运行执行什么命令</span></span><br></pre></td></tr></table></figure>
+<p>​            如果需要让某个用户<strong>只能使用root管理员的身份</strong>执行指定的命令，<u>切记一定要给出该命令的<strong>绝对路径</strong></u>，否则系统会识别不出来。我们可以先使用<strong>whereis命令</strong>找出命令所对应的保存路径，然后把配置文件<strong>第99行</strong>的用户权限参数修改成对应的路径即可：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">whereis cat</span><br><span class="line">cat: /usr/bin/cat /usr/share/man/man1/cat.1.gz /usr/share/man/man1p/cat.1p.gz</span><br><span class="line">[root@linuxprobe ~]<span class="comment"># visudo</span></span><br><span class="line"> 96 <span class="comment">##</span></span><br><span class="line"> 97 <span class="comment">## Allow root to run any commands anywhere</span></span><br><span class="line"> 98 root ALL=(ALL) ALL</span><br><span class="line"> 99 linuxprobe ALL=(ALL) /usr/bin/cat</span><br></pre></td></tr></table></figure>
+<p> :zap: 可以添加NOPASSWD参数，使得用户执行sudo命令时不再需要密码验证：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">[linuxprobe@linuxprobe ~]$ <span class="built_in">exit</span></span><br><span class="line"><span class="built_in">logout</span></span><br><span class="line">[root@linuxprobe ~]<span class="comment"># whereis poweroff</span></span><br><span class="line">poweroff: /usr/sbin/poweroff /usr/share/man/man8/poweroff.8.gz</span><br><span class="line">[root@linuxprobe ~]<span class="comment"># visudo</span></span><br><span class="line"> 96 <span class="comment">##</span></span><br><span class="line"> 97 <span class="comment">## Allow root to run any commands anywhere</span></span><br><span class="line"> 98 root ALL=(ALL) ALL</span><br><span class="line"> 99 linuxprobe ALL=NOPASSWD: /usr/sbin/poweroff</span><br></pre></td></tr></table></figure>
+<h2 id="第六章-存储结构与磁盘划分"><a href="#第六章-存储结构与磁盘划分" class="headerlink" title="第六章 存储结构与磁盘划分"></a><strong>第六章 存储结构与磁盘划分</strong></h2><h3 id="6-1-一切从“-”开始"><a href="#6-1-一切从“-”开始" class="headerlink" title="6.1 一切从“/”开始"></a>6.1 一切从“/”开始</h3><p><img src="/2020/03/11/Linux学习笔记-2-9/Linux系统中的文件存储结构.png" alt></p>
+<p>​                                                                       <strong>Linux系统中常见的目录名称以及相应内容</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">目录名称</th>
+<th style="text-align:left">应放置文件的内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">/boot</td>
+<td style="text-align:left">开机所需文件—内核、开机菜单以及所需配置文件等</td>
+</tr>
+<tr>
+<td style="text-align:right">/dev</td>
+<td style="text-align:left">以文件形式存放任何设备与接口</td>
+</tr>
+<tr>
+<td style="text-align:right">/etc</td>
+<td style="text-align:left">配置文件</td>
+</tr>
+<tr>
+<td style="text-align:right">/home</td>
+<td style="text-align:left">用户主目录</td>
+</tr>
+<tr>
+<td style="text-align:right">/bin</td>
+<td style="text-align:left">存放单用户模式下还可以操作的<a href="https://www.linuxcool.com/" target="_blank" rel="noopener">命令</a></td>
+</tr>
+<tr>
+<td style="text-align:right">/lib</td>
+<td style="text-align:left">开机时用到的函数库，以及/bin与/sbin下面的命令要调用的函数</td>
+</tr>
+<tr>
+<td style="text-align:right">/sbin</td>
+<td style="text-align:left">开机过程中需要的命令</td>
+</tr>
+<tr>
+<td style="text-align:right">/media</td>
+<td style="text-align:left">用于挂载设备文件的目录</td>
+</tr>
+<tr>
+<td style="text-align:right">/opt</td>
+<td style="text-align:left">放置第三方的软件</td>
+</tr>
+<tr>
+<td style="text-align:right">/root</td>
+<td style="text-align:left">系统管理员的家目录</td>
+</tr>
+<tr>
+<td style="text-align:right">/srv</td>
+<td style="text-align:left">一些网络服务的数据文件目录</td>
+</tr>
+<tr>
+<td style="text-align:right">/tmp</td>
+<td style="text-align:left">任何人均可使用的“共享”临时目录</td>
+</tr>
+<tr>
+<td style="text-align:right">/proc</td>
+<td style="text-align:left">虚拟文件系统，例如系统内核、进程、外部设备及网络状态等</td>
+</tr>
+<tr>
+<td style="text-align:right">/usr/local</td>
+<td style="text-align:left">用户自行安装的软件</td>
+</tr>
+<tr>
+<td style="text-align:right">/usr/sbin</td>
+<td style="text-align:left">Linux系统开机时不会使用到的软件/命令/<a href="https://www.linuxcool.com/" target="_blank" rel="noopener">脚本</a></td>
+</tr>
+<tr>
+<td style="text-align:right">/usr/share</td>
+<td style="text-align:left">帮助与说明文件，也可放置共享文件</td>
+</tr>
+<tr>
+<td style="text-align:right">/var</td>
+<td style="text-align:left">主要存放经常变化的文件，如日志</td>
+</tr>
+<tr>
+<td style="text-align:right">/lost+found</td>
+<td style="text-align:left">当文件系统发生错误时，将一些丢失的文件片段存放在这里</td>
+</tr>
+</tbody>
+</table>
+<p><strong>绝对路径</strong>指的是从根目录（/）开始写起的文件或目录名称，</p>
+<p><strong>相对路径</strong>则指的是相对于当前路径的写法</p>
+<h3 id="6-2-物理设备的命名规则"><a href="#6-2-物理设备的命名规则" class="headerlink" title="6.2 物理设备的命名规则"></a>6.2 物理设备的命名规则</h3><p>​                                                                            <strong>常见的硬件设备及其文件名称</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">硬件设备</th>
+<th>文件名称</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">IDE设备</td>
+<td>/dev/hd[a-d]</td>
+</tr>
+<tr>
+<td style="text-align:right">:star:SCSI/SATA/U盘 硬盘</td>
+<td><strong>/dev/sd[a-p]</strong>     <strong>sda sdb sdc</strong></td>
+</tr>
+<tr>
+<td style="text-align:right">软驱</td>
+<td>/dev/fd[0-1]</td>
+</tr>
+<tr>
+<td style="text-align:right">打印机</td>
+<td>/dev/lp[0-15]</td>
+</tr>
+<tr>
+<td style="text-align:right">:star:光驱</td>
+<td><strong>/dev/cdrom</strong></td>
+</tr>
+<tr>
+<td style="text-align:right">鼠标</td>
+<td>/dev/mouse</td>
+</tr>
+<tr>
+<td style="text-align:right">磁带机</td>
+<td>/dev/st0或/dev/ht0</td>
+</tr>
+</tbody>
+</table>
+<p> :grey_question: <strong>坑一</strong>：第一个知识点是设备名称的理解错误。很多培训讲师和Linux技术图书中会提到，比如/dev/sda表示主板上第一个插槽上的存储设备，学员或读者在实践操作的时候会发现果然如此，因此也就对这条理论知识更加深信不疑</p>
+<p>:zap: <strong>正解</strong>：/dev目录中sda设备之所以是a，并不是由插槽决定的，而是由系统内核的<strong>识别顺序</strong>来决定的.</p>
+<p>:grey_question: <strong>坑二</strong>：第二个知识点是对分区名称的理解错误。很多Linux培训讲师会告诉学员，分区的编号代表分区的个数</p>
+<p>:zap: <strong>正解</strong>：sda3只能表示是<strong>编号为3的分区</strong>，而不能判断sda设备上已经存在了3个分区.</p>
+<blockquote>
+<p><strong><code>主分区</code>或扩展分区的编号从1开始，到4结束；</strong></p>
+<p><strong><code>逻辑分区</code>从编号<code>5</code>开始。</strong></p>
+</blockquote>
+<p><img src="/2020/03/11/Linux学习笔记-2-9/设备文件名称.png" style="zoom:67%;"></p>
+<ul>
+<li><strong>首先，/dev/目录中保存的应当是硬件设备文件；</strong>    </li>
+<li><strong>其次，<code>sd</code>表示是存储设备；然后，a表示系统中同类接口中第一个被识别到的设备</strong></li>
+<li><strong>最后，<code>5</code>表示这个设备是一个逻辑分区。“区的设备文件”</strong></li>
+<li><strong><code>/dev/sda5</code>表示的就是“这是系统中第一块被识别到的硬件设备中分区编号为5的逻辑分</strong></li>
+</ul>
+<p><img src="/2020/03/11/Linux学习笔记-2-9/第一个扇区中的数据信息.png" style="zoom:50%;"></p>
+<p><img src="/2020/03/11/Linux学习笔记-2-9/硬盘分区的规划.png" style="zoom:50%;"></p>
+<blockquote>
+<p>所谓扩展分区，严格地讲它不是一个实际意义的分区，它仅仅是一个指向下一个分区的指针，这种指针结构将形成一个单向链表。</p>
+</blockquote>
+<h3 id="6-3-文件系统与数据资料"><a href="#6-3-文件系统与数据资料" class="headerlink" title="6.3 文件系统与数据资料"></a>6.3 文件系统与数据资料</h3><ul>
+<li><p><strong>Ext3</strong>：是一款日志文件系统，能够在系统异常宕机时避免文件系统资料丢失，并能自动修复数据的不一致与错误。</p>
+</li>
+<li><p><strong>Ext4</strong>：Ext3的改进版本，作为RHEL 6系统中的默认文件管理系统，它支持的存储容量高达1EB（1EB=1,073,741,824GB），且能够有无限多的子目录。另外，Ext4文件系统能够批量分配block块，从而极大地提高了读写效率。</p>
+</li>
+<li><p><strong>XFS</strong>：是一种高性能的日志文件系统，而且是RHEL 7中默认的文件管理系统，它的优势在发生意外宕机后尤其明显，即可以快速地恢复可能被破坏的文件，而且强大的日志功能只用花费极低的计算和存储性能。并且它最大可支持的存储容量为18EB，这几乎满足了所有需求。</p>
+</li>
+</ul>
+<p><strong><a href>剪裁——-&gt;分区</a></strong></p>
+<p><strong><a href>打格——-&gt;格式化</a></strong></p>
+<p><strong><a href>挂载——-&gt;使用  关联</a></strong></p>
+<p><strong>独立的inode表格</strong></p>
+<ul>
+<li><strong>该文件的访问权限</strong>（read、write、execute）；</li>
+<li><strong>该文件的所有者与所属组</strong>（owner、group）；</li>
+<li><strong>该文件的大小</strong>（size）；</li>
+<li><strong>该文件的创建或内容修改时间</strong>（ctime）；</li>
+<li><strong>该文件的最后一次访问时间</strong>（atime）；</li>
+<li><strong>该文件的修改时间</strong>（mtime）；</li>
+<li><strong>文件的特殊权限</strong>（SUID、SGID、SBIT）；</li>
+<li><strong>该文件的真实数据地址</strong>（point）。</li>
+</ul>
+<p>​                                                               </p>
+<p>​                                                                   <strong>VFS的架构示意图</strong></p>
+<p><img src="/2020/03/11/Linux学习笔记-2-9/VFS的架构示意图.png" style="zoom:80%;"></p>
+<h3 id="6-4-挂载硬件设备"><a href="#6-4-挂载硬件设备" class="headerlink" title="6.4 挂载硬件设备"></a>6.4 挂载硬件设备</h3><ul>
+<li><h4 id="mount命令用于挂载文件系统-mount-dev-sdb2-backup"><a href="#mount命令用于挂载文件系统-mount-dev-sdb2-backup" class="headerlink" title="mount命令用于挂载文件系统        # mount /dev/sdb2 /backup"></a><strong><code>mount</code></strong>命令用于挂载文件系统        <strong><code># mount /dev/sdb2 /backup</code></strong></h4><ul>
+<li><code>-a</code> 挂载所有在/etc/fstab中定义的文件系统</li>
+<li><code>-t</code>  指定文件系统的类型</li>
+</ul>
+</li>
+<li><h4 id="umount命令用于撤销已经挂载的设备文件-umount-dev-sdb2"><a href="#umount命令用于撤销已经挂载的设备文件-umount-dev-sdb2" class="headerlink" title="umount命令用于撤销已经挂载的设备文件     # umount /dev/sdb2"></a><strong><code>umount</code></strong>命令用于撤销已经挂载的设备文件     <strong><code># umount /dev/sdb2</code></strong></h4></li>
+</ul>
+<p>如果想将文件系统为ext4的硬件设备/dev/sdb2在开机后<strong>自动挂载</strong>到/backup目录上，并保持默认权限且无需开机<strong>自检</strong>，就需要在/etc/fstab文件中写入下面的信息:</p>
+<ul>
+<li><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxprobe ~]<span class="comment"># vim /etc/fstab</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># /etc/fstab</span></span><br><span class="line"><span class="comment"># Accessible filesystems, by reference, are maintained under '/dev/disk'</span></span><br><span class="line"><span class="comment"># See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line">/dev/mapper/rhel-root / xfs defaults 1 1</span><br><span class="line">UUID=812b1f7c-8b5b-43da-8c06-b9999e0fe48b /boot xfs defaults 1 2</span><br><span class="line">/dev/mapper/rhel-swap swap swap defaults 0 0</span><br><span class="line">/dev/cdrom /media/cdrom iso9660 defaults 0 0 </span><br><span class="line">/dev/sdb2 /backup ext4 defaults 0 0   &lt;-----------------</span><br><span class="line">   备份     挂载    格式  权限   备份 自检</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>​                            </p>
+<p> <strong>用于挂载信息的指定填写格式中，各字段所表示的意义</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段</th>
+<th style="text-align:left">意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>设备文件</strong></td>
+<td style="text-align:left">一般为设备的路径+设备名称，也可以写唯一识别码（UUID，Universally Unique Identifier）</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>挂载目录</strong></td>
+<td style="text-align:left">指定要挂载到的目录，需在挂载前创建好</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>格式类型</strong></td>
+<td style="text-align:left">指定文件系统的格式，比如Ext3、Ext4、XFS、SWAP、iso9660（此为光盘设备）等</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>权限选项</strong></td>
+<td style="text-align:left">若设置为defaults，则默认权限为：rw, suid, dev, exec, auto, nouser, async</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>是否备份</strong></td>
+<td style="text-align:left">若为1则开机后使用dump进行磁盘备份，为0则不备份</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>是否自检</strong></td>
+<td style="text-align:left">若为1则开机后自动进行磁盘自检，为0则不自检</td>
+</tr>
+</tbody>
+</table>
+<h3 id="6-5-添加硬盘设备"><a href="#6-5-添加硬盘设备" class="headerlink" title="6.5 添加硬盘设备"></a>6.5 添加硬盘设备</h3><p><strong>添加硬盘设备的操作思路：</strong></p>
+<ol>
+<li><strong>首先需要在虚拟机中模拟添加入一块新的硬盘存储设备，</strong></li>
+<li><strong>然后再进行分区、格式化、挂载等操作，</strong></li>
+<li><strong>最后通过检查系统的挂载状态并真实地使用硬盘来验证硬盘设备是否成功添加。</strong></li>
+</ol>
+<hr>
+<h4 id="分区"><a href="#分区" class="headerlink" title="分区"></a><strong>分区</strong></h4><hr>
+<ul>
+<li><h4 id="fdisk命令-管理硬盘设备"><a href="#fdisk命令-管理硬盘设备" class="headerlink" title="fdisk命令          管理硬盘设备"></a><strong><code>fdisk</code>命令</strong>          管理硬盘设备</h4><ul>
+<li><code>m</code> 查看全部可用的参数        </li>
+<li><code>n</code><strong>添加新的分区</strong></li>
+<li><code>d</code> 删除某个分区信息</li>
+<li><code>l</code>列出所有可用的<strong>分区类型</strong></li>
+<li><code>t</code> 改变某个分区的类型</li>
+<li><code>p</code><strong>查看分区表信息</strong></li>
+<li><code>w</code> <strong>保存并退出</strong></li>
+<li><code>q</code><strong>不保存直接退出</strong></li>
+</ul>
+</li>
+</ul>
+<p>​                 </p>
+<h5 id="第1步："><a href="#第1步：" class="headerlink" title="第1步："></a><strong>第1步</strong>：</h5><p>我们首先使用fdisk命令来尝试管理/dev/sdb硬盘设备。在看到提示信息后输入参数<strong><code>p</code></strong>来查看硬盘设备内已有的分区信息，其中包括了硬盘的容量大小、扇区个数等信息：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxprobe ~]<span class="comment"># fdisk /dev/sdb     &lt;----------------管理/dev/sdb硬盘设备</span></span><br><span class="line">·············</span><br><span class="line">Command (m <span class="keyword">for</span> <span class="built_in">help</span>): p      &lt;-----------------查看硬盘设备内已有的分区信息</span><br><span class="line">·············</span><br></pre></td></tr></table></figure>
+<h5 id="第2步："><a href="#第2步：" class="headerlink" title="第2步："></a><strong>第2步</strong>：</h5><p>输入参数<strong><code>n</code></strong>尝试添加新的分区。系统会要求您是选择继续输入参数<strong><code>p</code></strong>来创建主分区，还是输入参数<strong><code>e</code></strong>来<strong>创建扩展分区</strong>。这里输入参数p来创建一个主分区：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Command (m <span class="keyword">for</span> <span class="built_in">help</span>): n         &lt;-----------------添加新的分区</span><br><span class="line">Partition <span class="built_in">type</span>:</span><br><span class="line">p primary (0 primary, 0 extended, 4 free)</span><br><span class="line">e extended</span><br><span class="line">Select (default p): p           &lt;-----------------创建主分区   e来创建扩展分区</span><br></pre></td></tr></table></figure>
+<h5 id="第3步："><a href="#第3步：" class="headerlink" title="第3步："></a><strong>第3步</strong>：</h5><p>在确认创建一个主分区后，系统要求您先输入主分区的编号。这里输入<strong>默认的1</strong>就可以了。接下来系统会提示定义起始的扇区位置，我们敲击回车键保留默认设置即可，系统会自动计算出最靠前的空闲扇区的位置。最后，系统会要求定义分区的结束扇区位置，需要输入+2G即可创建出一个容量为2GB的硬盘分区。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Partition number (1-4, default 1): 1           &lt;-----------------输入主分区的编号</span><br><span class="line">First sector (2048-41943039, default 2048):此处敲击回车       &lt;-----------------提示定义起始的扇区位置</span><br><span class="line">Using default value 2048</span><br><span class="line">Last sector, +sectors or +size&#123;K,M,G&#125; (2048-41943039, default 41943039): +2G    &lt;-----------------</span><br><span class="line">Partition 1 of <span class="built_in">type</span> Linux and of size 2 GiB is <span class="built_in">set</span></span><br></pre></td></tr></table></figure>
+<h5 id="第4步："><a href="#第4步：" class="headerlink" title="第4步："></a><strong>第4步</strong>：</h5><p>再次使用参数<strong><code>p</code></strong>来查看硬盘设备中的分区信息。这时候千万不要直接关闭窗口，而应该敲击参数<strong><code>w</code></strong>后回车，这样分区信息才是真正的写入成功啦。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">Command (m <span class="keyword">for</span> <span class="built_in">help</span>): p      &lt;-----------------查看硬盘设备中的分区信息</span><br><span class="line">Disk /dev/sdb: 21.5 GB, 21474836480 bytes, 41943040 sectors</span><br><span class="line">Units = sectors of 1 * 512 = 512 bytes</span><br><span class="line">Sector size (logical/physical): 512 bytes / 512 bytes</span><br><span class="line">I/O size (minimum/optimal): 512 bytes / 512 bytes</span><br><span class="line">Disk label <span class="built_in">type</span>: dos</span><br><span class="line">Disk identifier: 0x47d24a34</span><br><span class="line">Device Boot Start End Blocks Id System</span><br><span class="line">/dev/sdb1 2048 4196351 2097152 83 Linux</span><br><span class="line">Command (m <span class="keyword">for</span> <span class="built_in">help</span>): w      &lt;----------------- 写入</span><br><span class="line">The partition table has been altered!</span><br><span class="line">Calling ioctl() to re-read partition table.</span><br><span class="line">Syncing disks.</span><br></pre></td></tr></table></figure>
+<h5 id="第5步："><a href="#第5步：" class="headerlink" title="第5步："></a><strong>第5步：</strong></h5><p>在上述步骤执行完毕之后，Linux系统会自动把这个硬盘主分区抽象成/dev/sdb1设备文件。我们可以使用<strong><code>file</code></strong>命令查看该文件的属性，但是刘遄老师在讲课和工作中发现，有些时候系统并没有自动把分区信息同步给Linux内核，而且这种情况似乎还比较常见（但不能算作是严重的bug）。我们可以输入<strong><code>partprobe</code></strong>命令手动将分区信息同步到内核，推荐<strong>连续两次</strong>执行该命令，效果会更好。如果使用这个命令都无法解决问题，那么就重启计算机吧，这个杀手锏百试百灵，一定会有用的。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxprobe ]<span class="comment"># file /dev/sdb1        &lt;-----------------   查看该文件的属性</span></span><br><span class="line">/dev/sdb1: cannot open (No such file or directory)</span><br><span class="line">[root@linuxprobe ]<span class="comment"># partprobe             &lt;-----------------   将分区信息同步到内核</span></span><br><span class="line">[root@linuxprobe ]<span class="comment"># partprobe</span></span><br><span class="line">[root@linuxprobe ]<span class="comment"># file /dev/sdb1</span></span><br><span class="line">/dev/sdb1: block special</span><br></pre></td></tr></table></figure>
+<hr>
+<h4 id="格式化"><a href="#格式化" class="headerlink" title="格式化"></a><strong>格式化</strong></h4><hr>
+<ul>
+<li><h4 id="mkfs-用于格式化操作的命令"><a href="#mkfs-用于格式化操作的命令" class="headerlink" title="mkfs 用于格式化操作的命令"></a><strong><code>mkfs</code></strong> 用于格式化操作的命令</h4></li>
+</ul>
+<p>这条命令很有意思，因为在Shell终端中输入mkfs名后再敲击两下用于补齐命令的Tab键，会有如下所示的效果：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxprobe ~]<span class="comment"># mkfs</span></span><br><span class="line">mkfs mkfs.cramfs mkfs.ext3 mkfs.fat mkfs.msdos mkfs.xfs</span><br><span class="line">mkfs.btrfs mkfs.ext2 mkfs.ext4 mkfs.minix mkfs.vfat</span><br></pre></td></tr></table></figure>
+<p>要格式分区为XFS的文件系统，则命令应为<strong><code>mkfs.xfs /dev/sdb1</code></strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxprobe ~]<span class="comment"># mkfs.xfs /dev/sdb1   &lt;-----------------格式化分区</span></span><br><span class="line">meta-data=/dev/sdb1 isize=256 agcount=4, agsize=131072 blks</span><br><span class="line"> = sectsz=512 attr=2, projid32bit=1</span><br><span class="line"> = crc=0</span><br><span class="line">data = bsize=4096 blocks=524288, imaxpct=25</span><br><span class="line"> = sunit=0 swidth=0 blks</span><br><span class="line">naming =version 2 bsize=4096 ascii-ci=0 ftype=0</span><br><span class="line"><span class="built_in">log</span> =internal <span class="built_in">log</span> bsize=4096 blocks=2560, version=2</span><br><span class="line"> = sectsz=512 sunit=0 blks, lazy-count=1</span><br><span class="line">realtime =none extsz=4096 blocks=0, rtextents=0</span><br></pre></td></tr></table></figure>
+<hr>
+<h4 id="挂载"><a href="#挂载" class="headerlink" title="挂载"></a><strong>挂载</strong></h4><hr>
+<ul>
+<li><h4 id="mount-将存储设备与挂载点进行关联"><a href="#mount-将存储设备与挂载点进行关联" class="headerlink" title="mount      将存储设备与挂载点进行关联"></a><code>mount</code>      将存储设备与挂载点进行关联</h4></li>
+</ul>
+<p>终于完成了存储设备的<strong>分区和格式化</strong>操作，接下来就是要来挂载并使用存储设备了。与之相关的步骤也非常简单：首先是创建一个用于挂载设备的挂载点目录；然后使用<strong><code>mount</code></strong>命令将存储设备与挂载点进行关联；最后使用<strong><code>df -h</code></strong>命令来查看挂载状态和硬盘使用量信息。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxprobe ~]<span class="comment"># mkdir /newFS             # 创建一个用于挂载设备的挂载点目录</span></span><br><span class="line">[root@linuxprobe ~]<span class="comment"># mount /dev/sdb1 /newFS/  # 将存储设备与挂载点进行关联</span></span><br><span class="line">[root@linuxprobe ~]<span class="comment"># df -h                    # 查看挂载状态和硬盘使用量信息</span></span><br><span class="line">Filesystem Size Used Avail Use% Mounted on</span><br><span class="line">/dev/mapper/rhel-root 18G 3.5G 15G 20% /</span><br><span class="line">devtmpfs 905M 0 905M 0% /dev</span><br><span class="line">tmpfs 914M 140K 914M 1% /dev/shm</span><br><span class="line">tmpfs 914M 8.8M 905M 1% /run</span><br><span class="line">tmpfs 914M 0 914M 0% /sys/fs/cgroup</span><br><span class="line">/dev/sr0 3.5G 3.5G 0 100% /media/cdrom</span><br><span class="line">/dev/sda1 497M 119M 379M 24% /boot</span><br><span class="line">/dev/sdb1 2.0G 33M 2.0G 2% /newFS</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li><h4 id="du命令-查看文件数据占用量-du-sh-newFS"><a href="#du命令-查看文件数据占用量-du-sh-newFS" class="headerlink" title="du命令                  查看文件数据占用量      # du -sh /newFS/"></a><code>du</code>命令                  查看文件数据占用量      <code># du -sh /newFS/</code></h4></li>
+</ul>
+<p>如果想让这个设备文件的<strong>挂载永久有效</strong>，则需要把挂载的<strong>信息写入到配置文件</strong>中：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxprobe ~]<span class="comment"># vim /etc/fstab</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># /etc/fstab</span></span><br><span class="line"><span class="comment"># Created by anaconda on Wed May 4 19:26:23 2017</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># Accessible filesystems, by reference, are maintained under '/dev/disk'</span></span><br><span class="line"><span class="comment"># See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line">/dev/mapper/rhel-root / xfs defaults 1 1</span><br><span class="line">UUID=812b1f7c-8b5b-43da-8c06-b9999e0fe48b /boot xfs defaults 1 2</span><br><span class="line">/dev/mapper/rhel-swap swap swap defaults 0 0</span><br><span class="line">/dev/cdrom /media/cdrom iso9660 defaults 0 0 </span><br><span class="line">/dev/sdb1 /newFS xfs defaults 0 0                &lt;-----------------</span><br></pre></td></tr></table></figure>
+<h3 id="6-6-添加交换分区"><a href="#6-6-添加交换分区" class="headerlink" title="6.6 添加交换分区"></a>6.6 添加交换分区</h3><p><strong>SWAP</strong>（交换）分区是一种通过在硬盘中预先划分<strong>一定的空间</strong>，然后将把内存中暂时不常用的数据临时存放到硬盘中，以便腾出物理内存空间让更活跃的程序服务来使用的技术，其设计目的是为了解决真实物理内存不足的问题。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxprobe ~]<span class="comment"># fdisk /dev/sdb   &lt;-----------------</span></span><br><span class="line">······</span><br><span class="line">Command (m <span class="keyword">for</span> <span class="built_in">help</span>): n               &lt;-----------------</span><br><span class="line">Partition <span class="built_in">type</span>:</span><br><span class="line">p primary (1 primary, 0 extended, 3 free)</span><br><span class="line">e extendedSelect (default p): p       &lt;-----------------</span><br><span class="line">Partition number (2-4, default 2): </span><br><span class="line">First sector (4196352-41943039, default 4196352): 此处敲击回车      &lt;-----------------</span><br><span class="line">······</span><br><span class="line">Last sector, +sectors or +size&#123;K,M,G&#125; (4196352-41943039, default 41943039): +5G    &lt;-----------------</span><br><span class="line">·······</span><br><span class="line">Command (m <span class="keyword">for</span> <span class="built_in">help</span>): p    &lt;-----------------</span><br><span class="line">·······</span><br><span class="line">Command (m <span class="keyword">for</span> <span class="built_in">help</span>): w    &lt;-----------------</span><br><span class="line">·······</span><br></pre></td></tr></table></figure>
+<p>使用SWAP分区专用的格式化命令<strong><code>mkswap</code></strong>，对新建的主分区进行格式化操作</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxprobe ~]<span class="comment"># mkswap /dev/sdb2       &lt;-----------------</span></span><br><span class="line">Setting up swapspace version 1, size = 5242876 KiB</span><br><span class="line">no label, UUID=2972f9cb-17f0-4113-84c6-c64b97c40c75</span><br></pre></td></tr></table></figure>
+<p>使用<strong><code>swapon</code>命令</strong>把准备好的SWAP分区设备正式挂载到系统中</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxprobe ~]<span class="comment"># swapon /dev/sdb2       &lt;-----------------</span></span><br></pre></td></tr></table></figure>
+<p>为了能够让新的交换分区设备在重启后依然生效，需要按照下面的格式将相关信息写入到配置文件中，并记得保存：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxprobe ~]<span class="comment"># vim /etc/fstab        &lt;-----------------</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># /etc/fstab</span></span><br><span class="line"><span class="comment"># Created by anaconda on Wed May 4 19:26:23 2017</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># Accessible filesystems, by reference, are maintained under '/dev/disk'</span></span><br><span class="line"><span class="comment"># See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line">/dev/mapper/rhel-root / xfs defaults 1 1</span><br><span class="line">UUID=812b1f7c-8b5b-43da-8c06-b9999e0fe48b /boot xfs defaults 1 2</span><br><span class="line">/dev/mapper/rhel-swap swap swap defaults 0 0</span><br><span class="line">/dev/cdrom /media/cdrom iso9660 defaults 0 0 </span><br><span class="line">/dev/sdb1 /newFS xfs defaults 0 0 </span><br><span class="line">/dev/sdb2 swap swap defaults 0 0</span><br></pre></td></tr></table></figure>
+<h3 id="6-7-磁盘容量配额"><a href="#6-7-磁盘容量配额" class="headerlink" title="6.7 磁盘容量配额"></a>6.7 磁盘容量配额</h3><p><strong>点击查看(ctrl +) </strong> ：<a href="https://www.linuxprobe.com/inode-incloud-context.html" target="_blank" rel="noopener">linux 中<code>inode</code>包含什么内容</a></p>
+<blockquote>
+<p><strong>软限制(bsoft=3m isoft=3)</strong>：当达到软限制时会提示用户，但仍允许用户在限定的额度内继续使用。</p>
+<p><strong>硬限制(bhard=6m ihard=6)</strong>：当达到硬限制时会提示用户，且强制终止用户的操作。</p>
+</blockquote>
+<p>接下来创建一个用于检查quota磁盘容量配额效果的用户tom，并针对/boot目录增加其他人的写权限，保证用户能够正常写入数据：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxprobe ~]<span class="comment"># useradd tom</span></span><br><span class="line">[root@linuxprobe ~]<span class="comment"># chmod -Rf o+w /boot</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><h4 id="xfs-quota命令-针对XFS文件系统来管理quota磁盘容量配额服务而设计的命令"><a href="#xfs-quota命令-针对XFS文件系统来管理quota磁盘容量配额服务而设计的命令" class="headerlink" title="xfs_quota命令       针对XFS文件系统来管理quota磁盘容量配额服务而设计的命令"></a><strong><code>xfs_quota</code>命令</strong>       针对XFS文件系统来管理quota磁盘容量配额服务而设计的命令</h4><ul>
+<li><h5 id="c参数用于以参数的形式设置要执行的命令；"><a href="#c参数用于以参数的形式设置要执行的命令；" class="headerlink" title="-c参数用于以参数的形式设置要执行的命令；"></a><code>-c</code>参数用于以<strong>参数的形式</strong>设置要执行的命令；</h5></li>
+<li><h5 id="x参数是专家模式，让运维人员能够对quota服务进行更多复杂的配置。"><a href="#x参数是专家模式，让运维人员能够对quota服务进行更多复杂的配置。" class="headerlink" title="-x参数是专家模式，让运维人员能够对quota服务进行更多复杂的配置。"></a><code>-x</code>参数是专家模式，让运维人员能够对quota服务进行更多复杂的配置。</h5></li>
+</ul>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 具体的限额控制包括：硬盘使用量的软限制和硬限制分别为3MB和6MB；创建文件数量的软限制和硬限制分别为3个和6个。</span></span><br><span class="line">[root@linuxprobe ~]<span class="comment"># xfs_quota -x -c 'limit bsoft=3m bhard=6m isoft=3 ihard=6 tom' /boot</span></span><br><span class="line">[root@linuxprobe ~]<span class="comment"># xfs_quota -x -c report /boot</span></span><br><span class="line">User quota on /boot (/dev/sda1)   Blocks</span><br><span class="line">User ID Used Soft Hard Warn/Grace</span><br><span class="line">---------- --------------------------------------------------</span><br><span class="line">root 95084 0 0 00 [--------]</span><br><span class="line">tom 0 3072 6144 00 [--------]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><h4 id="edquota命令-编辑用户的quota配额限制"><a href="#edquota命令-编辑用户的quota配额限制" class="headerlink" title="edquota命令          编辑用户的quota配额限制"></a><strong><code>edquota</code>命令</strong>          编辑用户的quota配额限制</h4><ul>
+<li><h5 id="u参数表示要针对哪个用户进行设置；"><a href="#u参数表示要针对哪个用户进行设置；" class="headerlink" title="-u参数表示要针对哪个用户进行设置；"></a><code>-u</code>参数表示要针对<strong>哪个<code>用户</code>进行设置</strong>；</h5></li>
+<li><h5 id="g参数表示要针对哪个用户组进行设置"><a href="#g参数表示要针对哪个用户组进行设置" class="headerlink" title="-g参数表示要针对哪个用户组进行设置"></a><code>-g</code>参数表示要针对<strong>哪个用户<code>组</code>进行设置</strong></h5></li>
+</ul>
+</li>
+</ul>
+<p>把用户tom的硬盘使用量的硬限额从5MB提升到8MB：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxprobe ~]<span class="comment"># edquota -u tom</span></span><br><span class="line">Disk quotas <span class="keyword">for</span> user tom (uid 1001):</span><br><span class="line"> Filesystem blocks soft hard inodes soft hard</span><br><span class="line"> /dev/sda1 6144 3072 8192 1 3 6</span><br><span class="line">[root@linuxprobe ~]<span class="comment"># su - tom</span></span><br><span class="line">Last login: Mon Sep 7 16:43:12 CST 2017 on pts/0</span><br><span class="line">[tom@linuxprobe ~]$ dd <span class="keyword">if</span>=/dev/zero of=/boot/tom bs=8M count=1</span><br><span class="line">1+0 records <span class="keyword">in</span></span><br><span class="line">1+0 records out</span><br><span class="line">8388608 bytes (8.4 MB) copied, 0.0268044 s, 313 MB/s</span><br><span class="line">[tom@linuxprobe ~]$ dd <span class="keyword">if</span>=/dev/zero of=/boot/tom bs=10M count=1</span><br><span class="line">dd: error writing ‘/boot/tom’: Disk quota exceeded</span><br><span class="line">1+0 records <span class="keyword">in</span></span><br><span class="line">0+0 records out</span><br><span class="line">8388608 bytes (8.4 MB) copied, 0.167529 s, 50.1 MB/s</span><br></pre></td></tr></table></figure>
+<h3 id="6-8-软硬方式链接"><a href="#6-8-软硬方式链接" class="headerlink" title="6.8 软硬方式链接"></a>6.8 软硬方式链接</h3><blockquote>
+<p><strong>硬链接（hard link）：</strong>可以将它理解为一个“指向原始文件inode的指针”，系统不为它分配独立的inode和文件</p>
+<p><strong>软链接（soft link）：</strong>仅仅包含所链接文件的路径名，因此能链接目录文件，也可以跨越文件系统进行链接。</p>
+</blockquote>
+<ul>
+<li><h4 id="ln-命令-创建链接文件"><a href="#ln-命令-创建链接文件" class="headerlink" title="ln 命令      创建链接文件"></a><strong><code>ln</code> 命令 </strong>     创建链接文件</h4><ul>
+<li><code>-s</code> 创建“符号链接”（如果不带-s参数，则默认创建硬链接）</li>
+<li><code>-f</code> 强制创建文件或目录的链接</li>
+<li><code>-i</code> 覆盖前先询问</li>
+<li><code>-v</code> 显示创建链接的过程</li>
+</ul>
+</li>
+</ul>
+<h4 id="关于-inode"><a href="#关于-inode" class="headerlink" title="关于 inode"></a><strong>关于 inode</strong></h4><ul>
+<li><p><strong>inode</strong> 相关命令</p>
+<ul>
+<li>查看inode总数和已经使用的数量： <code>df -i</code></li>
+<li>查看每个inode节点的大小：<code>sudo dumpe2fs -h /dev/hda | grep &quot;Inode size&quot;</code></li>
+<li>查看每个文件对应的inode号码：<code>ls -i example.txt</code></li>
+<li>查看整个目录文件(文件名及inode号码)：<code>ls -i /etc</code></li>
+<li>查看文件详细信息：<code>ls -l /etc</code></li>
+</ul>
+</li>
+<li><p><strong>inode</strong> 的特殊作用</p>
+<ul>
+<li>有时，文件名包含特殊字符，无法正常删除。这时，直接删除inode节点，就能起到删除文件的作用。</li>
+<li>移动文件或重命名文件，只是改变文件名，不影响inode号码。</li>
+<li>打开一个文件以后，系统就以inode号码来识别这个文件，不再考虑文件名。因此，通常来说，系统无法从inode号码得知文件名</li>
+</ul>
+</li>
+</ul>
+<p><strong>实际问题</strong>：</p>
+<p>在一台配置较低的Linux服务器（内存、硬盘比较小）的/data分区内创建文件时，系统提示磁盘空间不足，用<strong>df -h</strong>命令查看了一下磁盘使用情况，发现/data分区只使用了66%，还有12G的剩余空间，按理说不会出现这种问题。 后来用df -i查看了一下/data分区的索引节点(inode)，<strong>发现已经用满(IUsed=100%)，导致系统无法创建新目录和文件。</strong></p>
+<p><strong>查找原因：</strong></p>
+<p>/data/cache目录中存在数量非常多的小字节缓存文件，占用的Block不多，但是占用了大量的inode。</p>
+<p><strong>解决方案：</strong></p>
+<p>1、删除/data/cache目录中的部分文件，释放出/data分区的一部分inode。<br>2、用软连接将空闲分区/opt中的newcache目录连接到/data/cache，使用/opt分区的inode来缓解/data分区inode不足的问题：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s /opt/newcache /data/cache</span><br></pre></td></tr></table></figure>
+<h2 id="第七章-使用RAID与LVM磁盘阵列技术"><a href="#第七章-使用RAID与LVM磁盘阵列技术" class="headerlink" title="第七章 使用RAID与LVM磁盘阵列技术"></a><strong>第七章 使用RAID与LVM磁盘阵列技术</strong></h2><h3 id="7-1-RAID磁盘冗余阵列"><a href="#7-1-RAID磁盘冗余阵列" class="headerlink" title="7.1 RAID磁盘冗余阵列"></a>7.1 RAID磁盘冗余阵列</h3><ul>
+<li><h4 id="RAID-0"><a href="#RAID-0" class="headerlink" title="RAID 0"></a><strong>RAID 0</strong></h4><ul>
+<li>有效地提升硬盘数据的吞吐速度</li>
+<li>不具备数据备份和错误修复能力</li>
+</ul>
+</li>
+</ul>
+<p><img src="/2020/03/11/Linux学习笔记-2-9/RAID 0技术示意图.png" alt></p>
+<ul>
+<li><h4 id="RAID1"><a href="#RAID1" class="headerlink" title="RAID1"></a><strong>RAID1</strong></h4><ul>
+<li>将数据进行镜像或备份，避免数据损毁</li>
+<li>使用率较低 33%左右</li>
+</ul>
+</li>
+</ul>
+<p><img src="/2020/03/11/Linux学习笔记-2-9/RAID 1技术示意图.png" alt></p>
+<ul>
+<li><h4 id="RAID-5"><a href="#RAID-5" class="headerlink" title="RAID 5"></a><strong>RAID 5</strong></h4><ul>
+<li>兼顾了硬盘设备的读写速度、数据安全性与存储成本问题</li>
+</ul>
+</li>
+</ul>
+<p><img src="/2020/03/11/Linux学习笔记-2-9/RAID5技术示意图.png" alt></p>
+<ul>
+<li><h4 id="RAID-10"><a href="#RAID-10" class="headerlink" title="RAID 10"></a>RAID 10</h4><ul>
+<li>RAID 1+RAID 0技术的一个“组合体</li>
+<li>最多可以损坏50%的硬盘设备而不丢失数</li>
+<li>进一步提高硬盘设备的读写速度</li>
+</ul>
+</li>
+</ul>
+<p><img src="/2020/03/11/Linux学习笔记-2-9/RAID 10技术示意图.png" alt></p>
+<h4 id="7-1-1-部署磁盘阵列"><a href="#7-1-1-部署磁盘阵列" class="headerlink" title="7.1.1 部署磁盘阵列"></a>7.1.1 部署磁盘阵列</h4><ul>
+<li><h4 id="mdadm-用于管理-Linux-系统中的软件RAID硬盘阵列"><a href="#mdadm-用于管理-Linux-系统中的软件RAID硬盘阵列" class="headerlink" title="mdadm    用于管理 Linux 系统中的软件RAID硬盘阵列"></a><strong><code>mdadm</code></strong>    用于管理 Linux 系统中的软件RAID硬盘阵列</h4><ul>
+<li><code>-a</code><strong>检测设备名称</strong></li>
+<li><code>-n</code>指定设备数量<br><code>-l</code>指定RAID级别</li>
+<li><code>-C</code><strong>创建</strong></li>
+<li><code>-v</code><strong>显示过程</strong></li>
+<li><code>-f</code>模拟设备损坏</li>
+<li><code>-r</code><strong>移除设备</strong></li>
+<li><code>-Q</code><strong>查看摘要信息</strong></li>
+<li><code>-D</code> <strong>查看详细信息</strong></li>
+<li><code>-S</code>停止RAID磁盘阵列</li>
+</ul>
+</li>
+</ul>
+<p><strong>第一步：查看一下硬盘情况： <code># ls -l /dev/sd*</code></strong></p>
+<p>​                 <strong>创建磁盘阵列<code># mdadm -Cv /dev/md0 -a yes -n 4 -l 10 /dev/sd[b-e]</code> </strong></p>
+<p>​                 <strong>查看一下md0磁盘简要的信息<code># mdadm -Q /dev/md0</code> </strong></p>
+<p>​                <strong>查看一下md0磁盘详细的信息及同步状态<code># mdadm -D /dev/md0</code> </strong></p>
+<blockquote>
+<p><strong>-C</strong>参数代表创建一个RAID阵列卡；</p>
+<p><strong>-v</strong>参数显示创建的过程，同时在后面追加一个设备名称/dev/md0，这样/dev/md0就是创建后的RAID磁盘阵列的名称；</p>
+<p><strong>-a yes</strong>参数代表自动创建设备文件；</p>
+<p><strong>-n 4</strong>参数代表使用4块硬盘来部署这个RAID磁盘阵列；</p>
+<p><strong>-l 10</strong>参数则代表RAID 10方案；</p>
+<p>最后再加上4块硬盘设备的名称就搞定了</p>
+</blockquote>
+<p><strong>第二步：将RAID磁盘阵列格式化<code># mkfs.xfs /dev/md0</code> </strong></p>
+<blockquote>
+<p>  格式化的格式可以随意的 ext4 或者xfs 都可以</p>
+</blockquote>
+<p><strong>第三步：创建一个目录foot作为挂载点<code># mkdir /foot</code>  </strong></p>
+<p><strong>第四步：挂载到foot目录上面<code># mount /dev/md0 /foot</code>  </strong></p>
+<p>​                <strong>查看一下挂载完后的信息<code># df -h</code>  </strong></p>
+<p><strong>第五步： 将挂载信息写入配置文件 <code># vim /etc/fstab</code> </strong>:zap:</p>
+<p>​                 <strong><code>最底行写入 /dev/md0 /foot xfs defaults 0 0</code></strong>     0 不备份   0不自检</p>
+<hr>
+<h4 id="7-1-2-损坏磁盘阵列及修复"><a href="#7-1-2-损坏磁盘阵列及修复" class="headerlink" title="7.1.2 损坏磁盘阵列及修复"></a>7.1.2 损坏磁盘阵列及修复</h4><p> :bulb: <strong>替换掉坏掉的硬盘，将新的硬盘插入。</strong></p>
+<p><strong>第一步：先查看硬盘状态 <code># mdadm -D /dev/md0</code></strong></p>
+<p><strong>第二步：卸载掉当前的挂载点：<code># umount /foot</code></strong></p>
+<p><strong>第三步：为磁盘整列组添加新的磁盘：<code># mdadm /dev/md0 -a /dev/sd*</code></strong> </p>
+<blockquote>
+<p><a href>*</a> 星号 代表那个盘坏了添加哪个</p>
+</blockquote>
+<p><strong>第四步：查看一下同步信息：<code># mdadm -D /dev/md0</code></strong>  等待它同步完成</p>
+<p><strong>第五步：重新挂载阵列磁盘：<code># mount /dev/md0 /foot</code></strong>       <strong>查看一下挂载完后的信息<code># df -h</code>   </strong>  </p>
+<hr>
+<h4 id="7-1-3-磁盘阵列-备份盘"><a href="#7-1-3-磁盘阵列-备份盘" class="headerlink" title="7.1.3 磁盘阵列+备份盘"></a>7.1.3 磁盘阵列+备份盘</h4><p><strong>第一步 ：创建一个RAID 5的磁盘整列和备份盘<code># mdadm -Cv /dev/md0 -n 3 -l 5 -x 1 /dev/sd[b-e]</code></strong></p>
+<p>​                <strong>查看一下同步信息：<code># mdadm -D /dev/md0</code> 等待它同步完成</strong></p>
+<blockquote>
+<p><strong>-n 3</strong>代表创建这个RAID 5磁盘阵列所需的硬盘数，</p>
+<p><strong>-l 5</strong>代表RAID的级别</p>
+<p><strong>-x 1</strong>则代表有一块备份盘</p>
+</blockquote>
+<p><strong>第二步：将RAID 5磁盘阵列格式化<code># mkfs.xfs /dev/md0</code> </strong></p>
+<p><strong>第三步：创建一个目录foot作为挂载点<code># mkdir /foot</code>  </strong></p>
+<p><strong>第四步：挂载阵列磁盘<code># mount -a</code>  </strong></p>
+<p>​                <strong>查看一下挂载完后的信息<code># df -h</code>  </strong></p>
+<p><strong>第五步： 将挂载信息写入配置文件 <code># vim /etc/fstab</code> </strong>:zap:</p>
+<p>​                 <strong><code>最底行写入 /dev/md0 /foot xfs defaults 0 0</code></strong>     0 不备份   0不自检</p>
+<p><strong>效果：</strong></p>
+<ul>
+<li>损坏磁盘4之前：</li>
+</ul>
+<p><img src="/2020/03/11/Linux学习笔记-2-9/备份盘生效1.png" alt></p>
+<ul>
+<li>损坏磁盘后备份磁盘3顶替原先损坏的磁盘位置：</li>
+</ul>
+<p><img src="/2020/03/11/Linux学习笔记-2-9/备份盘生效2.png" alt></p>
+<hr>
+<p><a href="https://www.jianshu.com/p/45c05a75f140" target="_blank" rel="noopener"><strong>简单无痛解决Linux下修改/etc/fstab导致无法启动的问题</strong></a></p>
+<hr>
+<h3 id="7-2-LVM逻辑卷管理器"><a href="#7-2-LVM逻辑卷管理器" class="headerlink" title="7.2 LVM逻辑卷管理器"></a>7.2 LVM逻辑卷管理器</h3><blockquote>
+<p>LVM可以允许用户对硬盘资源进行动态调整。</p>
+<p><strong>物理卷</strong>处于LVM中的最底层，可以将其理解为物理硬盘、硬盘分区或者RAID磁盘阵列，这都可以。</p>
+<p><strong>卷组</strong>建立在物理卷之上，一个卷组可以包含多个物理卷，而且在卷组创建之后也可以继续向其中添加新的物理卷。</p>
+<p><strong>逻辑卷</strong>是用卷组中空闲的资源建立的，并且逻辑卷在建立后可以动态地扩展或缩小空间。这就是LVM的核心理念。</p>
+</blockquote>
+<p> :happy:<strong>老刘易懂例子解释：</strong>小明家里想吃馒头但是面粉不够了，于是妈妈从隔壁老王家、老李家、老张家分别借来一些面粉，准备蒸馒头吃。首先需要把这些面粉（<strong>物理卷[PV，Physical Volume]</strong>）揉成一个大面团（<strong>卷组[VG，Volume Group]</strong>），然后再把这个大面团分割成一个个小馒头（<strong>逻辑卷[LV，Logical Volume]</strong>），而且每个小馒头的重量必须是每勺面粉（<strong>基本单元[PE，Physical Extent]</strong>）的倍数。</p>
+<p><img src="/2020/03/11/Linux学习笔记-2-9/辑卷管理器的技术结构.png" alt></p>
+<h4 id="7-2-1-部署逻辑卷"><a href="#7-2-1-部署逻辑卷" class="headerlink" title="7.2.1 部署逻辑卷"></a>7.2.1 部署逻辑卷</h4><p>:card_file_box: 部署LVM时，需要逐个配置  <strong>物理卷——&gt;卷组——&gt;逻辑卷</strong></p>
+<p>​                                                                                                  <strong>常用的LVM部署命令</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">功能/命令</th>
+<th>物理卷管理 pv</th>
+<th>卷组管理 vg</th>
+<th>逻辑卷管理 lv</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>扫描</strong></td>
+<td><strong>pv</strong><a href><strong>scan</strong></a></td>
+<td><strong>vg</strong><a href>scan</a></td>
+<td><strong>lv</strong><a href>scan</a></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>建立</strong></td>
+<td><strong>pv</strong><a href>create</a></td>
+<td><strong>vg</strong><a href>create</a></td>
+<td><strong>lv</strong><a href>create</a></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>显示</strong></td>
+<td><strong>pv</strong><a href>display</a></td>
+<td><strong>vg</strong><a href>display</a></td>
+<td><strong>lv</strong><a href>display</a></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>删除</strong></td>
+<td><strong>pv</strong><a href>remove</a></td>
+<td><strong>vg</strong><a href>remove</a></td>
+<td><strong>lv</strong><a href>remove</a></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>扩展</strong></td>
+<td>无</td>
+<td><strong>vg</strong><a href>extend</a></td>
+<td><strong>lv</strong><a href>extend</a></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>缩小</strong></td>
+<td>无</td>
+<td><strong>vg</strong><a href>reduce</a></td>
+<td><strong>lv</strong><a href>reduce</a></td>
+</tr>
+</tbody>
+</table>
+<p>:file_cabinet: <strong>步骤：预先准备好两个硬盘</strong></p>
+<p><strong>第一步：让新添加的两块硬盘设备支持LVM技术  <code># pvcreate /dev/sdb /dev/sdc</code></strong></p>
+<p><strong>第二步：把两块硬盘设备加入到storage卷组中 <code># vgcreate storage /dev/sdb /dev/sdc</code></strong>      </p>
+<p>​                 <strong>查看卷组的状态  <code># vgdisplay</code></strong></p>
+<blockquote>
+<p> storage 卷组名称  命名随意   foot 也行，主要是自己认识</p>
+</blockquote>
+<p><strong>第三步：切割出一个约为150MB的逻辑卷设备 <code># lvcreate -n vo -l 37 storage</code></strong></p>
+<blockquote>
+<p><strong><code>-n  vo</code></strong>  卷组名称统一默认vo</p>
+<p><strong><code>-l 37</code></strong>     生成一个大小为37×4MB=148MB的逻辑卷</p>
+<p><strong><code>-L 150M</code></strong>  生成一个大小为150MB的逻辑卷</p>
+</blockquote>
+<p><strong>第四步：把生成好的逻辑卷进行格式化  <code># mkfs.ext4 /dev/storage/vo</code></strong>    </p>
+<blockquote>
+<p><strong>/dev/卷组名/逻辑卷名</strong></p>
+</blockquote>
+<p><strong>第五步：创建挂载点进行挂载   <code># mkdir /foot</code></strong></p>
+<p>​                                                        <strong><code># mount /dev/storage/vo /foot</code></strong></p>
+<p><strong>第六步：查看挂载状态    <code># df -h</code></strong></p>
+<p>​                <strong>写入到配置文件 <code># echo &quot;/dev/storage/vo /foot ext4 defaults 0 0&quot; &gt;&gt; /etc/fstab</code></strong></p>
+<h4 id="7-2-2-扩容逻辑卷"><a href="#7-2-2-扩容逻辑卷" class="headerlink" title="7.2.2 扩容逻辑卷"></a>7.2.2 扩容逻辑卷</h4><p><strong>第一步：卸载设备      <code># umount /foot</code></strong></p>
+<p><strong>第二步：上一个实验中的逻辑卷vo扩展至290MB   <code># lvextend -L 290M /dev/storage/vo</code></strong></p>
+<p><strong>第三步：检查硬盘完整性     <code># e2fsck -f /dev/storage/vo</code></strong></p>
+<p>​               <strong>并重置硬盘容量    <code># resize2fs /dev/storage/vo</code></strong></p>
+<p><strong>第四步：重新挂载硬盘设备并查看挂载状态  <code># mount -a</code>     `# df -h</strong>`</p>
+<h4 id="7-2-3-缩小逻辑卷"><a href="#7-2-3-缩小逻辑卷" class="headerlink" title="7.2.3 缩小逻辑卷"></a>7.2.3 缩小逻辑卷</h4><p><strong>注意事项：</strong></p>
+<ul>
+<li><p>:zap:   <a href><code>xfs</code>格式不能缩小操作</a></p>
+</li>
+<li><p>:zap: <a href>操作之前一定要做<strong><u>备份</u></strong>！！</a></p>
+</li>
+<li><p>在对LVM逻辑卷进行缩容操作之前，要<strong>先检查</strong>文件系统的完整性（当然这也是为了保证我们的数据安全）</p>
+</li>
+</ul>
+<p><strong>第一步：卸载设备      <code># umount /foot</code></strong></p>
+<p><strong>第二步：检查文件系统的完整性  <code># e2fsck -f /dev/storage/vo</code></strong></p>
+<p><strong>第三步：把逻辑卷vo的容量减小到120MB  <code># resize2fs /dev/storage/vo 120M</code></strong></p>
+<p><strong>第四步：重新挂载文件系统并查看系统状态   <code># mount -a</code>     <code># df -h</code></strong></p>
+<h4 id="7-2-4-逻辑卷快照"><a href="#7-2-4-逻辑卷快照" class="headerlink" title="7.2.4 逻辑卷快照"></a>7.2.4 逻辑卷快照</h4><p><strong>注意事项：</strong></p>
+<ul>
+<li>:zap: 快照卷的容量<strong>必须等同于逻辑卷的容量</strong>  <a href>大小相同</a></li>
+<li>:zap: 快照卷<strong><a href>仅一次有效</a></strong>，一旦执行还原操作后则会被立即自动删除</li>
+</ul>
+<p><strong>第一步：首先查看卷组的信息  <code># vgdisplay</code></strong></p>
+<p><strong>第二步：用重定向往逻辑卷设备所挂载的目录中写入一个文件 <code># echo &quot;Welcome to my style&quot; &gt; /foot/readme.txt</code></strong></p>
+<p><strong>第三步：用<code>-s</code>参数生成一个快照卷，使用<code>-L</code>参数指定切割的大小  <code># lvcreate -L 120M -s -n SNAP /dev/storage/vo</code></strong></p>
+<p>​                                                                                                <strong>查看快照信息   <code># lvdisplay</code></strong></p>
+<blockquote>
+<p><strong>SNAP</strong> ：快照的名称！</p>
+<p><strong>/dev/storage/vo</strong>  ：快照备份对象</p>
+</blockquote>
+<p><strong>快照还原：</strong></p>
+<p><strong>第一步：先卸载逻辑卷设备  <code># umount /foot</code></strong>  </p>
+<p><strong>第二步： 还原快照<code># lvconvert --merge /dev/storage/SNAP</code></strong></p>
+<p><strong>第三步：重新挂载     <code># mount -a</code></strong></p>
+<h4 id="7-2-5-删除逻辑卷"><a href="#7-2-5-删除逻辑卷" class="headerlink" title="7.2.5 删除逻辑卷"></a>7.2.5 删除逻辑卷</h4><p><strong>注意事项：</strong>  <strong>:zap:  需要提前<a href>备份</a>好重要的数据信息，然后<a href>依次删除</a>逻辑卷、卷组、物理卷设备，这个顺序不可颠倒</strong></p>
+<p><strong>第一步：取消逻辑卷与目录的挂载关联，<code># umount /foot</code></strong></p>
+<p><strong>第二步：删除<a href>配置文件</a>中永久生效的设备参数。<code># vim /etc/fstab</code></strong></p>
+<p><strong>第三步：删除<a href>逻辑卷设备</a>，需要输入<a href>y</a>来确认操作  <code># lvremove /dev/storage/vo</code></strong>    </p>
+<p>​                 <strong><code>Do you really want to remove active logical volume vo? [y/n]: y</code></strong></p>
+<p><strong>第四步：删除<a href>卷组</a>，此处只写卷组名称即可，不需要设备的绝对路径。    <code># vgremove storage</code></strong></p>
+<p><strong>第五步：删除<a href>物理卷设备</a>  <code># pvremove /dev/sdb /dev/sdc</code></strong></p>
+<h2 id="第八章-Iptables与Firewalld防火墙"><a href="#第八章-Iptables与Firewalld防火墙" class="headerlink" title="第八章 Iptables与Firewalld防火墙"></a><strong>第八章 Iptables与Firewalld防火墙</strong></h2><blockquote>
+<p><strong>iptables、firewall-cmd、firewall-config和TCP Wrappers</strong>等防火墙策略配置服务</p>
+</blockquote>
+<h3 id="8-1-防火墙管理工具"><a href="#8-1-防火墙管理工具" class="headerlink" title="8.1 防火墙管理工具"></a>8.1 防火墙管理工具</h3><h3 id="8-2-Iptables"><a href="#8-2-Iptables" class="headerlink" title="8.2 Iptables"></a>8.2 Iptables</h3><h4 id="8-2-1-策略与规则链"><a href="#8-2-1-策略与规则链" class="headerlink" title="8.2.1 策略与规则链"></a>8.2.1 策略与规则链</h4><h4 id="8-2-2-基本的命令参数"><a href="#8-2-2-基本的命令参数" class="headerlink" title="8.2.2 基本的命令参数"></a>8.2.2 基本的命令参数</h4><h3 id="8-3-Firewalld"><a href="#8-3-Firewalld" class="headerlink" title="8.3 Firewalld"></a>8.3 Firewalld</h3><blockquote>
+<p>RHEL 7系统中集成了多款防火墙管理工具，其中firewalld（Dynamic Firewall Manager of Linux systems，Linux系统的动态防火墙管理器）服务是默认的防火墙配置管理工具，它拥有基于CLI（命令行界面）和基于GUI（图形用户界面）的两种管理方式。</p>
+</blockquote>
+<p><strong>firewalld中常用的区域名称及策略规则</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">区域</th>
+<th>默认规则策略</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">:eyes: <strong>trusted</strong></td>
+<td>允许所有的数据包</td>
+</tr>
+<tr>
+<td style="text-align:right"><strong>home</strong></td>
+<td>拒绝流入的流量，除非与流出的流量相关；而如果流量与ssh、mdns、ipp-client、amba-client与dhcpv6-client服务相关，则允许流量</td>
+</tr>
+<tr>
+<td style="text-align:right"><strong>internal</strong></td>
+<td>等同于home区域</td>
+</tr>
+<tr>
+<td style="text-align:right"><strong>work</strong></td>
+<td>拒绝流入的流量，除非与流出的流量相关；而如果流量与ssh、ipp-client与dhcpv6-client服务相关，则允许流量</td>
+</tr>
+<tr>
+<td style="text-align:right">:eyes: <strong>public</strong></td>
+<td>拒绝流入的流量，除非与流出的流量相关；而如果流量与ssh、dhcpv6-client服务相关，则允许流量</td>
+</tr>
+<tr>
+<td style="text-align:right"><strong>external</strong></td>
+<td>拒绝流入的流量，除非与流出的流量相关；而如果<strong>流量与ssh服务相关</strong>，则允许流量</td>
+</tr>
+<tr>
+<td style="text-align:right"><strong>dmz</strong></td>
+<td>拒绝流入的流量，除非与流出的流量相关；而如果<strong>流量与ssh服务相关，</strong>则允许流量</td>
+</tr>
+<tr>
+<td style="text-align:right"><strong>block</strong></td>
+<td>拒绝流入的流量，除非与流出的流量相关</td>
+</tr>
+<tr>
+<td style="text-align:right">:eyes: <strong>drop</strong></td>
+<td>拒绝流入的流量，除非与流出的流量相关</td>
+</tr>
+</tbody>
+</table>
+<h4 id="8-3-1-终端管理工具"><a href="#8-3-1-终端管理工具" class="headerlink" title="8.3.1 终端管理工具"></a>8.3.1 终端管理工具</h4><ul>
+<li><h4 id="firewall-cmd-用Tab键来补齐-长格式参数了"><a href="#firewall-cmd-用Tab键来补齐-长格式参数了" class="headerlink" title="firewall-cmd               用Tab键来补齐  长格式参数了"></a>firewall-cmd               用<strong><code>Tab</code></strong>键来补齐  长格式参数了</h4></li>
+</ul>
+<p><strong>ewall-cmd命令中使用的参数以及作用</strong></p>
+<ul>
+<li><strong>–get-default-zone</strong>                                                        <strong>查询默认的区域名称</strong></li>
+<li><strong>–set-default-zone=&lt;区域名称&gt;                   设置默认的区域，使其永久生效-</strong></li>
+<li><strong>-get-zones                                                  显示可用的区域</strong></li>
+<li><strong>–get-services                                           显示预先定义的服务</strong></li>
+<li><strong>–get-active-zones                            显示当前正在使用的区域与网卡名称</strong></li>
+<li><strong>–add-source=                                 将源自此IP或子网的流量导向指定的区域</strong></li>
+<li><strong>–remove-source=                       不再将源自此IP或子网的流量导向某个指定区域</strong></li>
+<li><strong>–add-interface=&lt;网卡名称&gt;       将源自该网卡的所有流量都导向某个指定区域</strong></li>
+<li><strong>–change-interface= &lt;网卡名称&gt;        将某个网卡与区域进行关联</strong></li>
+<li><strong>–list-all                            示当前区域的网卡配置参数、资源、端口以及服务等信息</strong></li>
+<li><strong>–list-all-zones                    显示所有区域的网卡配置参数、资源、端口以及服务等信息</strong></li>
+<li><strong>–add-service= &lt;服务名&gt;        设置默认区域允许该服务的流量</strong></li>
+<li><strong>–add-port= &lt;端口号/协议&gt;    设置默认区域允许该端口的流量</strong></li>
+<li><strong>–remove-service= &lt;服务名&gt;     设置默认区域不再允许该服务的流量</strong></li>
+<li><strong>–remove-port=&lt;端口号/协议&gt;        设置默认区域不再允许该端口的流量</strong></li>
+<li><strong>–reload                                  让“永久生效”的配置规则立即生效，并覆盖当前的配置规则</strong></li>
+<li><strong>–panic-on                           开启应急状况模式</strong></li>
+<li><strong>–panic-off                        关闭应急状况模式</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>参数</strong></th>
+<th><strong>作用</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>–get-default-zone</strong></td>
+<td><strong>查询默认的区域名称</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>–set-default-zone=&lt;区域名称&gt;</strong></td>
+<td><strong>设置默认的区域，使其永久生效</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>–get-zones</strong></td>
+<td><strong>显示可用的区域</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>–get-services</strong></td>
+<td><strong>显示预先定义的服务</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>–get-active-zones</strong></td>
+<td><strong>显示当前正在使用的区域与网卡名称</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>–add-source=</strong></td>
+<td><strong>将源自此IP或子网的流量导向指定的区域</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>–remove-source=</strong></td>
+<td><strong>不再将源自此IP或子网的流量导向某个指定区域</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>–add-interface=&lt;网卡名称&gt;</strong></td>
+<td><strong>将源自该网卡的所有流量都导向某个指定区域</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>–change-interface=&lt;网卡名称&gt;</strong></td>
+<td><strong>将某个网卡与区域进行关联</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>–list-all</strong></td>
+<td><strong>显示当前区域的网卡配置参数、资源、端口以及服务等信息</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>–list-all-zones</strong></td>
+<td><strong>显示所有区域的网卡配置参数、资源、端口以及服务等信息</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>–add-service=&lt;服务名&gt;</strong></td>
+<td><strong>设置默认区域允许该服务的流量</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>–add-port=&lt;端口号/协议&gt;</strong></td>
+<td><strong>设置默认区域允许该端口的流量</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>–remove-service=&lt;服务名&gt;</strong></td>
+<td><strong>设置默认区域不再允许该服务的流量</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>–remove-port=&lt;端口号/协议&gt;</strong></td>
+<td><strong>设置默认区域不再允许该端口的流量</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>–reload</strong></td>
+<td><strong>让“永久生效”的配置规则立即生效，并覆盖当前的配置规则</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>–panic-on</strong></td>
+<td><strong>开启应急状况模式</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>–panic-off</strong></td>
+<td><strong>关闭应急状况模式</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>运行时<strong>（Runtime）</strong>模式<ul>
+<li>又称为当前生效模式，而且随着系统的重启会失效</li>
+</ul>
+</li>
+<li>永久<strong>（Permanent）</strong>模式<ul>
+<li>设置防火墙策略时添加<code>--permanent</code>参数，防火墙策略就可以永久生效</li>
+<li>如果想让配置的策略立即生效，需要手动执行<strong><code># firewall-cmd --reload</code></strong>命令</li>
+</ul>
+</li>
+</ul>
+<p>:bookmark_tabs: <strong>查看 get </strong>firewall服务<strong>当前</strong>所使用的区域 </p>
+<p><strong><code># firewall-cmd --get-default-zone</code></strong></p>
+<p>:bookmark_tabs: 把firewalld服务的当前默认区域<strong>设置为  public</strong>：</p>
+<p><strong><code># firewall-cmd --set-default-zone=public</code></strong></p>
+<p>:bookmark_tabs: 查询eno16777736<strong>网卡</strong>在firewalld服务中的区域</p>
+<p><strong><code># firewall-cmd --get-zone-of-interface=eno16777736</code></strong></p>
+<p>:bookmark_tabs: 启动/关闭firewalld<a href>防火墙服务的应急状况模式 panic</a>  ，阻断一切网络连接</p>
+<p><strong><code># firewall-cmd --panic-on</code></strong> <strong>启动紧急</strong>状况 </p>
+<p><strong><code># firewall-cmd --panic-off</code></strong> <strong>关闭紧急</strong>状况</p>
+<p>:bookmark_tabs: 查询public区域是<a href><strong>否允许请求 query</strong></a>SSH和HTTPS协议的流量：query</p>
+<p><strong><code># firewall-cmd --zone=public --query-service=ssh</code></strong></p>
+<p><strong><code># firewall-cmd --zone=public --query-service=https</code></strong></p>
+<p>:bookmark_tabs: 把firewalld服务中请求HTTPS协议的流量设置为<a href><strong>永久允许 add</strong></a>，并立即生效</p>
+<p><strong><code># firewall-cmd --zone=public --add-service=https</code></strong></p>
+<p><strong><code># firewall-cmd --permanent --zone=public --add-service=https</code></strong> 永久生效</p>
+<p><strong><code># firewall-cmd --reload</code></strong></p>
+<p>把firewalld服务中请求HTTP协议的流量设置为<a href><strong>永久拒绝 remove</strong></a>，并立即生效：</p>
+<p><strong><code># firewall-cmd --permanent --zone=public --remove-service=http</code></strong></p>
+<p><strong><code># firewall-cmd --reload</code></strong></p>
+<p>把在firewalld服务中<a href>访问8080和8081端口的流量策略设置为允许</a>，但仅限当前生效</p>
+<p><strong><code># firewall-cmd --zone=public --add-port=8080-8081/tcp</code></strong></p>
+<p><strong><code># firewall-cmd --zone=public --list-ports</code></strong></p>
+<p>把原本访问本机888端口的流量转发到22端口，要且求当前和长期均有效：</p>
+<p><strong><code># firewall-cmd --permanent --zone=public --add-forward-port=port=888:proto=tcp:toport=22:toaddr=192.168.10.10</code></strong></p>
+<p><strong><code># firewall-cmd --reload</code></strong></p>
+<h4 id="8-3-2-图形管理工具"><a href="#8-3-2-图形管理工具" class="headerlink" title="8.3.2 图形管理工具"></a><strong>8.3.2 图形管理工具</strong></h4><ul>
+<li><h3 id="firewall-config-图形用户界面"><a href="#firewall-config-图形用户界面" class="headerlink" title="# firewall-config  图形用户界面"></a><strong><code># firewall-config</code>  图形用户界面</strong></h3><blockquote>
+<p>在使用firewall-config工具配置完防火墙策略之后，<strong>无须进行二次确认</strong>，因为只要有修改内容，它就自动进行保存</p>
+</blockquote>
+</li>
+</ul>
+<p><img src="/2020/03/11/Linux学习笔记-2-9/firewall-config界面.png" alt></p>
+<p><strong>1：</strong>选择运行时（Runtime）模式或永久（Permanent）模式的配置。</p>
+<p><strong>2</strong>：可选的策略集合区域列表。</p>
+<p><strong>3</strong>：常用的系统服务列表。</p>
+<p><strong>4</strong>：当前正在使用的区域。</p>
+<p><strong>5</strong>：管理当前被选中区域中的服务。</p>
+<p><strong>6</strong>：管理当前被选中区域中的端口。</p>
+<p><strong>7</strong>：开启或关闭SNAT（源地址转换协议）技术。</p>
+<p><strong>8</strong>：设置端口转发策略。</p>
+<p><strong>9</strong>：控制请求icmp服务的流量。</p>
+<p><strong>10</strong>：管理防火墙的富规则。</p>
+<p><strong>11</strong>：管理网卡设备。</p>
+<p><strong>12</strong>：被选中区域的服务，若勾选了相应服务前面的复选框，则表示允许与之相关的流量。</p>
+<p><strong>13</strong>：firewall-config工具的运行状态。</p>
+<ul>
+<li><h3 id="让配置的防火墙策略规则立即生效"><a href="#让配置的防火墙策略规则立即生效" class="headerlink" title="让配置的防火墙策略规则立即生效"></a><strong>让配置的防火墙策略规则立即生效</strong></h3></li>
+</ul>
+<p><img src="/2020/03/11/Linux学习笔记-2-9/让配置的防火墙策略规则立即生效.png" alt></p>
+<ul>
+<li><h3 id="把网卡与防火墙策略区域进行绑定"><a href="#把网卡与防火墙策略区域进行绑定" class="headerlink" title="把网卡与防火墙策略区域进行绑定"></a><strong>把网卡与防火墙策略区域进行绑定</strong></h3></li>
+</ul>
+<p><img src="/2020/03/11/Linux学习笔记-2-9/把网卡与防火墙策略区域进行绑定.png" alt></p>
+<h3 id="8-4-服务的访问控制列表"><a href="#8-4-服务的访问控制列表" class="headerlink" title="8.4 服务的访问控制列表"></a><strong>8.4 服务的访问控制列表</strong></h3><ul>
+<li><h3 id="TCP-Wrappers"><a href="#TCP-Wrappers" class="headerlink" title="TCP Wrappers"></a><strong>TCP Wrappers</strong></h3><ul>
+<li><strong><code># vim /etc/hosts.allow</code></strong></li>
+<li><strong><code># vim /etc/hosts.deny</code></strong></li>
+</ul>
+</li>
+</ul>
+<p>​                                         <strong>TCP Wrappers服务的控制列表文件中常用的参数</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">客户端类型</th>
+<th style="text-align:center">示例</th>
+<th>满足示例的客户端列表</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">单一主机</td>
+<td style="text-align:center">192.168.10.10</td>
+<td>IP地址为192.168.10.10的主机</td>
+</tr>
+<tr>
+<td style="text-align:right">指定网段</td>
+<td style="text-align:center">192.168.10.</td>
+<td>IP段为192.168.10.0/24的主机</td>
+</tr>
+<tr>
+<td style="text-align:right">指定网段</td>
+<td style="text-align:center">192.168.10.0/255.255.255.0</td>
+<td>IP段为192.168.10.0/24的主机</td>
+</tr>
+<tr>
+<td style="text-align:right">指定DNS后缀</td>
+<td style="text-align:center">.linuxprobe.com</td>
+<td>所有DNS后缀为.linuxprobe.com的主机</td>
+</tr>
+<tr>
+<td style="text-align:right">指定主机名称</td>
+<td style="text-align:center"><a href="http://www.linuxprobe.com" target="_blank" rel="noopener">www.linuxprobe.com</a></td>
+<td>主机名称为<a href="http://www.linuxprobe.com的主机" target="_blank" rel="noopener">www.linuxprobe.com的主机</a></td>
+</tr>
+<tr>
+<td style="text-align:right">指定所有客户端</td>
+<td style="text-align:center">ALL</td>
+<td>所有主机全部包括在内</td>
+</tr>
+</tbody>
+</table>
+<h2 id="第9章-使用ssh服务管理远程主机"><a href="#第9章-使用ssh服务管理远程主机" class="headerlink" title="第9章 使用ssh服务管理远程主机"></a><strong>第9章 使用ssh服务管理远程主机</strong></h2><h3 id="9-1-配置网卡服务"><a href="#9-1-配置网卡服务" class="headerlink" title="9.1 配置网卡服务"></a>9.1 配置网卡服务</h3><h4 id="9-1-1-配置网卡参数"><a href="#9-1-1-配置网卡参数" class="headerlink" title="9.1.1 配置网卡参数"></a>9.1.1 配置网卡参数</h4><p><strong><code>nmtui</code></strong>方法详细配置件见<a href="#1.3 配置网卡信息">第四章</a>:arrow_left: 点击查看</p>
+<h4 id="9-1-2-创建网络会话"><a href="#9-1-2-创建网络会话" class="headerlink" title="9.1.2 创建网络会话"></a>9.1.2 创建网络会话</h4><blockquote>
+<p>使用了网络会话功能后只需在不同的使用环境中激活相应的网络会话，就可以实现网络配置信息的自动切换了</p>
+</blockquote>
+<ul>
+<li><h4 id="nmcli命令来管理Network-Manager"><a href="#nmcli命令来管理Network-Manager" class="headerlink" title="# nmcli命令来管理Network Manager"></a><strong><code># nmcli</code></strong>命令来管理Network Manager</h4></li>
+</ul>
+<p>:bookmark_tabs:查看网络信息： <strong><code># nmcli connection show</code></strong> </p>
+<p>:bookmark_tabs:查看网络状态及详细信息： <strong><code># nmcli con show eno16777736</code></strong></p>
+<p>:bookmark_tabs:创建网络会话： <strong><code># nmcil connection add con-name type ifname</code></strong></p>
+<ul>
+<li>公司 <ul>
+<li><strong><code># nmcli connection add con-name company ifname eno16777736 autoconnect no type ethernet ip4 192.168.10.10/24 gw4 192.168.10.1</code></strong></li>
+</ul>
+</li>
+<li>家庭<ul>
+<li><strong><code># nmcli connection add con-name house type ethernet ifname eno16777736</code></strong></li>
+</ul>
+</li>
+</ul>
+<p>:bookmark_tabs:查看创建的所有网络会话： <strong><code># nmcli connection show</code></strong></p>
+<blockquote>
+<p>如果使用的是虚拟机，请把虚拟机系统的网卡（网络适配器）切换成<strong>桥接模式</strong>，如图9-9所示。然后重启虚拟机系统即可。</p>
+<p><img src="/2020/03/11/Linux学习笔记-2-9/设置虚拟机网卡的模式.png" style="zoom:50%;"></p>
+</blockquote>
+<p>:bookmark_tabs: 启用house网络会话：<strong><code># nmcli connection up house</code></strong> </p>
+<h4 id="9-1-3-绑定两块网卡"><a href="#9-1-3-绑定两块网卡" class="headerlink" title="9.1.3 绑定两块网卡"></a>9.1.3 绑定两块网卡</h4><ul>
+<li><p>网络传输的速度变得更快；</p>
+</li>
+<li><p>一块网卡突然出现了故障，另外一块网卡便会立即自动顶替上去，保证数据传输不会中断</p>
+</li>
+</ul>
+<p><strong>第一步:  在虚拟机系统中再添加一块网卡设备，请确保两块网卡模式相同</strong></p>
+<p><strong>第二步：使用Vim文本编辑器来配置网卡设备的绑定参数</strong>  </p>
+<pre><code>- **`# vim /etc/sysconfig/network-scripts/ifcfg-eno16777736`**
+</code></pre><ul>
+<li>TYPE=Ethernet<br>BOOTPROTO=none<br>ONBOOT=yes<br>USERCTL=no<br><strong>DEVICE=eno16777736</strong>  确保不能输错<br><strong>MASTER=bond0</strong><br><strong>SLAVE=yes</strong><pre><code>- **`# vim /etc/sysconfig/network-scripts/ifcfg-eno33554968`**
+- **MASTER=bond0     SLAVE=yes**              
+</code></pre></li>
+</ul>
+<p><strong>第三步：将绑定后的设备命名为bond0并把IP地址等信息填写进去</strong></p>
+<ul>
+<li><p><strong><code># vim /etc/sysconfig/network-scripts/ifcfg-bond0</code></strong></p>
+</li>
+<li><p>TYPE=Ethernet<br>BOOTPROTO=static<br><strong>ONBOOT=yes</strong>                              yes开机启用它<br>USERCTL=no                              不通过命令行进行控制<br><strong>DEVICE=bond0</strong>                       </p>
+<p>IPADDR=192.168.10.10<br>PREFIX=24                                  等同 255.255.255.0<br>DNS=192.168.10.1<br>NM_CONTROLLED=no                 </p>
+</li>
+</ul>
+<p><strong>第四步：使用Vim文本编辑器创建一个用于网卡绑定的驱动文件</strong></p>
+<ul>
+<li><p><strong><code># vim /etc/modprobe.d/bond.conf</code></strong></p>
+</li>
+<li><p><strong>alias bond0 bonding</strong><br><strong>options bond0 miimon=100 mode=6</strong></p>
+</li>
+<li><blockquote>
+<p><strong>mode0（平衡负载模式）</strong>：平时两块网卡均工作，且自动备援，但需要在与服务器本地网卡相连的交换机设备上进行端口聚合来支持绑定技术。</p>
+<p><strong>mode1（自动备援模式）</strong>：平时只有一块网卡工作，在它故障后自动替换为另外的网卡。</p>
+<p><strong>mode6（平衡负载模式）</strong>：平时两块网卡均工作，且自动备援，无须交换机设备提供辅助支持。</p>
+<ul>
+<li>面使用Vim文本编辑器创建一个用于网卡绑定的驱动文件，使得绑定后的bond0网卡设备能够支持绑定技术bonding）；</li>
+<li>同时定义网卡以mode6模式进行绑定，且出现故障时自动切换的时间为100毫秒。</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<p><strong>第五步：重启网络服务后网卡绑定操作即可成功</strong></p>
+<ul>
+<li><strong><code># systemctl restart network</code></strong></li>
+</ul>
+<h3 id="9-2-远程控制服务"><a href="#9-2-远程控制服务" class="headerlink" title="9.2 远程控制服务"></a>9.2 远程控制服务</h3><h4 id="9-2-1-配置sshd服务"><a href="#9-2-1-配置sshd服务" class="headerlink" title="9.2.1 配置sshd服务"></a>9.2.1 配置sshd服务</h4><blockquote>
+<p> <strong>SSH（Secure <a href="https://www.linuxcool.com/" target="_blank" rel="noopener">Shell</a>）</strong>是一种能够以安全的方式提供远程登录的协议，也是目前远程管理Linux系统的首选方式</p>
+</blockquote>
+<p>两种安全验证的方法：</p>
+<ul>
+<li>基于口令的验证—用账户和密码来验证登录；</li>
+<li>基于密钥的验证—需要在本地生成密钥对，然后把密钥对中的公钥上传至服务器，并与服务器中的公钥进行比较；</li>
+</ul>
+<p><strong>sshd服务配置文件中包含的参数以及作用</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">参数</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">Port 22</td>
+<td>默认的sshd服务端口</td>
+</tr>
+<tr>
+<td style="text-align:right">ListenAddress 0.0.0.0</td>
+<td>设定sshd服务器监听的IP地址</td>
+</tr>
+<tr>
+<td style="text-align:right">Protocol 2</td>
+<td>SSH协议的版本号</td>
+</tr>
+<tr>
+<td style="text-align:right">HostKey /tc/ssh/ssh_host_key</td>
+<td>SSH协议版本为1时，DES私钥存放的位置</td>
+</tr>
+<tr>
+<td style="text-align:right">HostKey /etc/ssh/ssh_host_rsa_key</td>
+<td>SSH协议版本为2时，RSA私钥存放的位置</td>
+</tr>
+<tr>
+<td style="text-align:right">HostKey /etc/ssh/ssh_host_dsa_key</td>
+<td>SSH协议版本为2时，DSA私钥存放的位置</td>
+</tr>
+<tr>
+<td style="text-align:right">:eyes: <strong>PermitRootLogin yes</strong></td>
+<td><strong>设定是否允许root管理员直接登录</strong></td>
+</tr>
+<tr>
+<td style="text-align:right">StrictModes yes</td>
+<td>当远程用户的私钥改变时直接拒绝连接</td>
+</tr>
+<tr>
+<td style="text-align:right">MaxAuthTries 6</td>
+<td>最大密码尝试次数</td>
+</tr>
+<tr>
+<td style="text-align:right">MaxSessions 10</td>
+<td>最大终端数</td>
+</tr>
+<tr>
+<td style="text-align:right">PasswordAuthentication yes</td>
+<td>是否允许密码验证</td>
+</tr>
+<tr>
+<td style="text-align:right">PermitEmptyPasswords no</td>
+<td><strong>是否允许空密码登录（很不安全）</strong></td>
+</tr>
+</tbody>
+</table>
+<p>:bookmark_tabs: <strong>禁止以root管理员的身份远程登录到服务器</strong></p>
+<p><strong>第一步：使用Vim文本编辑器打开sshd服务的主配置文件 <code># vim /etc/ssh/sshd_config</code></strong></p>
+<p><strong>第二步：修改第<code>48</code>行参数</strong></p>
+<ul>
+<li><strong><code>#PermitRootLogin yes</code>   改为   <code>PermitRootLogin no</code></strong>    <ul>
+<li><strong># 井号去掉  ，并把 yes 改为 no</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>第三步：重启sshd    <code># systemctl restart sshd</code></strong></p>
+<p><strong>第四步：加入到开机启动项   <code># systemctl enable sshd</code></strong></p>
+<p><a href>登录方式 ：</a> <strong><code># ssh 192.168.10.10</code></strong></p>
+<h4 id="9-2-2-安全密钥验证"><a href="#9-2-2-安全密钥验证" class="headerlink" title="9.2.2 安全密钥验证"></a>9.2.2 安全密钥验证</h4><blockquote>
+<p><a href>windows 可以用PuTTYgen生成密钥</a></p>
+</blockquote>
+<p><strong>第一步</strong>：<strong>在客户端主机中生成“密钥对”</strong>     <strong><code># ssh-keygen</code></strong></p>
+<p><strong>第二步</strong>：<strong>把客户端主机中生成的公钥文件传送至远程主机</strong>  <strong><code># ssh-copy-id 192.168.10.10</code></strong></p>
+<p><strong>第三步</strong>：<strong>对服务器进行设置，使其只允许密钥验证，拒绝传统的口令验证方式</strong>    <strong><code># vim /etc/ssh/sshd_config</code></strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">………………省略部分输出信息………………</span><br><span class="line"> 74 </span><br><span class="line"> 75 # To disable tunneled clear text passwords, change to no here!</span><br><span class="line"> 76 #PasswordAuthentication yes</span><br><span class="line"> 77 #PermitEmptyPasswords no</span><br><span class="line"> 78 PasswordAuthentication no   &lt;--------</span><br><span class="line"> 79 </span><br><span class="line"> ………………省略部分输出信息………………</span><br></pre></td></tr></table></figure>
+<p><strong>第四步：重启sshd服务</strong>   <strong><code># systemctl restart sshd</code></strong></p>
+<p><strong>第五步</strong>：<strong>在客户端尝试登录到服务器，此时无须输入密码也可成功登录</strong>   <strong><code># ssh 192.168.10.10</code></strong></p>
+<h4 id="9-2-3-远程传输命令"><a href="#9-2-3-远程传输命令" class="headerlink" title="9.2.3 远程传输命令"></a>9.2.3 远程传输命令</h4><ul>
+<li><h4 id="scp-是一个基于SSH协议在网络之间进行安全传输的命令"><a href="#scp-是一个基于SSH协议在网络之间进行安全传输的命令" class="headerlink" title="scp  是一个基于SSH协议在网络之间进行安全传输的命令"></a><strong><code>scp</code></strong>  是一个基于SSH协议在网络之间进行安全传输的命令</h4><ul>
+<li><strong><code>-v</code></strong>  显示详细的连接进度<br><strong><code>-P</code></strong>  指定远程主机的sshd端口号<br><strong><code>-r</code></strong>  用于传送文件夹   要传送整个文件夹内的所有数据，还需要额外添加参数<strong>-r</strong>进行递归操作<br><strong><code>-6</code></strong>  使用IPv6协议</li>
+</ul>
+</li>
+<li><h4 id="上传"><a href="#上传" class="headerlink" title="上传"></a><a href>上传</a></h4><ul>
+<li><strong>scp /本地文件名  IP地址:/上传路径</strong>   <strong><code># scp /root/readme.txt 192.168.10.20:/home</code></strong></li>
+</ul>
+</li>
+<li><h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a><a href>下载</a></h4><ul>
+<li><strong>scp IP地址:文件名 /路径</strong>   <strong><code># scp 192.168.10.20:/etc/redhat-release /root</code></strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="9-3-不间断会话服务"><a href="#9-3-不间断会话服务" class="headerlink" title="9.3 不间断会话服务"></a>9.3 不间断会话服务</h3><blockquote>
+<p><strong><code>screen</code></strong>是一款能够实现多窗口远程控制的开源服务程序，简单来说就是为了解决网络异常中断或为了同时控制多个远程终端窗口而设计的程序</p>
+</blockquote>
+<ul>
+<li><strong>会话恢复</strong>：即便网络中断，也可让会话随时恢复，确保用户不会失去对远程会话的控制。</li>
+<li><strong>多窗口</strong>：每个会话都是独立运行的，拥有各自独立的输入输出终端窗口，终端窗口内显示过的信息也将被分开隔离保存，以便下次使用时依然能看到之前的操作记录。</li>
+<li><strong>会话共享</strong>：当多个用户同时登录到远程服务器时，便可以使用会话共享功能让用户之间的输入输出信息共享</li>
+</ul>
+<ul>
+<li><h3 id="screen命令"><a href="#screen命令" class="headerlink" title="screen命令"></a><strong><code>screen</code></strong>命令</h3><ul>
+<li><strong><code>-S</code></strong>参数<strong>创建会话窗口</strong></li>
+<li><strong><code>-d</code></strong>参数将指定会话进行离线处理</li>
+<li><strong><code>-r</code></strong>参数<strong>恢复指定会话</strong>；</li>
+<li><strong><code>-x</code></strong>参数一次性恢复所有的会话 <strong>同步</strong>；</li>
+<li><strong><code>-ls</code></strong>参数显示当前已有的会话；</li>
+<li><strong><code>-wipe</code></strong>参数把目前无法使用的会话删除</li>
+</ul>
+</li>
+</ul>
+<h4 id="9-3-1-管理远程会话"><a href="#9-3-1-管理远程会话" class="headerlink" title="9.3.1 管理远程会话"></a>9.3.1 管理远程会话</h4><p><strong>:bookmark_tabs: 创建一个名称为backup的会话窗口</strong> :  <strong><code># screen -S backup</code></strong></p>
+<p>:bookmark_tabs:<strong>查看到当前的会话</strong> :  <strong><code># screen -ls</code></strong></p>
+<p>:bookmark_tabs: <strong>退出一个会话</strong>:  <strong><code># exit</code></strong></p>
+<h4 id="9-3-2-会话共享功能"><a href="#9-3-2-会话共享功能" class="headerlink" title="9.3.2 会话共享功能"></a>9.3.2 会话共享功能</h4><p><strong><code>screen</code></strong>命令不仅可以确保用户在极端情况下也不丢失对系统的远程控制，保证了生产环境中远程工作的不间断性，而且它还具有会话共享、分屏切割、会话锁定等实用的功能。其中，会话共享功能是一件很酷的事情，当多个用户同时控制主机的时候，它可以把屏幕内容共享出来，也就是说每个用户都可以看到相同的内容。</p>
+<p><strong>首先使用ssh服务程序将终端A远程连接到服务器，并创建一个会话窗口</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">[root@client A ~]<span class="comment"># ssh 192.168.10.10</span></span><br><span class="line">The authenticity of host <span class="string">'192.168.10.10 (192.168.10.10)'</span> can<span class="string">'t be established.</span></span><br><span class="line"><span class="string">ECDSA key fingerprint is 70:3b:5d:37:96:7b:2e:a5:28:0d:7e:dc:47:6a:fe:5c.</span></span><br><span class="line"><span class="string">Are you sure you want to continue connecting (yes/no)? yes</span></span><br><span class="line"><span class="string">Warning: Permanently added '</span>192.168.10.10<span class="string">' (ECDSA) to the list of known hosts.</span></span><br><span class="line"><span class="string">root@192.168.10.10'</span>s password:此处输入root管理员密码</span><br><span class="line">Last login: Wed May 4 07:56:29 2017</span><br><span class="line">[root@client A ~]<span class="comment"># screen -S linuxprobe</span></span><br><span class="line">[root@client A ~]<span class="comment">#</span></span><br></pre></td></tr></table></figure>
+<p><strong>使用ssh服务程序将终端B远程连接到服务器，并执行获取远程会话的命令</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[root@client B ~]<span class="comment"># ssh 192.168.10.10</span></span><br><span class="line">The authenticity of host <span class="string">'192.168.10.10 (192.168.10.10)'</span> can<span class="string">'t be established.</span></span><br><span class="line"><span class="string">ECDSA key fingerprint is 70:3b:5d:37:96:7b:2e:a5:28:0d:7e:dc:47:6a:fe:5c.</span></span><br><span class="line"><span class="string">Are you sure you want to continue connecting (yes/no)? yes</span></span><br><span class="line"><span class="string">Warning: Permanently added '</span>192.168.10.10<span class="string">' (ECDSA) to the list of known hosts.</span></span><br><span class="line"><span class="string">root@192.168.10.10'</span>s password:此处输入root管理员密码</span><br><span class="line">Last login: Wed Feb 22 04:55:38 2017 from 192.168.10.10</span><br><span class="line">[root@client B ~]<span class="comment"># screen -x</span></span><br></pre></td></tr></table></figure>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src>
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        <li title="0" data-url="http://link.hhtjim.com/163/5146554.mp3"></li>
+                    
+                        <li title="1" data-url="http://link.hhtjim.com/qq/001faIUs4M2zna.mp3"></li>
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link" data-ae="false" data-ci="bf3b6228b6e577e68d28" data-cs="6cb97263d97a9d68f52875f09272ef70d9828f34" data-r="Mrxxd" data-o="Mrxxd" data-a="Mrxxd" data-d="true">查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="../js/plugin.js"></script>
+<script src="../js/diaspora.js"></script>
+<link rel="stylesheet" href="../photoswipe/photoswipe.css">
+<link rel="stylesheet" href="../photoswipe/default-skin/default-skin.css">
+<script src="../photoswipe/photoswipe.min.js"></script>
+<script src="../photoswipe/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>
